@@ -1,0 +1,129 @@
+{
+ "script": "26_12_causal_mean_check.py",
+ "version": "v1",
+ "sequence": "osaka",
+ "frozen_script": "21_20_osaka2018_similarity_confirmation.py",
+ "frozen_script_sha256": "2c0fb375e6a1a8d48d3ffbc611bb189b2390d224488cdd5585c76f5cadd5da43",
+ "cache": "data/osaka2018_processed/tottori_parsed_realpick_osaka2018_m15_a04.pt",
+ "n_events": 55,
+ "pre_p_samples": [
+  0,
+  290
+ ],
+ "n_traces": 5205,
+ "max_abs_change_Smax": 1.976485947130513e-07,
+ "gate_max_abs_diff_km": 0.0,
+ "summary": {
+  "per_tau": {
+   "0.5": {
+    "best": "M6p",
+    "C3": {
+     "median_cached_km": 0.707677639331098,
+     "median_causal_km": 0.707677639331098,
+     "n_changed": 0,
+     "max_abs_change_km": 0.0,
+     "median_change_km": 0.0
+    },
+    "C4": {
+     "median_cached_km": 0.8794410800236556,
+     "median_causal_km": 0.8794410800236556,
+     "n_changed": 0,
+     "max_abs_change_km": 0.0,
+     "median_change_km": 0.0
+    }
+   },
+   "2": {
+    "best": "M5f",
+    "C3": {
+     "median_cached_km": 0.3671001235783264,
+     "median_causal_km": 0.3671001235783264,
+     "n_changed": 0,
+     "max_abs_change_km": 0.0,
+     "median_change_km": 0.0
+    },
+    "C4": {
+     "median_cached_km": 0.2861697850694151,
+     "median_causal_km": 0.2861697850694151,
+     "n_changed": 0,
+     "max_abs_change_km": 0.0,
+     "median_change_km": 0.0
+    }
+   }
+  },
+  "hypotheses": {
+   "H1": {
+    "method": "C3",
+    "tau": "2",
+    "alpha": 0.01,
+    "best": "M5f",
+    "cached": {
+     "median_km": 0.3671001235783264,
+     "best_median_km": 0.3011,
+     "p": 0.04772429344178747,
+     "n_nonzero": 55,
+     "frac_better": 0.5818181818181818,
+     "frac_tied": 0.0,
+     "outcome": "PHYSICS-AT-FLOOR"
+    },
+    "causal": {
+     "median_km": 0.3671001235783264,
+     "best_median_km": 0.3011,
+     "p": 0.04772429344178747,
+     "n_nonzero": 55,
+     "frac_better": 0.5818181818181818,
+     "frac_tied": 0.0,
+     "outcome": "PHYSICS-AT-FLOOR"
+    }
+   },
+   "H2": {
+    "method": "C4",
+    "tau": "2",
+    "alpha": 0.005,
+    "best": "M5f",
+    "cached": {
+     "median_km": 0.2861697850694151,
+     "best_median_km": 0.3011,
+     "p": 0.001428294739330904,
+     "n_nonzero": 55,
+     "frac_better": 0.6181818181818182,
+     "frac_tied": 0.0,
+     "outcome": "PHYSICS-AT-FLOOR"
+    },
+    "causal": {
+     "median_km": 0.2861697850694151,
+     "best_median_km": 0.3011,
+     "p": 0.001428294739330904,
+     "n_nonzero": 55,
+     "frac_better": 0.6181818181818182,
+     "frac_tied": 0.0,
+     "outcome": "PHYSICS-AT-FLOOR"
+    }
+   },
+   "H3": {
+    "method": "C3",
+    "tau": "0.5",
+    "alpha": 0.005,
+    "best": "M6p",
+    "cached": {
+     "median_km": 0.707677639331098,
+     "best_median_km": 1.1698,
+     "p": 0.004053014431293188,
+     "n_nonzero": 55,
+     "frac_better": 0.6363636363636364,
+     "frac_tied": 0.0,
+     "outcome": "win"
+    },
+    "causal": {
+     "median_km": 0.707677639331098,
+     "best_median_km": 1.1698,
+     "p": 0.004053014431293188,
+     "n_nonzero": 55,
+     "frac_better": 0.6363636363636364,
+     "frac_tied": 0.0,
+     "outcome": "win"
+    }
+   }
+  }
+ },
+ "note": "descriptive, not registered; the stored traces are re-centred on their pre-P mean; M6r and BEST do not use waveforms"
+}

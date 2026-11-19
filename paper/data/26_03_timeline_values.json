@@ -1,0 +1,98 @@
+[
+ {
+  "row": "Central Tottori 2016",
+  "utc": "2026-10-28T01:14:13+00:00",
+  "kind": "reg",
+  "label": "registered"
+ },
+ {
+  "row": "Central Tottori 2016",
+  "utc": "2026-10-28T14:10:11+00:00",
+  "kind": "amd",
+  "label": "A01"
+ },
+ {
+  "row": "Central Tottori 2016",
+  "utc": "2026-10-29T07:51:36+00:00",
+  "kind": "amd",
+  "label": "A02"
+ },
+ {
+  "row": "Central Tottori 2016",
+  "utc": "2026-10-30T02:22:14+00:00",
+  "kind": "amd",
+  "label": "A03"
+ },
+ {
+  "row": "Central Tottori 2016",
+  "utc": "2026-10-30T03:00:38+00:00",
+  "kind": "open",
+  "label": "opened"
+ },
+ {
+  "row": "Northern Osaka 2018",
+  "utc": "2026-11-03T03:44:13+00:00",
+  "kind": "reg",
+  "label": "registered"
+ },
+ {
+  "row": "Northern Osaka 2018",
+  "utc": "2026-11-03T10:03:19+00:00",
+  "kind": "stop",
+  "label": "stopped before opening"
+ },
+ {
+  "row": "Northern Osaka 2018",
+  "utc": "2026-11-13T08:51:01+00:00",
+  "kind": "amd",
+  "label": "A04"
+ },
+ {
+  "row": "Northern Osaka 2018",
+  "utc": "2026-11-15T00:46:22+00:00",
+  "kind": "open",
+  "label": "opened"
+ },
+ {
+  "row": "Northern Nagano 2014",
+  "utc": "2026-11-15T05:51:02+00:00",
+  "kind": "reg",
+  "label": "registered"
+ },
+ {
+  "row": "Northern Nagano 2014",
+  "utc": "2026-11-15T13:52:53+00:00",
+  "kind": "amd",
+  "label": "A01"
+ },
+ {
+  "row": "Northern Nagano 2014",
+  "utc": "2026-11-15T14:56:06+00:00",
+  "kind": "stop",
+  "label": "stopped"
+ },
+ {
+  "row": "Western Shimane 2018",
+  "utc": "2026-11-17T15:52:40+00:00",
+  "kind": "reg",
+  "label": "registered"
+ },
+ {
+  "row": "Western Shimane 2018",
+  "utc": "2026-11-18T12:59:24+00:00",
+  "kind": "open",
+  "label": "opened"
+ },
+ {
+  "row": "Frozen models",
+  "utc": "2026-10-28T12:55:46+00:00",
+  "kind": "freeze",
+  "label": "ranker (L3, L4)"
+ },
+ {
+  "row": "Frozen models",
+  "utc": "2026-11-02T13:31:21+00:00",
+  "kind": "freeze",
+  "label": "switch G"
+ }
+]

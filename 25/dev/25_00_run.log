@@ -1,0 +1,101 @@
+(base) isaokurosawa@ISAOnoMacBook-Pro SWIFT % cd ~/SWIFT && uv run python src/25_00_fifth_sequence_feasibility_count.py 2>&1 | tee data/catalog/25_00_run.log
+ls -l data/catalog/jma_raw/
+[25_00] selftest: 震源レコードの読み方の試験に全て合格(21_04a と同じ試験)
+[25_00] selftest: 選び方の規則(5 例)と 1 時間ごとの数え方(1 例)の試験に合格
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2018.zip
+[25_00] 震源ファイル h2018.zip(SHA-256 ea8eb186db3f…、中身 ['h2018'])  レコード 257071  96 バイトでない行 0
+[25_00] h2018.zip: 機関 J の震源 256992(他機関 79、時刻が読めない 0)
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2017.zip
+[25_00] 震源ファイル h2017.zip(SHA-256 c7d8d8382412…、中身 ['h2017'])  レコード 292878  96 バイトでない行 0
+[25_00] h2017.zip: 機関 J の震源 292811(他機関 67、時刻が読めない 0)
+
+[25_00] S 島根県西部 2018: 本震 2018-04-09 01:32:30.81 JST  35.1847N 132.5867E  深さ 12.13 km  M6.1D  精度 1  印 'K'  (発表の 1 分 01:32:00〜01:33:00 JST の中か: True)
+[25_00] S 島根県西部 2018: 箱 [35.0347, 35.3347, 132.4117, 132.7617]  期間 2018-04-07 01:32:30.81 〜 2018-05-03 01:32:30.81 JST  pool の切れ目 2018-04-12 01:32:30.81 JST
+[25_00] S 島根県西部 2018: 除いた数 {'blank_lat_lon': 0, 'outside_box_or_period': 253583, 'precision_M_8_9': 0, 'subsidiary_3_5': 0, 'det_flag_N_F': 0, 'blank_mag_or_depth': 48}
+[25_00] S 島根県西部 2018: 数 {'all': 3361, 'mj_ge_1p5': 389, 'mj_ge_2p0': 189, 'pool_mj_ge_1p5': 310, 'test_candidates_1p5_to_2p0_after_72h': 41, 'test_candidates_after_R1_estimate': 41, 'removed_by_R1_estimate': 0, 'library_only_mj_ge_2p0_after_72h': 38, 'mj_ge_1p5_deeper_than_25km': 0, 'test_candidates_deeper_than_25km': 0, 'mj_ge_1p5_after_R1_estimate': 292}
+[25_00] S 島根県西部 2018: 1 時間ごと(Mj ≥ 1.5、R1 の前) {'hours': 118, 'hours_one': 77, 'hours_two_or_more': 41, 'after_cut_hours': 65, 'after_cut_hours_one': 54, 'after_cut_hours_two_or_more': 11}
+[25_00] S 島根県西部 2018: 1 時間ごと(Mj ≥ 1.5、R1 の見積もりの後) {'hours': 117, 'hours_one': 77, 'hours_two_or_more': 40, 'after_cut_hours': 65, 'after_cut_hours_one': 54, 'after_cut_hours_two_or_more': 11}
+[25_00] S 島根県西部 2018: 365 日前の同じ箱・同じ長さの期間 {'period_jst': ['2017-04-07 01:32:30.81', '2017-05-03 01:32:30.81'], 'all': 34, 'mj_ge_1p5': 0}
+[25_00] S 島根県西部 2018: 震源決定の印 Mj ≥ 1.5 {'K': 285, 's': 3, 'k': 13, 'A': 88}  R1 の後の試験の候補 {'K': 15, 'A': 25, 'k': 1}
+[25_00] S 島根県西部 2018: R1 の後の試験の候補の日ごとの数(本震からの日) {'3': 5, '4': 3, '5': 4, '6': 5, '7': 2, '8': 6, '10': 2, '11': 2, '13': 5, '14': 1, '17': 3, '20': 2, '21': 1}
+[25_00] S 島根県西部 2018: R1 の後の試験の候補 41(資格の基準 40)→ 資格あり
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2013.zip
+[25_00] 震源ファイル h2013.zip(SHA-256 16dff7a56b1d…、中身 ['h2013'])  レコード 143888  96 バイトでない行 0
+[25_00] h2013.zip: 機関 J の震源 143456(他機関 432、時刻が読めない 0)
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2012.zip
+[25_00] 震源ファイル h2012.zip(SHA-256 6359b292c403…、中身 ['h2012'])  レコード 182424  96 バイトでない行 0
+[25_00] h2012.zip: 機関 J の震源 181982(他機関 442、時刻が読めない 0)
+
+[25_00] A 淡路島付近 2013: 本震 2013-04-13 05:33:17.75 JST  34.4188N 134.8290E  深さ 14.85 km  M6.3D  精度 1  印 'K'  (発表の 1 分 05:33:00〜05:34:00 JST の中か: True)
+[25_00] A 淡路島付近 2013: 箱 [34.2688, 34.5688, 134.654, 135.004]  期間 2013-04-11 05:33:17.75 〜 2013-05-07 05:33:17.75 JST  pool の切れ目 2013-04-16 05:33:17.75 JST
+[25_00] A 淡路島付近 2013: 除いた数 {'blank_lat_lon': 0, 'outside_box_or_period': 142614, 'precision_M_8_9': 0, 'subsidiary_3_5': 0, 'det_flag_N_F': 0, 'blank_mag_or_depth': 20}
+[25_00] A 淡路島付近 2013: 数 {'all': 822, 'mj_ge_1p5': 144, 'mj_ge_2p0': 69, 'pool_mj_ge_1p5': 113, 'test_candidates_1p5_to_2p0_after_72h': 17, 'test_candidates_after_R1_estimate': 16, 'removed_by_R1_estimate': 1, 'library_only_mj_ge_2p0_after_72h': 14, 'mj_ge_1p5_deeper_than_25km': 0, 'test_candidates_deeper_than_25km': 0, 'mj_ge_1p5_after_R1_estimate': 124}
+[25_00] A 淡路島付近 2013: 1 時間ごと(Mj ≥ 1.5、R1 の前) {'hours': 60, 'hours_one': 46, 'hours_two_or_more': 14, 'after_cut_hours': 30, 'after_cut_hours_one': 29, 'after_cut_hours_two_or_more': 1}
+[25_00] A 淡路島付近 2013: 1 時間ごと(Mj ≥ 1.5、R1 の見積もりの後) {'hours': 59, 'hours_one': 45, 'hours_two_or_more': 14, 'after_cut_hours': 29, 'after_cut_hours_one': 28, 'after_cut_hours_two_or_more': 1}
+[25_00] A 淡路島付近 2013: 365 日前の同じ箱・同じ長さの期間 {'period_jst': ['2012-04-11 05:33:17.75', '2012-05-07 05:33:17.75'], 'all': 5, 'mj_ge_1p5': 0}
+[25_00] A 淡路島付近 2013: 震源決定の印 Mj ≥ 1.5 {'K': 144}  R1 の後の試験の候補 {'K': 16}
+[25_00] A 淡路島付近 2013: R1 の後の試験の候補の日ごとの数(本震からの日) {'3': 1, '4': 1, '5': 1, '6': 2, '11': 1, '15': 2, '17': 1, '18': 2, '19': 1, '21': 1, '22': 2, '23': 1}
+[25_00] A 淡路島付近 2013: R1 の後の試験の候補 16(資格の基準 40)→ 資格なし
+
+[25_00] T 栃木県北部 2013: 本震 2013-02-25 16:23:53.58 JST  36.8737N 139.4128E  深さ 2.84 km  M6.3D  精度 1  印 'K'  (発表の 1 分 16:23:00〜16:24:00 JST の中か: True)
+[25_00] T 栃木県北部 2013: 箱 [36.7237, 37.0237, 139.2378, 139.5878]  期間 2013-02-23 16:23:53.58 〜 2013-03-21 16:23:53.58 JST  pool の切れ目 2013-02-28 16:23:53.58 JST
+[25_00] T 栃木県北部 2013: 除いた数 {'blank_lat_lon': 0, 'outside_box_or_period': 141898, 'precision_M_8_9': 0, 'subsidiary_3_5': 0, 'det_flag_N_F': 0, 'blank_mag_or_depth': 1}
+[25_00] T 栃木県北部 2013: 数 {'all': 1557, 'mj_ge_1p5': 367, 'mj_ge_2p0': 163, 'pool_mj_ge_1p5': 284, 'test_candidates_1p5_to_2p0_after_72h': 53, 'test_candidates_after_R1_estimate': 49, 'removed_by_R1_estimate': 4, 'library_only_mj_ge_2p0_after_72h': 30, 'mj_ge_1p5_deeper_than_25km': 1, 'test_candidates_deeper_than_25km': 1, 'mj_ge_1p5_after_R1_estimate': 324}
+[25_00] T 栃木県北部 2013: 1 時間ごと(Mj ≥ 1.5、R1 の前) {'hours': 115, 'hours_one': 69, 'hours_two_or_more': 46, 'after_cut_hours': 64, 'after_cut_hours_one': 48, 'after_cut_hours_two_or_more': 16}
+[25_00] T 栃木県北部 2013: 1 時間ごと(Mj ≥ 1.5、R1 の見積もりの後) {'hours': 111, 'hours_one': 70, 'hours_two_or_more': 41, 'after_cut_hours': 62, 'after_cut_hours_one': 50, 'after_cut_hours_two_or_more': 12}
+[25_00] T 栃木県北部 2013: 365 日前の同じ箱・同じ長さの期間 {'period_jst': ['2012-02-24 16:23:53.58', '2012-03-21 16:23:53.58'], 'all': 11, 'mj_ge_1p5': 1}
+[25_00] T 栃木県北部 2013: 震源決定の印 Mj ≥ 1.5 {'K': 367}  R1 の後の試験の候補 {'K': 49}
+[25_00] T 栃木県北部 2013: R1 の後の試験の候補の日ごとの数(本震からの日) {'3': 8, '4': 5, '5': 6, '6': 3, '7': 3, '8': 2, '9': 1, '10': 2, '11': 1, '12': 3, '13': 1, '14': 2, '15': 1, '16': 3, '19': 3, '20': 2, '22': 1, '23': 2}
+[25_00] T 栃木県北部 2013: R1 の後の試験の候補 49(資格の基準 40)→ 資格あり
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2004.zip
+[25_00] 震源ファイル h2004.zip(SHA-256 3c0df93946c2…、中身 ['h2004'])  レコード 136513  96 バイトでない行 0
+[25_00] h2004.zip: 機関 J の震源 135811(他機関 702、時刻が読めない 0)
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2005.zip
+[25_00] 震源ファイル h2005.zip(SHA-256 44a7530f8c6f…、中身 ['h2005'])  レコード 133780  96 バイトでない行 0
+[25_00] h2005.zip: 機関 J の震源 132963(他機関 817、時刻が読めない 0)
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2003.zip
+[25_00] 震源ファイル h2003.zip(SHA-256 daccbdd30acc…、中身 ['h2003'])  レコード 144976  96 バイトでない行 0
+[25_00] h2003.zip: 機関 J の震源 144340(他機関 636、時刻が読めない 0)
+
+[25_00] R 留萌支庁南部 2004: 本震 2004-12-14 14:56:10.54 JST  44.0767N 141.6995E  深さ 8.58 km  M6.1D  精度 1  印 'K'  (発表の 1 分 14:56:00〜14:57:00 JST の中か: True)
+[25_00] R 留萌支庁南部 2004: 箱 [43.9267, 44.2267, 141.5245, 141.8745]  期間 2004-12-12 14:56:10.54 〜 2005-01-07 14:56:10.54 JST  pool の切れ目 2004-12-17 14:56:10.54 JST
+[25_00] R 留萌支庁南部 2004: 除いた数 {'blank_lat_lon': 0, 'outside_box_or_period': 267582, 'precision_M_8_9': 0, 'subsidiary_3_5': 0, 'det_flag_N_F': 0, 'blank_mag_or_depth': 111}
+[25_00] R 留萌支庁南部 2004: 数 {'all': 1081, 'mj_ge_1p5': 243, 'mj_ge_2p0': 108, 'pool_mj_ge_1p5': 173, 'test_candidates_1p5_to_2p0_after_72h': 46, 'test_candidates_after_R1_estimate': 46, 'removed_by_R1_estimate': 0, 'library_only_mj_ge_2p0_after_72h': 24, 'mj_ge_1p5_deeper_than_25km': 0, 'test_candidates_deeper_than_25km': 0, 'mj_ge_1p5_after_R1_estimate': 234}
+[25_00] R 留萌支庁南部 2004: 1 時間ごと(Mj ≥ 1.5、R1 の前) {'hours': 107, 'hours_one': 68, 'hours_two_or_more': 39, 'after_cut_hours': 61, 'after_cut_hours_one': 52, 'after_cut_hours_two_or_more': 9}
+[25_00] R 留萌支庁南部 2004: 1 時間ごと(Mj ≥ 1.5、R1 の見積もりの後) {'hours': 107, 'hours_one': 68, 'hours_two_or_more': 39, 'after_cut_hours': 61, 'after_cut_hours_one': 52, 'after_cut_hours_two_or_more': 9}
+[25_00] R 留萌支庁南部 2004: 365 日前の同じ箱・同じ長さの期間 {'period_jst': ['2003-12-13 14:56:10.54', '2004-01-08 14:56:10.54'], 'all': 1, 'mj_ge_1p5': 0}
+[25_00] R 留萌支庁南部 2004: 震源決定の印 Mj ≥ 1.5 {'K': 243}  R1 の後の試験の候補 {'K': 46}
+[25_00] R 留萌支庁南部 2004: R1 の後の試験の候補の日ごとの数(本震からの日) {'3': 5, '4': 3, '5': 5, '6': 2, '7': 8, '8': 4, '9': 2, '11': 3, '12': 3, '13': 2, '15': 2, '16': 1, '17': 1, '18': 2, '19': 1, '20': 1, '22': 1}
+[25_00] R 留萌支庁南部 2004: R1 の後の試験の候補 46(資格の基準 40)→ 資格あり
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2016.zip
+[25_00] 震源ファイル h2016.zip(SHA-256 2c438d8189fd…、中身 ['h2016'])  レコード 313487  96 バイトでない行 0
+[25_00] h2016.zip: 機関 J の震源 313356(他機関 131、時刻が読めない 0)
+[25_00] 取得: https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2015.zip
+[25_00] 震源ファイル h2015.zip(SHA-256 dfa66b2c8025…、中身 ['h2015'])  レコード 124281  96 バイトでない行 0
+[25_00] h2015.zip: 機関 J の震源 123782(他機関 499、時刻が読めない 0)
+
+[25_00] I 茨城県北部 2016: 本震 2016-12-28 21:38:49.04 JST  36.7202N 140.5742E  深さ 10.84 km  M6.3D  精度 1  印 'K'  (発表の 1 分 21:38:00〜21:39:00 JST の中か: True)
+[25_00] I 茨城県北部 2016: 箱 [36.5702, 36.8702, 140.3992, 140.7492]  期間 2016-12-26 21:38:49.04 〜 2017-01-21 21:38:49.04 JST  pool の切れ目 2016-12-31 21:38:49.04 JST
+[25_00] I 茨城県北部 2016: 除いた数 {'blank_lat_lon': 0, 'outside_box_or_period': 596529, 'precision_M_8_9': 0, 'subsidiary_3_5': 0, 'det_flag_N_F': 0, 'blank_mag_or_depth': 196}
+[25_00] I 茨城県北部 2016: 数 {'all': 9442, 'mj_ge_1p5': 794, 'mj_ge_2p0': 345, 'pool_mj_ge_1p5': 470, 'test_candidates_1p5_to_2p0_after_72h': 193, 'test_candidates_after_R1_estimate': 181, 'removed_by_R1_estimate': 12, 'library_only_mj_ge_2p0_after_72h': 131, 'mj_ge_1p5_deeper_than_25km': 1, 'test_candidates_deeper_than_25km': 0, 'mj_ge_1p5_after_R1_estimate': 641}
+[25_00] I 茨城県北部 2016: 1 時間ごと(Mj ≥ 1.5、R1 の前) {'hours': 279, 'hours_one': 151, 'hours_two_or_more': 128, 'after_cut_hours': 210, 'after_cut_hours_one': 137, 'after_cut_hours_two_or_more': 73}
+[25_00] I 茨城県北部 2016: 1 時間ごと(Mj ≥ 1.5、R1 の見積もりの後) {'hours': 272, 'hours_one': 150, 'hours_two_or_more': 122, 'after_cut_hours': 205, 'after_cut_hours_one': 137, 'after_cut_hours_two_or_more': 68}
+[25_00] I 茨城県北部 2016: 365 日前の同じ箱・同じ長さの期間 {'period_jst': ['2015-12-27 21:38:49.04', '2016-01-22 21:38:49.04'], 'all': 84, 'mj_ge_1p5': 48}
+[25_00] I 茨城県北部 2016: 震源決定の印 Mj ≥ 1.5 {'A': 196, 'K': 532, 'S': 4, 's': 2, 'k': 60}  R1 の後の試験の候補 {'K': 84, 'A': 83, 'k': 14}
+[25_00] I 茨城県北部 2016: R1 の後の試験の候補の日ごとの数(本震からの日) {'3': 18, '4': 13, '5': 15, '6': 14, '7': 12, '8': 12, '9': 14, '10': 8, '11': 14, '12': 3, '13': 6, '14': 8, '15': 7, '16': 4, '17': 4, '18': 6, '19': 6, '20': 4, '21': 4, '22': 4, '23': 5}
+[25_00] I 茨城県北部 2016: R1 の後の試験の候補 181(資格の基準 40)→ 資格あり
+
+[25_00] 選んだ候補: S(rule 2: first eligible candidate in the fixed order S > A > T > R > I)
+[25_00] 出力: data/catalog/25_00_fifth_sequence_feasibility.json(数だけ。位置の一覧は書いていない)
+total 98232
+-rw-r--r--  1 isaokurosawa  staff  3901001 11月 16 07:34 h2003.zip
+-rw-r--r--  1 isaokurosawa  staff  3687416 11月 16 07:34 h2004.zip
+-rw-r--r--  1 isaokurosawa  staff  3632542 11月 16 07:34 h2005.zip
+-rw-r--r--  1 isaokurosawa  staff  4874001 11月 16 07:34 h2012.zip
+-rw-r--r--  1 isaokurosawa  staff  3888296 11月 16 07:34 h2013.zip
+-rw-r--r--  1 isaokurosawa  staff  3803135 11月 15 10:23 h2014.zip
+-rw-r--r--  1 isaokurosawa  staff  3384915 11月 16 07:34 h2015.zip
+-rw-r--r--  1 isaokurosawa  staff  8221979 11月 16 07:34 h2016.zip
+-rw-r--r--  1 isaokurosawa  staff  7907333 11月 16 07:34 h2017.zip
+-rw-r--r--  1 isaokurosawa  staff  6973661 11月 16 07:34 h2018.zip
+(base) isaokurosawa@ISAOnoMacBook-Pro SWIFT % 

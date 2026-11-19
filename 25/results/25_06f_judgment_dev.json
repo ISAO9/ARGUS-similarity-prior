@@ -1,0 +1,613 @@
+{
+ "script": "25_06f_shimane2018_learned_test.py",
+ "version": "v1",
+ "script_sha256": "a2784dd7165a345dd05f05cd4ce536291eb3c6498b047b16da2c0f0aa7f5b142",
+ "mode": "dev",
+ "suffix": "_dev",
+ "cache": "data/shimane2018_processed/tottori_parsed_realpick_shimane2018_m15_r1.pt",
+ "cache_sha256": "c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4",
+ "reference_csv": "data/25_05_per_event_dev.csv",
+ "train_json": "models/21_06a_train.json",
+ "model_sha256": "0d0f75a48a50f866d3963c6560497abe1c007ecac628391284ca6fe248b712e1",
+ "train_json_sha256": "4f27ad1e0596d244b62b064918cde92cde6f93a13829a96bb6ac04079e13f87e",
+ "train_rows_sha256": "ca23242288ad6fe4fdf5853960a6fd41b78328a59ec22bc5d484bf5334e632e9",
+ "reference_csv_sha256": "c6e722586b6d81e6907779a1804eab300b4f6f6f37f3489cdb428c914213db04",
+ "feature_block_sha256": "9905420e546da69e0e3426bccb1f5e962c04d42013e27b506811f13e402ed0b5",
+ "n_evaluated": 20,
+ "g_same": "PASS",
+ "summary": {
+  "C3": {
+   "0.5": {
+    "median_km": 0.70255,
+    "ci_lo": 0.4339,
+    "ci_hi": 1.06785
+   },
+   "1": {
+    "median_km": 0.5516,
+    "ci_lo": 0.3433,
+    "ci_hi": 0.8040499999999999
+   },
+   "2": {
+    "median_km": 0.6177999999999999,
+    "ci_lo": 0.39825,
+    "ci_hi": 1.0035500000000002
+   },
+   "3": {
+    "median_km": 0.28715,
+    "ci_lo": 0.2242,
+    "ci_hi": 0.48625
+   }
+  },
+  "C4": {
+   "0.5": {
+    "median_km": 0.64075,
+    "ci_lo": 0.3761,
+    "ci_hi": 1.0295337499999964
+   },
+   "1": {
+    "median_km": 0.5156000000000001,
+    "ci_lo": 0.3013,
+    "ci_hi": 0.91865
+   },
+   "2": {
+    "median_km": 0.53535,
+    "ci_lo": 0.26205,
+    "ci_hi": 0.9861500000000001
+   },
+   "3": {
+    "median_km": 0.2217,
+    "ci_lo": 0.1089,
+    "ci_hi": 0.47750000000000004
+   }
+  },
+  "L3": {
+   "0.5": {
+    "median_km": 0.61885,
+    "ci_lo": 0.49965000000000004,
+    "ci_hi": 1.0004
+   },
+   "1": {
+    "median_km": 0.5191,
+    "ci_lo": 0.3879,
+    "ci_hi": 0.8040499999999999
+   },
+   "2": {
+    "median_km": 0.49115,
+    "ci_lo": 0.29774999999999996,
+    "ci_hi": 0.9576
+   },
+   "3": {
+    "median_km": 0.28715,
+    "ci_lo": 0.2104,
+    "ci_hi": 0.4964
+   }
+  },
+  "L4": {
+   "0.5": {
+    "median_km": 0.6277,
+    "ci_lo": 0.43165,
+    "ci_hi": 0.9904
+   },
+   "1": {
+    "median_km": 0.50915,
+    "ci_lo": 0.3172,
+    "ci_hi": 0.66805
+   },
+   "2": {
+    "median_km": 0.34045000000000003,
+    "ci_lo": 0.23235,
+    "ci_hi": 0.93685
+   },
+   "3": {
+    "median_km": 0.3284,
+    "ci_lo": 0.2036,
+    "ci_hi": 0.4606
+   }
+  },
+  "L3p": {
+   "0.5": {
+    "median_km": 0.6187,
+    "ci_lo": 0.41100000000000003,
+    "ci_hi": 0.8424
+   },
+   "1": {
+    "median_km": 0.47425,
+    "ci_lo": 0.31374624999999995,
+    "ci_hi": 0.6905
+   },
+   "2": {
+    "median_km": 0.45315,
+    "ci_lo": 0.3436,
+    "ci_hi": 0.87095
+   },
+   "3": {
+    "median_km": 0.27945,
+    "ci_lo": 0.227,
+    "ci_hi": 0.4883
+   }
+  },
+  "L4p": {
+   "0.5": {
+    "median_km": 0.6229,
+    "ci_lo": 0.33340000000000003,
+    "ci_hi": 0.8964000000000001
+   },
+   "1": {
+    "median_km": 0.43145,
+    "ci_lo": 0.3099,
+    "ci_hi": 0.55505
+   },
+   "2": {
+    "median_km": 0.30469999999999997,
+    "ci_lo": 0.24485,
+    "ci_hi": 0.8364
+   },
+   "3": {
+    "median_km": 0.18205,
+    "ci_lo": 0.1361,
+    "ci_hi": 0.45065
+   }
+  },
+  "M0r": {
+   "0.5": {
+    "median_km": 1.2963,
+    "ci_lo": 1.05015,
+    "ci_hi": 2.3121
+   },
+   "1": {
+    "median_km": 1.2963,
+    "ci_lo": 1.05015,
+    "ci_hi": 2.3121
+   },
+   "2": {
+    "median_km": 1.2963,
+    "ci_lo": 1.05015,
+    "ci_hi": 2.3121
+   },
+   "3": {
+    "median_km": 1.2963,
+    "ci_lo": 1.05015,
+    "ci_hi": 2.3121
+   }
+  },
+  "Mp10": {
+   "0.5": {
+    "median_km": 1.3961999999999999,
+    "ci_lo": 0.911,
+    "ci_hi": 1.680094999999996
+   },
+   "1": {
+    "median_km": 1.3961999999999999,
+    "ci_lo": 0.9108962500000001,
+    "ci_hi": 1.67935
+   },
+   "2": {
+    "median_km": 1.3961999999999999,
+    "ci_lo": 0.911,
+    "ci_hi": 1.67935
+   },
+   "3": {
+    "median_km": 1.3961999999999999,
+    "ci_lo": 0.911,
+    "ci_hi": 1.67935
+   }
+  },
+  "M1": {
+   "0.5": {
+    "median_km": 11.6615,
+    "ci_lo": 10.3788,
+    "ci_hi": 12.42085
+   },
+   "1": {
+    "median_km": 11.6615,
+    "ci_lo": 10.3788,
+    "ci_hi": 12.42085
+   },
+   "2": {
+    "median_km": 11.6615,
+    "ci_lo": 10.3788,
+    "ci_hi": 12.42085
+   },
+   "3": {
+    "median_km": 11.6615,
+    "ci_lo": 10.3788,
+    "ci_hi": 12.42085
+   }
+  },
+  "M2": {
+   "0.5": {
+    "median_km": 6.99405,
+    "ci_lo": 6.0105,
+    "ci_hi": 9.76585
+   },
+   "1": {
+    "median_km": 5.8403,
+    "ci_lo": 4.32375,
+    "ci_hi": 6.89825
+   },
+   "2": {
+    "median_km": 10.56845,
+    "ci_lo": 5.55045,
+    "ci_hi": 12.79665
+   },
+   "3": {
+    "median_km": 10.5731,
+    "ci_lo": 9.575,
+    "ci_hi": 11.378879999999992
+   }
+  },
+  "M3r": {
+   "0.5": {
+    "median_km": 1.44535,
+    "ci_lo": 1.13415,
+    "ci_hi": 2.25145
+   },
+   "1": {
+    "median_km": 1.44535,
+    "ci_lo": 1.13415,
+    "ci_hi": 2.25145
+   },
+   "2": {
+    "median_km": 1.44535,
+    "ci_lo": 1.13415,
+    "ci_hi": 2.25145
+   },
+   "3": {
+    "median_km": 1.44535,
+    "ci_lo": 1.13415,
+    "ci_hi": 2.25145
+   }
+  },
+  "M5": {
+   "0.5": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null
+   },
+   "1": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null
+   },
+   "2": {
+    "median_km": 1.0855,
+    "ci_lo": 0.4284,
+    "ci_hi": 3.5633
+   },
+   "3": {
+    "median_km": 0.28715,
+    "ci_lo": 0.1968,
+    "ci_hi": 0.46995
+   }
+  },
+  "M5f": {
+   "0.5": {
+    "median_km": 11.6615,
+    "ci_lo": 10.3788,
+    "ci_hi": 12.42085
+   },
+   "1": {
+    "median_km": 11.6615,
+    "ci_lo": 10.3788,
+    "ci_hi": 12.42085
+   },
+   "2": {
+    "median_km": 2.03635,
+    "ci_lo": 0.44989999999999997,
+    "ci_hi": 3.98915
+   },
+   "3": {
+    "median_km": 0.28715,
+    "ci_lo": 0.21435,
+    "ci_hi": 0.46995
+   }
+  },
+  "M6p": {
+   "0.5": {
+    "median_km": 1.8016,
+    "ci_lo": 1.1545999999999998,
+    "ci_hi": 2.07575
+   },
+   "1": {
+    "median_km": 1.5728,
+    "ci_lo": 1.1545999999999998,
+    "ci_hi": 2.099468749999991
+   },
+   "2": {
+    "median_km": 0.8706,
+    "ci_lo": 0.38595,
+    "ci_hi": 1.3122500000000001
+   },
+   "3": {
+    "median_km": 0.30579999999999996,
+    "ci_lo": 0.2242,
+    "ci_hi": 0.53095
+   }
+  },
+  "M6r": {
+   "0.5": {
+    "median_km": 1.8016,
+    "ci_lo": 1.33535,
+    "ci_hi": 2.0978
+   },
+   "1": {
+    "median_km": 1.6404,
+    "ci_lo": 1.3275,
+    "ci_hi": 2.0813
+   },
+   "2": {
+    "median_km": 0.8706,
+    "ci_lo": 0.4141,
+    "ci_hi": 1.3122500000000001
+   },
+   "3": {
+    "median_km": 0.3366,
+    "ci_lo": 0.22804999999999997,
+    "ci_hi": 0.5486
+   }
+  }
+ },
+ "per_tau": {
+  "0.5": {
+   "best": "M0r",
+   "L4_vs_best": {
+    "n": 20,
+    "n_nonzero": 20,
+    "p": 1.811981201171875e-05,
+    "median_diff_km": -0.6840999999999999,
+    "frac_better": 0.9
+   },
+   "L3_vs_best": {
+    "n": 20,
+    "n_nonzero": 20,
+    "p": 4.76837158203125e-06,
+    "median_diff_km": -0.78245,
+    "frac_better": 0.95
+   },
+   "L4_vs_C4": {
+    "n": 20,
+    "n_nonzero": 20,
+    "p": 0.4061775207519531,
+    "median_diff_km": -0.006199999999999942,
+    "frac_better": 0.5
+   },
+   "L3_vs_C3": {
+    "n": 20,
+    "n_nonzero": 15,
+    "p": 0.45478046927805604,
+    "median_diff_km": 0.0,
+    "frac_better": 0.3
+   },
+   "L4p_vs_L4": {
+    "n": 20,
+    "n_nonzero": 18,
+    "p": 0.07847759431131326,
+    "median_diff_km": -0.06385000000000002,
+    "frac_better": 0.6
+   },
+   "learned_fallback_frac": 0.0,
+   "top10_true_dist_median_km": {
+    "C": 1.0397629145085847,
+    "L": 0.9781635360592208
+   },
+   "stations_median": 2.0
+  },
+  "1": {
+   "best": "M0r",
+   "L4_vs_best": {
+    "n": 20,
+    "n_nonzero": 20,
+    "p": 4.76837158203125e-06,
+    "median_diff_km": -0.8656,
+    "frac_better": 0.95
+   },
+   "L3_vs_best": {
+    "n": 20,
+    "n_nonzero": 20,
+    "p": 6.67572021484375e-06,
+    "median_diff_km": -0.9279000000000001,
+    "frac_better": 0.95
+   },
+   "L4_vs_C4": {
+    "n": 20,
+    "n_nonzero": 17,
+    "p": 0.1779793494232873,
+    "median_diff_km": -0.004499999999999976,
+    "frac_better": 0.5
+   },
+   "L3_vs_C3": {
+    "n": 20,
+    "n_nonzero": 9,
+    "p": 0.5236174890046236,
+    "median_diff_km": 0.0,
+    "frac_better": 0.2
+   },
+   "L4p_vs_L4": {
+    "n": 20,
+    "n_nonzero": 19,
+    "p": 0.5,
+    "median_diff_km": 0.014400000000000024,
+    "frac_better": 0.45
+   },
+   "learned_fallback_frac": 0.0,
+   "top10_true_dist_median_km": {
+    "C": 0.7827483373148267,
+    "L": 0.6515406074013214
+   },
+   "stations_median": 2.0
+  },
+  "2": {
+   "best": "M6p",
+   "L4_vs_best": {
+    "n": 20,
+    "n_nonzero": 18,
+    "p": 0.0032454162472800945,
+    "median_diff_km": -0.219,
+    "frac_better": 0.6
+   },
+   "L3_vs_best": {
+    "n": 20,
+    "n_nonzero": 12,
+    "p": 0.00382454102764696,
+    "median_diff_km": -0.03100000000000007,
+    "frac_better": 0.55
+   },
+   "L4_vs_C4": {
+    "n": 20,
+    "n_nonzero": 18,
+    "p": 0.32373535646867224,
+    "median_diff_km": -0.005549999999999999,
+    "frac_better": 0.5
+   },
+   "L3_vs_C3": {
+    "n": 20,
+    "n_nonzero": 9,
+    "p": 0.4294774613687412,
+    "median_diff_km": 0.0,
+    "frac_better": 0.3
+   },
+   "L4p_vs_L4": {
+    "n": 20,
+    "n_nonzero": 17,
+    "p": 0.08128587957814465,
+    "median_diff_km": -0.017549999999999982,
+    "frac_better": 0.5
+   },
+   "learned_fallback_frac": 0.0,
+   "top10_true_dist_median_km": {
+    "C": 0.6626254667030718,
+    "L": 0.7084871955052301
+   },
+   "stations_median": 3.0
+  },
+  "3": {
+   "best": "M5",
+   "L4_vs_best": {
+    "n": 20,
+    "n_nonzero": 16,
+    "p": 0.7325373934307802,
+    "median_diff_km": 0.010149999999999992,
+    "frac_better": 0.3
+   },
+   "L3_vs_best": {
+    "n": 20,
+    "n_nonzero": 10,
+    "p": 0.47967681702008175,
+    "median_diff_km": 0.0,
+    "frac_better": 0.25
+   },
+   "L4_vs_C4": {
+    "n": 20,
+    "n_nonzero": 16,
+    "p": 0.8103126655955601,
+    "median_diff_km": 0.002350000000000005,
+    "frac_better": 0.3
+   },
+   "L3_vs_C3": {
+    "n": 20,
+    "n_nonzero": 4,
+    "p": null,
+    "median_diff_km": 0.0,
+    "frac_better": 0.1
+   },
+   "L4p_vs_L4": {
+    "n": 20,
+    "n_nonzero": 16,
+    "p": 0.10730094314595473,
+    "median_diff_km": -0.011250000000000003,
+    "frac_better": 0.55
+   },
+   "learned_fallback_frac": 0.0,
+   "top10_true_dist_median_km": {
+    "C": 0.8643285560117163,
+    "L": 0.548434018939125
+   },
+   "stations_median": 3.5
+  }
+ },
+ "hypotheses": {
+  "HL1": {
+   "method": "L4",
+   "tau": "2",
+   "alpha": 0.01,
+   "comparator": "M6p",
+   "comparator_median_km": 0.8706,
+   "median_km": 0.34045000000000003,
+   "paired": {
+    "n": 20,
+    "n_nonzero": 18,
+    "p": 0.0032454162472800945,
+    "median_diff_km": -0.219,
+    "frac_better": 0.6
+   },
+   "floor": false,
+   "win": true
+  },
+  "HL2": {
+   "method": "L4",
+   "tau": "2",
+   "alpha": 0.005,
+   "comparator": "C4",
+   "comparator_median_km": 0.53535,
+   "median_km": 0.34045000000000003,
+   "paired": {
+    "n": 20,
+    "n_nonzero": 18,
+    "p": 0.32373535646867224,
+    "median_diff_km": -0.005549999999999999,
+    "frac_better": 0.5
+   },
+   "floor": false,
+   "win": false
+  },
+  "HL3": {
+   "method": "L3",
+   "tau": "0.5",
+   "alpha": 0.005,
+   "comparator": "M0r",
+   "comparator_median_km": 1.2963,
+   "median_km": 0.61885,
+   "paired": {
+    "n": 20,
+    "n_nonzero": 20,
+    "p": 4.76837158203125e-06,
+    "median_diff_km": -0.78245,
+    "frac_better": 0.95
+   },
+   "floor": false,
+   "win": true
+  }
+ },
+ "verdict": "DEV (no verdict)",
+ "verdict_rule": "BEST(tau) = smallest median among the 9 AI-free methods with an estimate for every evaluated event (from the 21_20 CSV). HL1 (primary): L4 at tau = 2 s vs BEST, alpha 0.01; HL2: L4 at 2 s vs C4, alpha 0.005; HL3: L3 at 0.5 s vs BEST, alpha 0.005. Win = method median < comparator median, one-sided paired Wilcoxon (zero_method='wilcox') p < alpha, >= 10 non-zero pairs, and (vs BEST only) BEST >= 0.5 km. Verdict from HL1: LEARNED-CONFIRMED / PHYSICS-AT-FLOOR / NOT-CONFIRMED; INCONCLUSIVE if fewer than 30 evaluated events",
+ "limits": [
+  "fifth sequence: Western Shimane 2018 (mainshock 2018-04-09, 01:32:30.81 JST; JMA catalogue values), never used in ARGUS development; HL1-HL3 and the learned ranker were fixed in the 21_06 preregistration and frozen by 21_06a on West Tottori 2026 before this test",
+  "one fifth sequence only; before this preregistration the catalogue h2018 was opened by 25_00 to count events (counts and the mainshock row only; no location list, waveform or method error was looked at); h2018 had been opened before for Northern Osaka 2018 (21_20a), whose box and period do not include this sequence",
+  "the catalogue-only count of test candidates after rule R1 was 41 in 25_00 (25_00 required at least 40 to select a sequence); events without a PhaseNet P in the cache are not evaluated, and fewer than 30 evaluated events give INCONCLUSIVE",
+  "25 of these 41 catalogue test candidates have JMA's automatic-hypocentre flag (A), 15 are K and 1 is k (25_00); the truth and past-event locations therefore mix manual and automatic JMA hypocentres; errors by flag are described by 25_09 (no test)",
+  "stations are NIED Hi-net (0101) only, chosen as the 50 nearest with data among the current NIED list; the West Tottori 2026 set of 50 stations also included non-Hi-net stations, so station types and geometry differ; stations that existed in 2018 but are not in the current NIED list cannot be candidates",
+  "waveforms were downloaded around catalogue events only and converted to the West Tottori 2026 h5 form (30-s windows, per-window per-component z-score, JST epoch; 25_02 also stores the window mean and standard deviation); no filter was applied before the z-score (compared in 25_02 G-spec)",
+  "the cache was built by 25_03, whose picking, QC and assembly are identical to 15_01c v3.3; 25_03h then removed every event with another catalogue event from 15 s before to 5 s after its origin (rule R1 of 21_20 amendment 04, fixed here before any Shimane waveform was opened; it uses origin times and Mj only), which can bias the sample against busy periods",
+  "catalogue: JMA hypocentres from h2018 (whether h2018 is the final stage is to be confirmed); past-event locations are JMA hypocentres (in operation: automatic slow-layer locations, possibly worse); truth is also JMA",
+  "the 2018 catalogue excludes matched-filter, undetermined/fixed (precision M, 8, 9; flag N, F), artificial and low-frequency events. Manual and automatic hypocentres can be mixed (per-flag counts in 25_01's JSON)",
+  "station elevations are NIED's current height(m) (possibly the sensor depth for borehole stations); static station terms absorb a constant offset",
+  "H1-H4 use offline PhaseNet picks on full records (possibly better than real-time picks); every method uses the same picks",
+  "cache keeps up to 24 stations per event (PhaseNet P first, earliest first); no not-yet-arrived information is used",
+  "cache waveforms had the full-window mean removed (includes future samples; removed by the 2 Hz high-pass except for a transient from the window start 3 s before P) and the source h5 is z-score normalised per 30-s window (the scale uses later samples of that window; cosine similarity is scale-invariant except where a window join falls inside the correlation window); the one-sample look-ahead of the cache's central-difference derivative is avoided by not using the last sample",
+  "no picking or telemetry latency (tau is ideal elapsed time)",
+  "the test events are small (1.5 <= Mj < 2.0); pick quality and station counts can differ from Mj >= 2.0 events",
+  "the 2-8 Hz band was chosen after seeing 18_01 on West Tottori 2026",
+  "C4's station terms come from past events' JMA hypocentres and truth is also JMA, so part of a C4 gain can be agreement with the JMA frame rather than better early information; C3all/C4all at all picks are reported to show this",
+  "C4 corrects only arrived stations held by >= 3 top similar events; each past event's terms are demeaned by its own median P residual over all its stations, while uncorrected stations keep only the static term",
+  "H4 compares C3 with C1 (the JMA epicentre of the most similar past event, the 'search the most similar past event' approach) on the events where C1 exists (C1 is undefined when fewer than 5 past events have a positive similarity)",
+  "H5 re-runs every method with picks made by 24_07 from data up to T only (T = first offline P + tau); the tau origin, the station set (the cache stations) and the P search band (relative to the catalogue origin) still come from the offline picks and the catalogue; no Wadati QC or STA/LTA fallback at each time; the similarity windows start at the causal P; stations picked causally but without an offline PhaseNet P are used by the physics but not by the similarity; past events keep their offline picks (their records are complete at the time of the target event)",
+  "the clock check G-clock2 condition (d) was redesigned for this preregistration on four earlier sequences only (25_04x, 25_04y, 25_04z and 25_04v; Shimane was not opened): 5 consecutive events after mainshock + 72 h, median of event medians within 0.5 s; it does not check common timing errors that affect only one or two events, or events within 72 h of the mainshock; its positive control was set to +1.0 s on 4 consecutive events after +0.6 s could not be met together with the negative control (25_04z); a 0.6 s common offset over 4 events is therefore not reliably detected",
+  "if the station-level clock check G-clock2 (c) fails only at stations farther than 80 km, the test proceeds with a fixed label (preregistration 25, section 5.3); a constant clock offset at a far station can be missed",
+  "the double-difference offset is a horizontal straight-ray approximation (depth not solved); it is missing (nan) with fewer than 4 common stations or a near-linear station geometry",
+  "the learned ranker (21_06a) was trained on West Tottori 2026 only and frozen before this test; L3p/L4p (retrained with the 2018 pool) are descriptive",
+  "25_06f reuses the 25_05 per-event CSV for the physics-only methods and C3/C4, and recomputes C3/C4 to check identity (G-same)",
+  "C3/C4/L3/L4 errors are rounded to 4 decimals (as in the 25_05 CSV) before comparison so that ties stay ties",
+  "log10_dt_h uses the target's JMA origin time (not known exactly at tau; the error is a few seconds against >= 1 h)"
+ ],
+ "runtime_s": 41.73752784729004
+}

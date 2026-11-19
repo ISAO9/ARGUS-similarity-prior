@@ -1,0 +1,129 @@
+{
+ "script": "26_12_causal_mean_check.py",
+ "version": "v1",
+ "sequence": "ct2016",
+ "frozen_script": "21_04_ct2016_similarity_confirmation.py",
+ "frozen_script_sha256": "0b2807843763b641a67e090407311d39c0204cdb7825577c6b86b07a0532908d",
+ "cache": "data/ct2016_processed/tottori_parsed_realpick_ct2016_m15.pt",
+ "n_events": 307,
+ "pre_p_samples": [
+  0,
+  290
+ ],
+ "n_traces": 39932,
+ "max_abs_change_Smax": 5.396319167627617e-07,
+ "gate_max_abs_diff_km": 0.0,
+ "summary": {
+  "per_tau": {
+   "0.5": {
+    "best": "M6r",
+    "C3": {
+     "median_cached_km": 0.8668894415726545,
+     "median_causal_km": 0.8668894415726545,
+     "n_changed": 0,
+     "max_abs_change_km": 0.0,
+     "median_change_km": 0.0
+    },
+    "C4": {
+     "median_cached_km": 0.7971582135611736,
+     "median_causal_km": 0.7971582135611736,
+     "n_changed": 0,
+     "max_abs_change_km": 0.0,
+     "median_change_km": 0.0
+    }
+   },
+   "2": {
+    "best": "M6r",
+    "C3": {
+     "median_cached_km": 0.49573937710712646,
+     "median_causal_km": 0.49573937710712646,
+     "n_changed": 0,
+     "max_abs_change_km": 0.0,
+     "median_change_km": 0.0
+    },
+    "C4": {
+     "median_cached_km": 0.4348807596425684,
+     "median_causal_km": 0.4348807596425684,
+     "n_changed": 0,
+     "max_abs_change_km": 0.0,
+     "median_change_km": 0.0
+    }
+   }
+  },
+  "hypotheses": {
+   "H1": {
+    "method": "C3",
+    "tau": "2",
+    "alpha": 0.01,
+    "best": "M6r",
+    "cached": {
+     "median_km": 0.49573937710712646,
+     "best_median_km": 0.953,
+     "p": 8.045613524868527e-17,
+     "n_nonzero": 307,
+     "frac_better": 0.6938110749185668,
+     "frac_tied": 0.0,
+     "outcome": "win"
+    },
+    "causal": {
+     "median_km": 0.49573937710712646,
+     "best_median_km": 0.953,
+     "p": 8.045613524868527e-17,
+     "n_nonzero": 307,
+     "frac_better": 0.6938110749185668,
+     "frac_tied": 0.0,
+     "outcome": "win"
+    }
+   },
+   "H2": {
+    "method": "C4",
+    "tau": "2",
+    "alpha": 0.005,
+    "best": "M6r",
+    "cached": {
+     "median_km": 0.4348807596425684,
+     "best_median_km": 0.953,
+     "p": 3.8383219791221055e-21,
+     "n_nonzero": 307,
+     "frac_better": 0.745928338762215,
+     "frac_tied": 0.0,
+     "outcome": "win"
+    },
+    "causal": {
+     "median_km": 0.4348807596425684,
+     "best_median_km": 0.953,
+     "p": 3.8383219791221055e-21,
+     "n_nonzero": 307,
+     "frac_better": 0.745928338762215,
+     "frac_tied": 0.0,
+     "outcome": "win"
+    }
+   },
+   "H3": {
+    "method": "C3",
+    "tau": "0.5",
+    "alpha": 0.005,
+    "best": "M6r",
+    "cached": {
+     "median_km": 0.8668894415726545,
+     "best_median_km": 2.0576,
+     "p": 2.5144396929108842e-14,
+     "n_nonzero": 307,
+     "frac_better": 0.6677524429967426,
+     "frac_tied": 0.0,
+     "outcome": "win"
+    },
+    "causal": {
+     "median_km": 0.8668894415726545,
+     "best_median_km": 2.0576,
+     "p": 2.5144396929108842e-14,
+     "n_nonzero": 307,
+     "frac_better": 0.6677524429967426,
+     "frac_tied": 0.0,
+     "outcome": "win"
+    }
+   }
+  }
+ },
+ "note": "descriptive, not registered; the stored traces are re-centred on their pre-P mean; M6r and BEST do not use waveforms"
+}

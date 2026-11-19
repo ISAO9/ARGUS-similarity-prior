@@ -1,0 +1,401 @@
+{
+ "script": "21_20h_osaka2018_overlap_exclusion.py",
+ "version": "v1",
+ "script_sha256": "32a383a04dd7959f9ed7897ed8e9c89b3ab6fba2f5977e119f5375169950b52f",
+ "purpose": "amendment 04: remove events with another catalogue event within [-15 s, +5 s] of origin; origin times only; no location, waveform or residual used",
+ "rule": {
+  "pre_s": 15.0,
+  "post_s": 5.0,
+  "self_row": "catalogue row with the same 21_20c-parsed time (0.1 s) and Mj; dt measured from its 0.01 s time",
+  "keep": "mainshock and the 21_20b G-clock events",
+  "pool_h": 72.0,
+  "fresh_max_mag": 2.0,
+  "min_test": 30
+ },
+ "input": {
+  "cache": "/content/drive/MyDrive/ARGUS_osaka2018/data/tottori_processed/tottori_parsed_realpick_osaka2018_m15.pt",
+  "cache_sha256": "b9162a9d8aab2747540de6a67006478349221e774c7c0a9f26e090cf1922aa83",
+  "catalog": "/content/drive/MyDrive/ARGUS/data/catalog/jma_osaka2018.csv",
+  "catalog_sha256": "09a2324d081d7795936710a2dd989bd31f0d96f53d3a8ead0406673d9b62dd7e",
+  "report": "/content/drive/MyDrive/ARGUS_osaka2018/data/21_20b_report.json",
+  "report_sha256": "873f9ef6625894da4f33042c7d57e74c3ca980be88bdfe4335575b0929d6c653"
+ },
+ "counts": {
+  "n_events": 242,
+  "n_with_neighbour": 21,
+  "n_keep_exempt": 4,
+  "n_keep_exempt_with_neighbour": 0,
+  "n_excluded": 21,
+  "n_test_before": 56,
+  "n_test_after": 55,
+  "n_other_before": 186,
+  "n_other_after": 166
+ },
+ "excluded": [
+  {
+   "origin_jst": "2018-06-18 08:02:41.90",
+   "mj": 2.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.07,
+     "mj": 2.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:03:24.30",
+   "mj": 2.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.26,
+     "mj": 2.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:05:01.70",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.07,
+     "mj": 1.6
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:05:08.90",
+   "mj": 2.2,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.18,
+     "mj": 1.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:05:16.30",
+   "mj": 2.2,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.6,
+     "mj": 1.7
+    },
+    {
+     "dt_s": -7.42,
+     "mj": 2.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:06:15.20",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.29,
+     "mj": 1.0
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:07:58.00",
+   "mj": 3.3,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.99,
+     "mj": 1.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:09:36.50",
+   "mj": 1.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.36,
+     "mj": 2.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:11:44.30",
+   "mj": 2.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.18,
+     "mj": 0.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 08:12:19.00",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.15,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 09:10:54.60",
+   "mj": 1.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -4.04,
+     "mj": 0.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 10:03:21.40",
+   "mj": 2.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.09,
+     "mj": 0.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 11:02:30.00",
+   "mj": 1.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -5.35,
+     "mj": 0.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 12:36:50.40",
+   "mj": 3.2,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.46,
+     "mj": 0.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 12:52:04.00",
+   "mj": 3.0,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -5.97,
+     "mj": 0.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 14:38:52.20",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.6,
+     "mj": 1.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-18 14:40:32.00",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.4,
+     "mj": 0.6
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-19 09:30:44.90",
+   "mj": 2.2,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.05,
+     "mj": 1.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-19 21:00:38.20",
+   "mj": 1.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -6.49,
+     "mj": 2.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-06-21 15:48:55.40",
+   "mj": 1.7,
+   "test_candidate": true,
+   "neighbours": [
+    {
+     "dt_s": -5.63,
+     "mj": 0.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-07-01 02:51:59.10",
+   "mj": 2.2,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -3.97,
+     "mj": -0.1
+    }
+   ]
+  }
+ ],
+ "kept_exempt": [
+  {
+   "origin_jst": "2018-06-18 07:58:34.10",
+   "mj": 6.1,
+   "why": "mainshock",
+   "neighbours": []
+  },
+  {
+   "origin_jst": "2018-06-19 00:31:25.00",
+   "mj": 4.1,
+   "why": "G-clock event",
+   "neighbours": []
+  },
+  {
+   "origin_jst": "2018-06-19 04:53:10.20",
+   "mj": 3.9,
+   "why": "G-clock event",
+   "neighbours": []
+  },
+  {
+   "origin_jst": "2018-06-23 23:08:45.70",
+   "mj": 4.0,
+   "why": "G-clock event",
+   "neighbours": []
+  }
+ ],
+ "descriptive_21_20g": {
+  "g_json_sha256": "d2951b1735eb85af3831c82d9938752cc3af4ead40a1d79269a8cdbba9d671a3",
+  "n_dev_gt_1s": 11,
+  "n_test_candidates": 0,
+  "n_excluded": 8,
+  "n_test_candidates_excluded": 0,
+  "n_test_excluded_not_in_this_list": 1,
+  "events": [
+   {
+    "origin_jst": "2018-06-18 08:03:24.30",
+    "mj": 2.5,
+    "dev_s": -12.242292324701944,
+    "found": true,
+    "test_candidate": false,
+    "excluded": true
+   },
+   {
+    "origin_jst": "2018-06-18 08:04:49.60",
+    "mj": 1.6,
+    "dev_s": 4.7017611662546805,
+    "found": true,
+    "test_candidate": false,
+    "excluded": false
+   },
+   {
+    "origin_jst": "2018-06-18 08:05:01.70",
+    "mj": 1.7,
+    "dev_s": 7.400678078333538,
+    "found": true,
+    "test_candidate": false,
+    "excluded": true
+   },
+   {
+    "origin_jst": "2018-06-18 08:05:16.30",
+    "mj": 2.2,
+    "dev_s": -6.923362970352173,
+    "found": true,
+    "test_candidate": false,
+    "excluded": true
+   },
+   {
+    "origin_jst": "2018-06-18 08:07:35.80",
+    "mj": 1.5,
+    "dev_s": -11.595991412798563,
+    "found": true,
+    "test_candidate": false,
+    "excluded": false
+   },
+   {
+    "origin_jst": "2018-06-18 08:09:36.50",
+    "mj": 1.8,
+    "dev_s": -11.533563454945883,
+    "found": true,
+    "test_candidate": false,
+    "excluded": true
+   },
+   {
+    "origin_jst": "2018-06-18 08:12:19.00",
+    "mj": 1.5,
+    "dev_s": -2.958262205123901,
+    "found": true,
+    "test_candidate": false,
+    "excluded": true
+   },
+   {
+    "origin_jst": "2018-06-18 08:17:19.50",
+    "mj": 1.6,
+    "dev_s": -5.483152151107788,
+    "found": true,
+    "test_candidate": false,
+    "excluded": false
+   },
+   {
+    "origin_jst": "2018-06-18 14:38:52.20",
+    "mj": 1.6,
+    "dev_s": -7.473542014757792,
+    "found": true,
+    "test_candidate": false,
+    "excluded": true
+   },
+   {
+    "origin_jst": "2018-06-19 09:30:44.90",
+    "mj": 2.2,
+    "dev_s": -1.6641654173533125,
+    "found": true,
+    "test_candidate": false,
+    "excluded": true
+   },
+   {
+    "origin_jst": "2018-06-19 21:00:38.20",
+    "mj": 1.9,
+    "dev_s": -6.627647082010904,
+    "found": true,
+    "test_candidate": false,
+    "excluded": true
+   }
+  ]
+ },
+ "output": {
+  "cache": "/content/ARGUS_osaka2018_a04/data/tottori_processed/tottori_parsed_realpick_osaka2018_m15_a04.pt",
+  "cache_sha256": "b4d1fe12c810ea84661c62b713f0541be31affb037b7ce2aed50cb62df51720e",
+  "n_events": 221
+ },
+ "verdict": "WRITTEN"
+}

@@ -1,0 +1,16 @@
+[
+ {
+  "utc": "2026-11-02T13:31:21Z",
+  "status": "started",
+  "version": "v1",
+  "script_sha256": "f1563722ea8e80548f7062541a3c9796fe85c593081b7a59192a62a5eb90b178",
+  "suffix": ""
+ },
+ {
+  "utc": "2026-11-02T13:31:21Z",
+  "status": "completed: model 358e3daddfc0c9dd3c95e35d92bb9c83a2123ee459f2bb5b657b0be10ce11555",
+  "version": "v1",
+  "script_sha256": "f1563722ea8e80548f7062541a3c9796fe85c593081b7a59192a62a5eb90b178",
+  "suffix": ""
+ }
+]

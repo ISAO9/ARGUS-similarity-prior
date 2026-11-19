@@ -1,0 +1,29 @@
+sequence,hypothesis,method,reference,tau_s,alpha,method_median_km,reference_median_km,p,n_pairs,n_nonzero,frac_better,frac_tied,floor,win,note
+Central Tottori 2016,H1,C3,M6r,2,0.01,0.4957,0.953,3.8e-17,307.0,255.0,0.6026,0.1694,False,True,
+Central Tottori 2016,H2,C4,M6r,2,0.005,0.4349,0.953,5e-21,307.0,298.0,0.7296,0.0293,False,True,
+Central Tottori 2016,H3,C3,M6r,0.5,0.005,0.8669,2.0576,1.5e-14,307.0,290.0,0.6352,0.0554,False,True,
+Central Tottori 2016,HL1,L4,M6r,2,0.01,0.478,0.953,1.4e-20,307.0,290.0,0.6775,,False,True,
+Central Tottori 2016,HL2,L4,C4,2,0.005,0.478,0.4349,0.99,307.0,287.0,0.4202,,False,False,
+Central Tottori 2016,HL3,L3,M6r,0.5,0.005,0.9101,2.0576,6.8e-14,307.0,284.0,0.6352,,False,True,
+Northern Osaka 2018,H1,C3,M5f,2,0.01,0.3671,0.3011,0.0019,55.0,19.0,0.2909,0.6545,True,False,
+Northern Osaka 2018,H2,C4,M5f,2,0.005,0.2862,0.3011,0.0012,55.0,53.0,0.6182,0.0364,True,False,
+Northern Osaka 2018,H3,C3,M6p,0.5,0.005,0.7077,1.1698,0.00081,55.0,33.0,0.4364,0.4,False,True,
+Northern Osaka 2018,HL1,L4,M5f,2,0.01,0.2567,0.3011,1.1e-05,55.0,55.0,0.7818,,True,False,
+Northern Osaka 2018,HL2,L4,C4,2,0.005,0.2567,0.2862,0.09,55.0,49.0,0.5455,,False,False,
+Northern Osaka 2018,HL3,L3,M6p,0.5,0.005,0.8952,1.1698,0.0015,55.0,32.0,0.4182,,False,True,
+Northern Osaka 2018,HG1,G,C4,2,0.005,,,0.062,,4.0,,,,,"missed > 10 km by C4 only 4, by G only 0"
+Northern Osaka 2018,HG2,G,R,2,0.005,,,0.86,,3.0,,,,,
+Northern Osaka 2018,HG3,G,R,1,0.005,0.4226,0.3999,0.86,,4.0,,,,,INCONCLUSIVE
+Northern Osaka 2018,guard,G,C4,2,,0.2821,0.2862,,,,,,,,ok True; verdict INCONCLUSIVE
+Western Shimane 2018,H1,C3,M6r,2,0.01,0.4562,0.844,0.024,41.0,19.0,0.3171,0.5366,False,False,
+Western Shimane 2018,H2,C4,M6r,2,0.005,0.597,0.844,0.0021,41.0,39.0,0.6341,0.0488,False,True,
+Western Shimane 2018,H3,C3,M6p,0.5,0.005,0.857,1.9339,0.00032,41.0,37.0,0.6098,0.0976,False,True,
+Western Shimane 2018,H4,C3,C1,2,0.005,0.4562,0.5656,0.74,41.0,41.0,0.4634,0.0,,False,
+Western Shimane 2018,H5,C3,M6p,2,0.01,0.8271,1.3317,0.017,41.0,27.0,0.4146,0.3415,False,False,
+Western Shimane 2018,HL1,L4,M6r,2,0.01,0.5265,0.844,0.081,41.0,36.0,0.4878,,False,False,
+Western Shimane 2018,HL2,L4,C4,2,0.005,0.5265,0.597,0.91,41.0,39.0,0.4146,,False,False,
+Western Shimane 2018,HL3,L3,M6p,0.5,0.005,0.7592,1.9339,0.00024,41.0,35.0,0.6829,,False,True,
+Western Shimane 2018,HG1,G,C4,2,0.005,,,0.035,,8.0,,,,,"missed > 10 km by C4 only 7, by G only 1"
+Western Shimane 2018,HG2,G,R,2,0.005,,,0.56,,8.0,,,,,
+Western Shimane 2018,HG3,G,R,1,0.005,0.5738,0.5861,0.25,,7.0,,,,,INCONCLUSIVE
+Western Shimane 2018,guard,G,C4,2,,0.5655,0.597,,,,,,,,ok True; verdict GATE-NOT-CONFIRMED

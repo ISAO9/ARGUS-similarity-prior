@@ -1,0 +1,190 @@
+[
+ {
+  "check": "no two planned files share a destination",
+  "status": "PASS"
+ },
+ {
+  "check": "all files needed for the verification exist",
+  "status": "PASS"
+ },
+ {
+  "check": "26_xx scripts identical to the delivered versions",
+  "status": "PASS"
+ },
+ {
+  "check": "every script named in a frozen result matches its SHA-256 (registered: committed copy)",
+  "status": "PASS"
+ },
+ {
+  "check": "released frozen results equal their committed copies",
+  "status": "PASS"
+ },
+ {
+  "check": "upstream check scripts (recorded, no registered hash)",
+  "status": "INFO"
+ },
+ {
+  "check": "last commit of the registration repository is pushed to GitHub",
+  "status": "PASS"
+ },
+ {
+  "check": "uncommitted changes in the registration repository (not in the public copy)",
+  "status": "INFO"
+ },
+ {
+  "check": "author contact details removed from records",
+  "status": "INFO"
+ },
+ {
+  "check": "learned model 21_06_ranker.pkl: arrays over 1e5 elements (stored training data?)",
+  "status": "PASS"
+ },
+ {
+  "check": "learned model 22_gate.pkl: arrays over 1e5 elements (stored training data?)",
+  "status": "PASS"
+ },
+ {
+  "check": "data/paper_gitlog.txt equals the log used for Fig. 3",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun 26_04_paper_effect_sizes.py",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun 26_06_paper_table_s1.py",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun 26_02_paper_result_figures.py",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun 26_03_paper_schematic_timeline.py",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun 26_09_reviewer_checks.py",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun 26_11_reviewer_supplement.py",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_02_figure_values.json [num] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_02_figure_values.json [text] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_03_timeline_values.json [all] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_04_effect_sizes.json [num] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "released data/26_04_effect_sizes.json [num] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_04_effect_sizes.csv [csv] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "released data/26_04_effect_sizes.csv [csv] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_06_table_S1a.csv [csv] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "released data/26_06_table_S1a.csv [csv] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_06_table_S1b.csv [csv] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "released data/26_06_table_S1b.csv [csv] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_06_table_S1c.csv [csv] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "released data/26_06_table_S1c.csv [csv] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun models/26_09_reviewer_checks.json [num] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "released models/26_09_reviewer_checks.json [num] = submitted paper",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun 26_11 numbers = released Mac output",
+  "status": "PASS"
+ },
+ {
+  "check": "figure PDFs",
+  "status": "INFO"
+ },
+ {
+  "check": "public copy: credential literal",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: e-mail address",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: sensitive file name",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: data/waveform-type file name",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: file over 50 MB",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: binary file (not PDF/PNG/registered model)",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: business name",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: large text table (check it holds no waveform samples)",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: word password/secret/token",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: AI tool name",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: notebook with stored outputs",
+  "status": "PASS"
+ },
+ {
+  "check": "public copy: home or Drive path",
+  "status": "INFO"
+ }
+]

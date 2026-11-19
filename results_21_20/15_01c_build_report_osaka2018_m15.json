@@ -1,0 +1,72 @@
+{
+  "script_version": "21_20c v1 (computation identical to 15_01c v3.3)",
+  "script_sha256": "7b938b944003d99fcad7df188792e8e8eb95c71b07f1a1223bffad6671d04cf0",
+  "args": {
+    "jma": "/content/drive/MyDrive/ARGUS/data/catalog/jma_osaka2018.csv",
+    "stations": "/content/ARGUS_osaka2018/data/catalog/stations_osaka2018.csv",
+    "h5": "/content/ARGUS_osaka2018/data/waves/osaka2018_100Hz.h5",
+    "knet_cache": "",
+    "knet_absmax_ref": "20.51",
+    "min_mag": "1.5",
+    "max_sta": "24",
+    "max_events": "0",
+    "picker": "phasenet",
+    "comp_order": "UD,NS,EW",
+    "no_differentiate": "False",
+    "amp_mode": "match_knet",
+    "snr_mode": "const1",
+    "h5_time_base": "jst",
+    "box": "[34.6943, 34.9943, 135.4467, 135.7967]",
+    "tag": "_osaka2018_m15",
+    "overwrite_canon": "False",
+    "base": "/content/ARGUS_osaka2018"
+  },
+  "stats": {
+    "n_ev": 242,
+    "n_sta": 5678,
+    "p_fb": 42,
+    "s_fb": 270,
+    "no_seg": 0,
+    "dropped": 6,
+    "wadati_rej": 474,
+    "imp_p": 0,
+    "imp_s": 242
+  },
+  "n_real_hist": {
+    "4": 1,
+    "6": 1,
+    "10": 2,
+    "11": 1,
+    "12": 1,
+    "15": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "20": 2,
+    "21": 1,
+    "23": 1,
+    "24": 228
+  },
+  "p_fallback_rate": 0.0074,
+  "s_fallback_rate": 0.0476,
+  "amp_factor": 0.027892485934887953,
+  "wadati_slope_median": 0.6841139316881808,
+  "n_clean_sp_pairs": 5408,
+  "disclosure": {
+    "mw_is": "JMA Mj (not F-net Mw)",
+    "comp_order": "UD,NS,EW",
+    "differentiate": true,
+    "snr_mode": "const1",
+    "amp_mode": "match_knet",
+    "window": "P-anchored [tP-3 s, tP+17.48 s], T=2048 @100 Hz",
+    "h5_time_base": "jst",
+    "source_waveforms": "per-window z-scored at h5 creation (window-std CV=0.000, audit 15_01d); amplitudes are not physical",
+    "pick_selection": "earliest P >= 0.3 prob; earliest S after P",
+    "station_selection": "earliest measured P (label-free), max 24, no padding (v2)"
+  },
+  "sp_vs_dist": {
+    "slope": 0.10746287357677753,
+    "intercept": 0.36461674156398904,
+    "r": 0.9234443386719381
+  }
+}

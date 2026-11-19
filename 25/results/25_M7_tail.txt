@@ -1,0 +1,34 @@
+25_05 suffix '' | N 41 rows 41 | NF 41 rows 41
+tau 0.5 s  BEST = M6p  (causal BEST = M6p)
+            M6p_err_t0.5  > 10.0 km: 3 / 41 = 0.073   空の欄 0
+             C3_err_t0.5  > 10.0 km: 2 / 41 = 0.049   空の欄 0
+             C4_err_t0.5  > 10.0 km: 3 / 41 = 0.073   空の欄 0
+     M6p_causal_err_t0.5  > 10.0 km: 4 / 41 = 0.098   空の欄 0
+      C3_causal_err_t0.5  > 10.0 km: 3 / 41 = 0.073   空の欄 0
+                 L4_t0.5  > 10.0 km: 3 / 41 = 0.073   空の欄 0
+tau 1 s  BEST = M6p  (causal BEST = M6p)
+              M6p_err_t1  > 10.0 km: 5 / 41 = 0.122   空の欄 0
+               C3_err_t1  > 10.0 km: 4 / 41 = 0.098   空の欄 0
+               C4_err_t1  > 10.0 km: 4 / 41 = 0.098   空の欄 0
+       M6p_causal_err_t1  > 10.0 km: 6 / 41 = 0.146   空の欄 0
+        C3_causal_err_t1  > 10.0 km: 5 / 41 = 0.122   空の欄 0
+                   L4_t1  > 10.0 km: 4 / 41 = 0.098   空の欄 0
+tau 2 s  BEST = M6r  (causal BEST = M6p)
+              M6r_err_t2  > 10.0 km: 7 / 41 = 0.171   空の欄 0
+               C3_err_t2  > 10.0 km: 7 / 41 = 0.171   空の欄 0
+               C4_err_t2  > 10.0 km: 7 / 41 = 0.171   空の欄 0
+       M6p_causal_err_t2  > 10.0 km: 8 / 41 = 0.195   空の欄 0
+        C3_causal_err_t2  > 10.0 km: 8 / 41 = 0.195   空の欄 0
+                   L4_t2  > 10.0 km: 7 / 41 = 0.171   空の欄 0
+tau 3 s  BEST = M6p  (causal BEST = M6p)
+              M6p_err_t3  > 10.0 km: 5 / 41 = 0.122   空の欄 0
+               C3_err_t3  > 10.0 km: 5 / 41 = 0.122   空の欄 0
+               C4_err_t3  > 10.0 km: 5 / 41 = 0.122   空の欄 0
+       M6p_causal_err_t3  > 10.0 km: 8 / 41 = 0.195   空の欄 0
+        C3_causal_err_t3  > 10.0 km: 8 / 41 = 0.195   空の欄 0
+                   L4_t3  > 10.0 km: 6 / 41 = 0.146   空の欄 0
+30 km, tau 2 s  BEST = M6r
+              M6r_err_t2  > 30.0 km: 6 / 41 = 0.146   空の欄 0
+              M6r_err_t2  > 30.0 km: 6 / 41 = 0.146   空の欄 0
+               C4_err_t2  > 30.0 km: 5 / 41 = 0.122   空の欄 0
+                   L4_t2  > 30.0 km: 6 / 41 = 0.146   空の欄 0

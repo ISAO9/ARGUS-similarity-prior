@@ -1,0 +1,262 @@
+{
+ "script": "21_06a_learned_ranker_train.py",
+ "version": "v1",
+ "script_sha256": "4305b0e5be2b31cbbc1d30aa5b4ecf8eb8d1c43b44f393358e36bd3f8169b70e",
+ "mode": "train",
+ "cache": "data/tottori_processed/tottori_parsed_realpick_m15.pt",
+ "cache_sha256": "420fe1e304f43aae9baa7cbab9474623e014d01dddb4dbecab6644431b6f0ef7",
+ "feature_block_sha256": "9905420e546da69e0e3426bccb1f5e962c04d42013e27b506811f13e402ed0b5",
+ "feats": [
+  "S",
+  "S_4_16",
+  "S_minus_max",
+  "S_rank_frac",
+  "frac_common_win",
+  "c_max",
+  "c_median",
+  "lag_std_s",
+  "n_common_picks",
+  "dd_rms_s",
+  "dd_offset_km",
+  "dd_fit_rms_s",
+  "same_first",
+  "log10_dt_h",
+  "mj_cand",
+  "n_i",
+  "tau_s"
+ ],
+ "hgb": {
+  "max_iter": 300,
+  "learning_rate": 0.05,
+  "max_leaf_nodes": 31,
+  "min_samples_leaf": 50,
+  "l2_regularization": 1.0,
+  "early_stopping": false,
+  "random_state": 0
+ },
+ "label_eps_km": 0.5,
+ "off_clip_km": 30.0,
+ "cond_min": 0.0001,
+ "block_consts": {
+  "TOPK": 10,
+  "MIN_POS": 5,
+  "BAND": [
+   2.0,
+   8.0
+  ],
+  "BAND_SENS": [
+   4.0,
+   16.0
+  ],
+  "PRE_S": 0.2,
+  "MIN_WIN_S": 0.3,
+  "MAX_WIN_S": 3.0,
+  "MAX_LAG_S": 0.1,
+  "MIN_CORR": 3,
+  "BUFFER_H": 1.0,
+  "IP": 300,
+  "FS": 100.0,
+  "S_WEIGHT": 0.5,
+  "EPS_T": 0.0001
+ },
+ "model_path": "models/21_06_ranker.pkl",
+ "model_sha256": "0d0f75a48a50f866d3963c6560497abe1c007ecac628391284ca6fe248b712e1",
+ "train_rows_path": "data/21_06a_train_rows.npz",
+ "train_rows_sha256": "ca23242288ad6fe4fdf5853960a6fd41b78328a59ec22bc5d484bf5334e632e9",
+ "n_iter": 300,
+ "utc": "2026-10-28T12:55:46Z",
+ "suffix": "",
+ "n_train_events": 494,
+ "n_train_pairs": 293568,
+ "check": {
+  "n_pool_events": 361,
+  "n_pairs": 134948,
+  "n_eval": 91,
+  "g_same": "PASS",
+  "per_tau": {
+   "0.5": {
+    "best": "M6r",
+    "best_median_km": 1.8963,
+    "medians_km": {
+     "C3": 1.4355,
+     "C4": 1.2618,
+     "L3": 1.2292,
+     "L4": 1.2292
+    },
+    "top10_true_dist_median_km": {
+     "C": 1.8020776055163732,
+     "L": 1.728549268875104
+    },
+    "L4_vs_best": {
+     "n": 91,
+     "n_nonzero": 90,
+     "p": 5.93823194340171e-05,
+     "median_diff_km": -0.18380000000000019
+    },
+    "L4_vs_C4": {
+     "n": 91,
+     "n_nonzero": 87,
+     "p": 0.45283301109896823,
+     "median_diff_km": 0.0
+    },
+    "L3_vs_C3": {
+     "n": 91,
+     "n_nonzero": 84,
+     "p": 0.533764269771096,
+     "median_diff_km": 0.0
+    },
+    "L3_vs_best": {
+     "n": 91,
+     "n_nonzero": 86,
+     "p": 0.00010203571096216373,
+     "median_diff_km": -0.1624
+    }
+   },
+   "1": {
+    "best": "M6r",
+    "best_median_km": 1.6566,
+    "medians_km": {
+     "C3": 1.2167,
+     "C4": 1.2167,
+     "L3": 1.1108,
+     "L4": 1.0546
+    },
+    "top10_true_dist_median_km": {
+     "C": 1.7522452960131298,
+     "L": 1.414204380026162
+    },
+    "L4_vs_best": {
+     "n": 91,
+     "n_nonzero": 89,
+     "p": 4.5133167968658774e-08,
+     "median_diff_km": -0.2246999999999999
+    },
+    "L4_vs_C4": {
+     "n": 91,
+     "n_nonzero": 86,
+     "p": 0.37418220274424296,
+     "median_diff_km": -0.0038000000000000048
+    },
+    "L3_vs_C3": {
+     "n": 91,
+     "n_nonzero": 76,
+     "p": 0.4301351909365683,
+     "median_diff_km": 0.0
+    },
+    "L3_vs_best": {
+     "n": 91,
+     "n_nonzero": 80,
+     "p": 8.350357852437307e-08,
+     "median_diff_km": -0.2246999999999999
+    }
+   },
+   "2": {
+    "best": "M6r",
+    "best_median_km": 0.553,
+    "medians_km": {
+     "C3": 0.5172,
+     "C4": 0.3368,
+     "L3": 0.5286,
+     "L4": 0.3071
+    },
+    "top10_true_dist_median_km": {
+     "C": 1.254319437605982,
+     "L": 0.5901900308544155
+    },
+    "L4_vs_best": {
+     "n": 91,
+     "n_nonzero": 88,
+     "p": 1.4466435421483859e-09,
+     "median_diff_km": -0.2027
+    },
+    "L4_vs_C4": {
+     "n": 91,
+     "n_nonzero": 86,
+     "p": 0.7890324082258089,
+     "median_diff_km": 0.0023999999999999577
+    },
+    "L3_vs_C3": {
+     "n": 91,
+     "n_nonzero": 41,
+     "p": 0.4922460324476605,
+     "median_diff_km": 0.0
+    },
+    "L3_vs_best": {
+     "n": 91,
+     "n_nonzero": 57,
+     "p": 0.0003218887539536663,
+     "median_diff_km": 0.0
+    }
+   },
+   "3": {
+    "best": "M5f",
+    "best_median_km": 0.229,
+    "medians_km": {
+     "C3": 0.2268,
+     "C4": 0.1888,
+     "L3": 0.229,
+     "L4": 0.1641
+    },
+    "top10_true_dist_median_km": {
+     "C": 1.101747270126154,
+     "L": 0.4870781253219252
+    },
+    "L4_vs_best": {
+     "n": 91,
+     "n_nonzero": 87,
+     "p": 2.4656265460388737e-05,
+     "median_diff_km": -0.0621
+    },
+    "L4_vs_C4": {
+     "n": 91,
+     "n_nonzero": 81,
+     "p": 0.10564025909287444,
+     "median_diff_km": -0.0092
+    },
+    "L3_vs_C3": {
+     "n": 91,
+     "n_nonzero": 25,
+     "p": 0.4411761134957885,
+     "median_diff_km": 0.0
+    },
+    "L3_vs_best": {
+     "n": 91,
+     "n_nonzero": 25,
+     "p": 0.0017527868118101524,
+     "median_diff_km": 0.0
+    }
+   }
+  },
+  "permutation_importance": {
+   "S": 0.012704153874595382,
+   "S_4_16": 0.05387105464662141,
+   "S_minus_max": 0.017533778315615756,
+   "S_rank_frac": 0.011695436761318878,
+   "frac_common_win": 0.00423157449188587,
+   "c_max": 0.001725948773477115,
+   "c_median": 0.0035498354176510595,
+   "lag_std_s": 0.0017422618755218,
+   "n_common_picks": 0.02411302926913077,
+   "dd_rms_s": 0.35225789331138724,
+   "dd_offset_km": 0.058512730797971035,
+   "dd_fit_rms_s": 0.00970001961036735,
+   "same_first": 0.0022969920860847594,
+   "log10_dt_h": 0.0007128836375639658,
+   "mj_cand": 0.015352005744200281,
+   "n_i": 0.011809433108605095,
+   "tau_s": 0.08199308861135794
+  }
+ },
+ "sklearn": "1.8.0",
+ "numpy": "2.4.3",
+ "python": "3.12.12",
+ "limits": [
+  "the ranker is trained on one sequence (West Tottori 2026); the 2026 check above is descriptive because those test events were opened in 21_02 and the pool shares the sequence",
+  "labels are JMA epicentral distances (truth and past locations are JMA)",
+  "hyperparameters are fixed in advance (no tuning)",
+  "features avoid station names and absolute positions so that the model can be applied to another sequence; the 2016 test (21_06b) is the only out-of-sequence check",
+  "log10_dt_h uses the target's JMA origin time (not known exactly at tau; the error is a few seconds against >= 1 h)",
+  "C3/C4/L3/L4 errors are rounded to 4 decimals (as in the 21_02 CSV) before comparison so that ties stay ties"
+ ],
+ "runtime_s": 122.7470178604126
+}

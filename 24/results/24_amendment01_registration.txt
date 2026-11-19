@@ -1,0 +1,46 @@
+Preregistration 24 (Northern Nagano 2014), amendment 01: registration record and 24_04h result
+
+Registration (before 24_04h was run)
+- GitHub commit: fc38d0f16a770d68986254cde42fafc02bdd9a3c (ISAO9/ARGUS-prereg-21_04, "24: amendment 01 (G-clock2 condition d), registered before opening")
+- Zenodo: version v4, DOI 10.5281/zenodo.24247608, published 2026-11-15
+- 24_04h was run after the Zenodo publication: Sun Nov 15 02:19:25 PM UTC 2026 to Sun Nov 15 02:19:52 PM UTC 2026 (cell A3, run once)
+
+Result
+- G-clock2 under amendment 01: FAIL (24_04h v1, SHA-256 98c7d515086a1971354cce658645a6aeeb98218a9f6b8af47d247dbf984cbc5b, exit code 1)
+- (d3) 2014-12-01 07 JST, single event, 24 picks, offset +0.672 s:
+  previous 6 h: 30 picks, median +0.061 s (pass); next 6 h: 16 picks, median +0.156 s (fewer than 20 picks: fail)
+  pooled (same as 24_04g): 46 picks, median +0.101 s
+- Other conditions: (a) PASS, (b) PASS, (c) FAIL with (c-near) PASS (46 stations, max 0.99 s), (e) PASS, (f) PASS; original (d) FAIL (max 0.672 s, 155 hours)
+- Decision: the test is stopped under section 5.3 rule 2 of preregistration 24 and reported as "clock could not be verified".
+  24_07, 24_05, 24_06f, 24_06g and 24_08 were not run on this sequence. No further amendment is made.
+
+Full output of cell A3 (pasted verbatim)
+1 部(commit・push・Zenodo の新しい版の公開)は全て済んだか? 済んだら yes: yes
+Sun Nov 15 02:19:25 PM UTC 2026
+exit code: 1
+Sun Nov 15 02:19:52 PM UTC 2026
+[24_04h] selftest: 時刻の変換と (d1)〜(d3) の規則の 10 例に合格
+[24_04h] 本スクリプト v1 SHA-256 98c7d515086a1971354cce658645a6aeeb98218a9f6b8af47d247dbf984cbc5b
+[24_04h] キャッシュ tottori_parsed_realpick_nagano2014_m15_r1.pt  SHA-256 3d8b3ff7a9438d14ff6b305fdf265a896b60158f6d8add27e7637852403026e3
+[24_04h] 24_04d の JSON  SHA-256 9f4a1ada909253501558f5cd960df70dbb810fa9124f1250712d14c1e3bfa292
+[24_04h] 24_04e の表      SHA-256 d2c05f4603089710beff573f3a2fbf17a1d5517e60aa1e1350dcb4bfdd6aaa8c
+[24_04h] 全体: 検測 9184  残りの中央値 +0.542233 s(24_04d の値 +0.542233 s)
+
+[24_04h] 事前登録 24 の 5.3 節の条件(24_04d・24_04e の出力から):
+   (a) 全体                     PASS
+   (b) 日ごと                   PASS
+   (c) 局ごと(24_04d)          FAIL(5.3 節の 4 により、判定は次の (c-near) で行う)
+       (c-near) 80 km 以内・検測 20 以上の 46 局で |dev_s| ≤ 1.0 s: PASS(最大 0.99 s)
+   (e) G-clock の地震            PASS(見つかる条件 PASS)
+   (f) P を測った割合            PASS
+   (d) 元の規則(24_04d)        FAIL(最大 0.672 s、155 時間)
+
+[24_04h] (d-amend01) 検測 20 以上の 155 時間: (d1) |ずれ| ≤ 0.5 s の時間 154
+   (d3) 2014-12-01 07 時台: 地震 1・検測 24・ずれ +0.672 s → 同じ局の他の地震の「残り − 局の中央値」の中央値(基準: 前と後のそれぞれで検測 20 以上・|中央値| ≤ 0.5 s)
+        前 6 時間: 検測 30・+0.061 s   後 6 時間: 検測 16・+0.156 s   (参考: 前後を合わせて 検測 46・+0.101 s。24_04g と同じ量) → FAIL
+   (d-amend01): FAIL
+
+[24_04h] G-clock2(事前登録 24・変更の記録 01): FAIL
+
+[24_04h] 出力: /content/drive/MyDrive/ARGUS_nagano2014/data/24_04h_gclock2_amend01.json、/content/drive/MyDrive/ARGUS_nagano2014/PDF/24_04h_gclock2_amend01.pdf
+[24_04h] STOP(G-clock2・変更の記録 01): 不合格。事前登録 24 の 5.3 節の 2 のとおり止め、clock could not be verified と報告する(これ以上の変更はしない。この出力を貼る)

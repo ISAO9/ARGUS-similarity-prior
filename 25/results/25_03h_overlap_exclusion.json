@@ -1,0 +1,1078 @@
+{
+ "script": "25_03h_shimane2018_overlap_exclusion.py",
+ "version": "v1",
+ "script_sha256": "e676ea476c098c68ee6461f21d40df1541a799c6497994d85a32df26620cebaa",
+ "purpose": "preregistration 25 rule R1 (same as preregistration 24; from 21_20 amendment 04): remove events with another catalogue event within [-15 s, +5 s] of origin; origin times and Mj only; no location, waveform or residual used",
+ "rule": {
+  "pre_s": 15.0,
+  "post_s": 5.0,
+  "self_row": "catalogue row with the same 25_03 (= 21_20c) parsed time (0.1 s) and Mj; dt measured from its 0.01 s time",
+  "keep": "mainshock and the 25_02 G-clock events",
+  "pool_h": 72.0,
+  "fresh_max_mag": 2.0,
+  "min_test": 30
+ },
+ "input": {
+  "cache": "/content/ARGUS_shimane2018/data/tottori_processed/tottori_parsed_realpick_shimane2018_m15.pt",
+  "cache_sha256": "6fde5af2190f07f936509a12ef64df5dcc3a3dcef0a83ae13048fb20a0b174f8",
+  "catalog": "/content/drive/MyDrive/ARGUS/data/catalog/jma_shimane2018.csv",
+  "catalog_sha256": "37ebc96d071bbedf49d2f07825dcfbd92e10ee03b455d9c0a0a07474813ba6a0",
+  "report": "/content/ARGUS_shimane2018/data/25_02_report.json",
+  "report_sha256": "9a2e82519aba2d17af1a466ac4f796cd7c9781aa8f155b673cd6cf01993e51b5"
+ },
+ "counts": {
+  "n_events": 369,
+  "n_with_neighbour": 86,
+  "n_keep_exempt": 4,
+  "n_keep_exempt_with_neighbour": 0,
+  "n_excluded": 86,
+  "n_test_before": 41,
+  "n_test_after": 41,
+  "n_other_before": 328,
+  "n_other_after": 242
+ },
+ "excluded": [
+  {
+   "origin_jst": "2018-04-09 01:35:52.40",
+   "mj": 2.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.91,
+     "mj": 2.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:35:58.90",
+   "mj": 2.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -6.43,
+     "mj": 2.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:37:09.80",
+   "mj": 2.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.42,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:37:17.90",
+   "mj": 2.4,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -8.09,
+     "mj": 2.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:38:13.10",
+   "mj": 1.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.12,
+     "mj": 1.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:38:20.00",
+   "mj": 2.4,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -6.92,
+     "mj": 1.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:39:29.70",
+   "mj": 2.4,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -10.07,
+     "mj": 2.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:39:37.80",
+   "mj": 2.3,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -8.07,
+     "mj": 2.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:40:41.30",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.31,
+     "mj": 2.0
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:40:50.40",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.13,
+     "mj": 1.6
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:41:27.10",
+   "mj": 1.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -5.66,
+     "mj": 1.6
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:41:34.30",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.87,
+     "mj": 1.6
+    },
+    {
+     "dt_s": -7.21,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:42:21.90",
+   "mj": 2.0,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.23,
+     "mj": 1.2
+    },
+    {
+     "dt_s": -9.3,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:42:31.50",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.68,
+     "mj": 2.0
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:42:37.90",
+   "mj": 1.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -6.4,
+     "mj": 1.7
+    },
+    {
+     "dt_s": 4.84,
+     "mj": 3.1
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:42:42.80",
+   "mj": 3.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.24,
+     "mj": 1.7
+    },
+    {
+     "dt_s": -4.84,
+     "mj": 1.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:43:13.00",
+   "mj": 2.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -3.22,
+     "mj": 1.6
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:45:28.60",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -5.97,
+     "mj": 2.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:45:37.30",
+   "mj": 2.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.64,
+     "mj": 2.2
+    },
+    {
+     "dt_s": -8.67,
+     "mj": 1.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:47:12.20",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.3,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:47:32.60",
+   "mj": 2.3,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.09,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:49:06.50",
+   "mj": 2.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.49,
+     "mj": 2.0
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:53:19.20",
+   "mj": 1.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.33,
+     "mj": 1.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:53:24.30",
+   "mj": 3.0,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -5.13,
+     "mj": 1.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 01:55:26.60",
+   "mj": 2.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.08,
+     "mj": 2.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:00:23.20",
+   "mj": 2.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.01,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:02:57.60",
+   "mj": 2.3,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.75,
+     "mj": 1.0
+    },
+    {
+     "dt_s": -6.36,
+     "mj": 1.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:09:36.80",
+   "mj": 2.4,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -10.15,
+     "mj": 0.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:10:53.00",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.87,
+     "mj": 1.2
+    },
+    {
+     "dt_s": 2.73,
+     "mj": 4.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:10:55.70",
+   "mj": 4.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.6,
+     "mj": 1.2
+    },
+    {
+     "dt_s": -2.73,
+     "mj": 1.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:11:07.60",
+   "mj": 3.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.61,
+     "mj": 1.7
+    },
+    {
+     "dt_s": -11.88,
+     "mj": 4.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:12:47.40",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.57,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:13:42.30",
+   "mj": 2.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.79,
+     "mj": 2.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:16:59.20",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.73,
+     "mj": 2.2
+    },
+    {
+     "dt_s": 3.09,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:17:46.30",
+   "mj": 2.2,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -6.58,
+     "mj": 1.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:19:59.40",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.35,
+     "mj": 2.0
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:26:09.00",
+   "mj": 2.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.42,
+     "mj": 1.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:26:23.20",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.22,
+     "mj": 2.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:28:22.30",
+   "mj": 2.4,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.5,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:32:37.80",
+   "mj": 2.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.54,
+     "mj": 1.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:38:30.60",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.15,
+     "mj": 0.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:39:31.90",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.68,
+     "mj": 1.6
+    },
+    {
+     "dt_s": 1.59,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:39:33.50",
+   "mj": 1.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -1.59,
+     "mj": 1.6
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:40:19.10",
+   "mj": 2.0,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -4.23,
+     "mj": 1.1
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:43:04.80",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -8.35,
+     "mj": 1.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:45:29.40",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.49,
+     "mj": 1.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:47:10.90",
+   "mj": 2.3,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -5.37,
+     "mj": 2.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:50:43.50",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -0.96,
+     "mj": 1.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:53:54.90",
+   "mj": 2.0,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.14,
+     "mj": 0.9
+    },
+    {
+     "dt_s": 3.67,
+     "mj": 2.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:53:58.60",
+   "mj": 2.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -10.81,
+     "mj": 0.9
+    },
+    {
+     "dt_s": -3.67,
+     "mj": 2.0
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 02:58:12.90",
+   "mj": 2.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.03,
+     "mj": 1.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 03:05:32.30",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.25,
+     "mj": 1.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 03:15:14.90",
+   "mj": 1.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -3.59,
+     "mj": 0.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 03:15:52.90",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -6.11,
+     "mj": 0.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 03:15:59.20",
+   "mj": 2.0,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -12.44,
+     "mj": 0.9
+    },
+    {
+     "dt_s": -6.33,
+     "mj": 1.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 03:25:51.10",
+   "mj": 2.2,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.64,
+     "mj": 1.6
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 03:36:39.40",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -3.89,
+     "mj": 0.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 03:39:03.40",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.78,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 03:46:29.60",
+   "mj": 3.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.39,
+     "mj": 0.9
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:04:45.60",
+   "mj": 2.0,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.04,
+     "mj": 2.0
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:10:37.50",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": 4.89,
+     "mj": 2.1
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:10:42.40",
+   "mj": 2.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -4.89,
+     "mj": 1.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:12:43.90",
+   "mj": 1.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -8.85,
+     "mj": 0.5
+    },
+    {
+     "dt_s": 1.28,
+     "mj": 1.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:12:45.10",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -10.13,
+     "mj": 0.5
+    },
+    {
+     "dt_s": -1.28,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:15:19.30",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -10.7,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:17:49.80",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.57,
+     "mj": 0.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:20:57.10",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -9.58,
+     "mj": 0.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:21:10.80",
+   "mj": 2.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.69,
+     "mj": 1.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:29:14.20",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -11.03,
+     "mj": 0.5
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:33:25.20",
+   "mj": 1.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": 1.26,
+     "mj": 3.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:33:26.50",
+   "mj": 3.3,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -1.26,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 04:51:06.70",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.56,
+     "mj": 1.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 05:01:03.20",
+   "mj": 1.8,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.52,
+     "mj": 1.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 05:10:14.10",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.07,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 05:14:44.40",
+   "mj": 3.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -6.46,
+     "mj": 1.1
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 05:15:14.70",
+   "mj": 2.4,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.56,
+     "mj": 2.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 05:32:43.90",
+   "mj": 1.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -5.9,
+     "mj": -0.1
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 05:42:04.70",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.79,
+     "mj": 1.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 05:55:05.00",
+   "mj": 1.9,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.92,
+     "mj": 0.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 06:05:39.80",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -2.82,
+     "mj": 1.3
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 08:24:07.40",
+   "mj": 1.7,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -14.88,
+     "mj": 0.8
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 10:54:27.30",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -13.4,
+     "mj": 0.7
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 11:24:52.30",
+   "mj": 2.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -10.02,
+     "mj": 1.2
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 16:22:43.40",
+   "mj": 1.5,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -7.54,
+     "mj": 0.4
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 17:11:52.80",
+   "mj": 1.6,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -2.93,
+     "mj": 0.6
+    }
+   ]
+  },
+  {
+   "origin_jst": "2018-04-09 21:21:48.80",
+   "mj": 2.1,
+   "test_candidate": false,
+   "neighbours": [
+    {
+     "dt_s": -3.83,
+     "mj": 0.6
+    }
+   ]
+  }
+ ],
+ "kept_exempt": [
+  {
+   "origin_jst": "2018-04-09 01:32:30.80",
+   "mj": 6.1,
+   "why": "mainshock",
+   "neighbours": []
+  },
+  {
+   "origin_jst": "2018-04-09 05:05:42.80",
+   "mj": 4.6,
+   "why": "G-clock event",
+   "neighbours": []
+  },
+  {
+   "origin_jst": "2018-04-13 10:59:13.60",
+   "mj": 3.9,
+   "why": "G-clock event",
+   "neighbours": []
+  },
+  {
+   "origin_jst": "2018-04-23 01:01:50.00",
+   "mj": 4.1,
+   "why": "G-clock event",
+   "neighbours": []
+  }
+ ],
+ "output": {
+  "cache": "/content/ARGUS_shimane2018/data/tottori_processed/tottori_parsed_realpick_shimane2018_m15_r1.pt",
+  "cache_sha256": "c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4",
+  "n_events": 283
+ },
+ "verdict": "WRITTEN"
+}

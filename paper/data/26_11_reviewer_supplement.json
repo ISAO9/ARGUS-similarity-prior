@@ -1,0 +1,3046 @@
+{
+ "script": "26_11_reviewer_supplement.py",
+ "version": "v1",
+ "script_sha256": "969c91bafd1bde42cf43b95188605ab3742fa5afcb91c9bf0985a2928df942ac",
+ "utc": "2026-11-19T01:32:38Z",
+ "inputs": {
+  "23_02_per_event.csv": "287a6d89a6fe5cb01ab2d696a314e9de6c227f74a58bd2b900a12f381bb3fd50",
+  "23_03_per_event.csv": "896eeeea918141033527251c4c2458fee7da538081f9954f495b546e16897f04",
+  "21_04_per_event.csv": "271d824df81ad34bc1f40ae1e71426badd9ff20e8f580fb6a9eba61dbd6724a7",
+  "21_04_judgment.json": "085697a691762983463045129256b340f3efd0404f499e17a60d58f38df281ef",
+  "21_20_per_event.csv": "b95bc1be712672c0f34a381dc77df4d8083705051020d31843eab20bb8fa07fb",
+  "21_20_judgment.json": "9c3283901c241e3abac47eb4879b93ccd1e0c8573e3d106cb2833cade73f0733",
+  "25_05_per_event.csv": "43942e3f112cbae2f5f8588f3b46fb8b5f6be1ebd8b5442ec6242d7c14a3d178",
+  "25_05_judgment.json": "49d646a1af63205edec8f75028faffb658104fea0db02f896e8f518e190c4fbe",
+  "21_10_gmpe_location_error.json": "e803fda7ac234b6b5c24b0e4eb81671084f8217e6618e6af78c539f79d485661",
+  "26_10_memory_truncation_ct2016.json": "696f4f9375eca5f7146c487f5ff3d48cbf6d6affd29a0fe8439e2cbc07f7426b",
+  "26_10_memory_truncation_osaka.json": "bebdbf1e8f170a3e8dbd0e7c59fae1b87f545ae0e0f5f977b1cb8413fd02834a",
+  "26_10_memory_truncation_shimane.json": "1037cbb030fbd3c6cd1ddc3820c2ff8ab1b250229fa867ce654174e8d260dc03"
+ },
+ "part1_dpri": {
+  "results": {
+   "jma|0.5|C3-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 0.70002,
+    "median_b_km": 1.42347,
+    "median_diff_km": -0.22392999999999996,
+    "frac_better": 0.6237623762376238,
+    "frac_tied": 0.06930693069306931,
+    "frac_worse": 0.3069306930693069,
+    "n_nonzero": 94,
+    "p_one_sided": 2.0245304259723668e-05
+   },
+   "jma|0.5|C3-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 1.32166,
+    "median_b_km": 1.79843,
+    "median_diff_km": -0.18404000000000043,
+    "frac_better": 0.5742574257425742,
+    "frac_tied": 0.06930693069306931,
+    "frac_worse": 0.3564356435643564,
+    "n_nonzero": 94,
+    "p_one_sided": 0.0011487848324208071
+   },
+   "jma|0.5|C4-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 0.70002,
+    "median_b_km": 1.42347,
+    "median_diff_km": -0.30443,
+    "frac_better": 0.693069306930693,
+    "frac_tied": 0.009900990099009901,
+    "frac_worse": 0.297029702970297,
+    "n_nonzero": 100,
+    "p_one_sided": 4.896691084075205e-06
+   },
+   "jma|0.5|C4-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 1.24581,
+    "median_b_km": 1.79843,
+    "median_diff_km": -0.24292000000000002,
+    "frac_better": 0.6534653465346535,
+    "frac_tied": 0.009900990099009901,
+    "frac_worse": 0.33663366336633666,
+    "n_nonzero": 100,
+    "p_one_sided": 0.00010795380614069195
+   },
+   "jma|2|C3-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 0.44854,
+    "median_b_km": 0.77539,
+    "median_diff_km": -0.09384999999999999,
+    "frac_better": 0.6138613861386139,
+    "frac_tied": 0.1485148514851485,
+    "frac_worse": 0.2376237623762376,
+    "n_nonzero": 86,
+    "p_one_sided": 1.9355858629627714e-06
+   },
+   "jma|2|C3-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 1.15383,
+    "median_b_km": 1.24628,
+    "median_diff_km": 0.0,
+    "frac_better": 0.48514851485148514,
+    "frac_tied": 0.1485148514851485,
+    "frac_worse": 0.36633663366336633,
+    "n_nonzero": 86,
+    "p_one_sided": 0.011050215184197873
+   },
+   "jma|2|C4-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 0.39774,
+    "median_b_km": 0.77539,
+    "median_diff_km": -0.1822899999999983,
+    "frac_better": 0.7029702970297029,
+    "frac_tied": 0.039603960396039604,
+    "frac_worse": 0.25742574257425743,
+    "n_nonzero": 97,
+    "p_one_sided": 2.2076456721506444e-07
+   },
+   "jma|2|C4-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 1.18618,
+    "median_b_km": 1.24628,
+    "median_diff_km": -0.06172,
+    "frac_better": 0.5742574257425742,
+    "frac_tied": 0.039603960396039604,
+    "frac_worse": 0.38613861386138615,
+    "n_nonzero": 97,
+    "p_one_sided": 0.021857662530999925
+   },
+   "jma_shift|0.5|C3-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 1.18226,
+    "median_b_km": 1.78783,
+    "median_diff_km": -0.19905,
+    "frac_better": 0.6039603960396039,
+    "frac_tied": 0.04950495049504951,
+    "frac_worse": 0.3465346534653465,
+    "n_nonzero": 96,
+    "p_one_sided": 0.00021061720705047628
+   },
+   "jma_shift|0.5|C3-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 0.91692,
+    "median_b_km": 1.68725,
+    "median_diff_km": -0.22642000000000007,
+    "frac_better": 0.6534653465346535,
+    "frac_tied": 0.04950495049504951,
+    "frac_worse": 0.297029702970297,
+    "n_nonzero": 96,
+    "p_one_sided": 4.65346861774933e-06
+   },
+   "jma_shift|0.5|C4-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 1.22297,
+    "median_b_km": 1.78783,
+    "median_diff_km": -0.24185999999999985,
+    "frac_better": 0.6039603960396039,
+    "frac_tied": 0.009900990099009901,
+    "frac_worse": 0.38613861386138615,
+    "n_nonzero": 100,
+    "p_one_sided": 0.0011062818456758633
+   },
+   "jma_shift|0.5|C4-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 0.76488,
+    "median_b_km": 1.68725,
+    "median_diff_km": -0.44897000000000004,
+    "frac_better": 0.7326732673267327,
+    "frac_tied": 0.009900990099009901,
+    "frac_worse": 0.25742574257425743,
+    "n_nonzero": 100,
+    "p_one_sided": 3.997862527605498e-08
+   },
+   "jma_shift|2|C3-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 0.67053,
+    "median_b_km": 0.89271,
+    "median_diff_km": -0.08779999999999999,
+    "frac_better": 0.5841584158415841,
+    "frac_tied": 0.12871287128712872,
+    "frac_worse": 0.2871287128712871,
+    "n_nonzero": 88,
+    "p_one_sided": 0.000449502675718153
+   },
+   "jma_shift|2|C3-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 0.81758,
+    "median_b_km": 1.2943,
+    "median_diff_km": -0.10713000000000006,
+    "frac_better": 0.6633663366336634,
+    "frac_tied": 0.12871287128712872,
+    "frac_worse": 0.2079207920792079,
+    "n_nonzero": 88,
+    "p_one_sided": 1.029547291502946e-06
+   },
+   "jma_shift|2|C4-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 1.00041,
+    "median_b_km": 0.89271,
+    "median_diff_km": 0.07220000000000015,
+    "frac_better": 0.40594059405940597,
+    "frac_tied": 0.039603960396039604,
+    "frac_worse": 0.5544554455445545,
+    "n_nonzero": 97,
+    "p_one_sided": 0.8374710092029416
+   },
+   "jma_shift|2|C4-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 0.44165,
+    "median_b_km": 1.2943,
+    "median_diff_km": -0.49358000000000146,
+    "frac_better": 0.8613861386138614,
+    "frac_tied": 0.039603960396039604,
+    "frac_worse": 0.09900990099009901,
+    "n_nonzero": 97,
+    "p_one_sided": 6.690101841871562e-13
+   },
+   "dpri|0.5|C3-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 1.18226,
+    "median_b_km": 1.82777,
+    "median_diff_km": -0.19762000000000002,
+    "frac_better": 0.6039603960396039,
+    "frac_tied": 0.039603960396039604,
+    "frac_worse": 0.3564356435643564,
+    "n_nonzero": 97,
+    "p_one_sided": 0.00020092702426518374
+   },
+   "dpri|0.5|C3-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 0.91692,
+    "median_b_km": 1.68725,
+    "median_diff_km": -0.22642000000000007,
+    "frac_better": 0.6732673267326733,
+    "frac_tied": 0.039603960396039604,
+    "frac_worse": 0.2871287128712871,
+    "n_nonzero": 97,
+    "p_one_sided": 2.002362938527908e-06
+   },
+   "dpri|0.5|C4-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 1.23152,
+    "median_b_km": 1.82777,
+    "median_diff_km": -0.21233999999999753,
+    "frac_better": 0.594059405940594,
+    "frac_tied": 0.009900990099009901,
+    "frac_worse": 0.39603960396039606,
+    "n_nonzero": 100,
+    "p_one_sided": 0.0006845665471286202
+   },
+   "dpri|0.5|C4-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 0.73495,
+    "median_b_km": 1.68725,
+    "median_diff_km": -0.4907800000000001,
+    "frac_better": 0.7425742574257426,
+    "frac_tied": 0.009900990099009901,
+    "frac_worse": 0.24752475247524752,
+    "n_nonzero": 100,
+    "p_one_sided": 1.676292391776098e-08
+   },
+   "dpri|2|C3-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 0.67053,
+    "median_b_km": 0.90748,
+    "median_diff_km": -0.08131999999999999,
+    "frac_better": 0.594059405940594,
+    "frac_tied": 0.12871287128712872,
+    "frac_worse": 0.27722772277227725,
+    "n_nonzero": 88,
+    "p_one_sided": 0.0005777797873479823
+   },
+   "dpri|2|C3-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 0.80141,
+    "median_b_km": 1.17066,
+    "median_diff_km": -0.11453999999999998,
+    "frac_better": 0.6732673267326733,
+    "frac_tied": 0.12871287128712872,
+    "frac_worse": 0.19801980198019803,
+    "n_nonzero": 88,
+    "p_one_sided": 1.7632566847654513e-07
+   },
+   "dpri|2|C4-M6r|vs_jma": {
+    "n": 101,
+    "median_a_km": 0.99782,
+    "median_b_km": 0.90748,
+    "median_diff_km": 0.06174999999999997,
+    "frac_better": 0.40594059405940597,
+    "frac_tied": 0.039603960396039604,
+    "frac_worse": 0.5544554455445545,
+    "n_nonzero": 97,
+    "p_one_sided": 0.8741101919260696
+   },
+   "dpri|2|C4-M6r|vs_dpri": {
+    "n": 101,
+    "median_a_km": 0.42801,
+    "median_b_km": 1.17066,
+    "median_diff_km": -0.50669,
+    "frac_better": 0.8811881188118812,
+    "frac_tied": 0.039603960396039604,
+    "frac_worse": 0.07920792079207921,
+    "n_nonzero": 97,
+    "p_one_sided": 2.6717587874275934e-13
+   }
+  },
+  "notes": [
+   "descriptive, not registered; Central Tottori 2016 test events matched to the DPRI catalogue (November 2016 only)",
+   "memory = jma: as in the registered test; memory = jma_shift / dpri come from 23_03, whose JMA-to-DPRI offset was estimated from all matched events including the scored test events (optimistic)",
+   "velocity, static station terms, KDE bandwidth and grid were fitted at JMA locations in every frame",
+   "p values are nominal: events share past events and paths"
+  ]
+ },
+ "part2_intensity": {
+  "results": {
+   "Central Tottori 2016": {
+    "tau0.5_BEST": {
+     "method": "M6r",
+     "n_events": 307,
+     "error_median_km": 2.0576,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.041919710865464005,
+       "median_azmax_absdI": 0.07879809503164698,
+       "max_azmax_absdI": 2.0016764801402993,
+       "class_change_prob_upper": 0.20157124578790708
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.05514889772416144,
+       "median_azmax_absdI": 0.09419783783744623,
+       "max_azmax_absdI": 1.9101922484105809,
+       "class_change_prob_upper": 0.20673311704102573
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.06340930488191737,
+       "median_azmax_absdI": 0.10093384935190117,
+       "max_azmax_absdI": 1.6566908012238373,
+       "class_change_prob_upper": 0.2125507290791417
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.0483935844707262,
+       "median_azmax_absdI": 0.07869818140462172,
+       "max_azmax_absdI": 1.3029558138737218,
+       "class_change_prob_upper": 0.16465797025358894
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.029680012693190188,
+       "median_azmax_absdI": 0.04757904789154936,
+       "max_azmax_absdI": 1.542014117485748,
+       "class_change_prob_upper": 0.10863427679194529
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.017571708688200793,
+       "median_azmax_absdI": 0.027863995565460948,
+       "max_azmax_absdI": 1.3521540792693494,
+       "class_change_prob_upper": 0.07359073013478325
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.03227637647210765,
+       "median_azmax_absdI": 0.059789811364460196,
+       "max_azmax_absdI": 1.7611185908582012,
+       "class_change_prob_upper": 0.16695081080676508
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.043690983831241,
+       "median_azmax_absdI": 0.07592919601211386,
+       "max_azmax_absdI": 1.7015863278330876,
+       "class_change_prob_upper": 0.17249363525287695
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.05294174225600653,
+       "median_azmax_absdI": 0.08429779622897414,
+       "max_azmax_absdI": 1.517149707021478,
+       "class_change_prob_upper": 0.18338972410755963
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.04328773684243917,
+       "median_azmax_absdI": 0.07002918733419006,
+       "max_azmax_absdI": 1.2301102802467412,
+       "class_change_prob_upper": 0.15058425541872228
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.028070544459176283,
+       "median_azmax_absdI": 0.044927682311249995,
+       "max_azmax_absdI": 1.31973480366421,
+       "class_change_prob_upper": 0.10391081515525286
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.017139777301178518,
+       "median_azmax_absdI": 0.02716817172856052,
+       "max_azmax_absdI": 1.2716995587786795,
+       "class_change_prob_upper": 0.07213522982312665
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.021708583132335958,
+       "median_azmax_absdI": 0.041424335060371915,
+       "max_azmax_absdI": 1.4409500587158801,
+       "class_change_prob_upper": 0.12596296181700922
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.030524250615781512,
+       "median_azmax_absdI": 0.05292733986094343,
+       "max_azmax_absdI": 1.4116877277066964,
+       "class_change_prob_upper": 0.13168615122455868
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.03915954553729509,
+       "median_azmax_absdI": 0.06187797554857992,
+       "max_azmax_absdI": 1.3027347627194195,
+       "class_change_prob_upper": 0.14531875247840195
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.03548574410866107,
+       "median_azmax_absdI": 0.05695365924689883,
+       "max_azmax_absdI": 1.1047850843806888,
+       "class_change_prob_upper": 0.12872626538140033
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.025212692556218677,
+       "median_azmax_absdI": 0.040240708366786095,
+       "max_azmax_absdI": 1.0342891834844279,
+       "class_change_prob_upper": 0.09535956661340153
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.016298544275858324,
+       "median_azmax_absdI": 0.025814694709106096,
+       "max_azmax_absdI": 1.1352257920955766,
+       "class_change_prob_upper": 0.06923720626651704
+      }
+     ]
+    },
+    "tau0.5_C3": {
+     "method": "C3",
+     "n_events": 307,
+     "error_median_km": 0.8669,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.018203044414441077,
+       "median_azmax_absdI": 0.0312008940691659,
+       "max_azmax_absdI": 2.0016764801402993,
+       "class_change_prob_upper": 0.13586082749909553
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.02484778245239443,
+       "median_azmax_absdI": 0.04069923041225693,
+       "max_azmax_absdI": 1.9101922484105809,
+       "class_change_prob_upper": 0.14319657154585036
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.026999771062520897,
+       "median_azmax_absdI": 0.043039349670757794,
+       "max_azmax_absdI": 1.6566908012238373,
+       "class_change_prob_upper": 0.14588518513572213
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.020226586115456222,
+       "median_azmax_absdI": 0.032245904219945616,
+       "max_azmax_absdI": 1.3029558138737218,
+       "class_change_prob_upper": 0.11496630011741805
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.012305301180082523,
+       "median_azmax_absdI": 0.019494858263659893,
+       "max_azmax_absdI": 1.542014117485748,
+       "class_change_prob_upper": 0.07900895968033946
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007333098306089077,
+       "median_azmax_absdI": 0.011566772709846039,
+       "max_azmax_absdI": 1.3521540792693494,
+       "class_change_prob_upper": 0.05609175759620008
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.013762857561314675,
+       "median_azmax_absdI": 0.02438945061785287,
+       "max_azmax_absdI": 1.7611185908582012,
+       "class_change_prob_upper": 0.11272033205880867
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.019170685818455973,
+       "median_azmax_absdI": 0.03029860878123126,
+       "max_azmax_absdI": 1.7015863278330876,
+       "class_change_prob_upper": 0.12021054699369603
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.02194994090608979,
+       "median_azmax_absdI": 0.034990536943645595,
+       "max_azmax_absdI": 1.517149707021478,
+       "class_change_prob_upper": 0.1274187112261575
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.018067139606671768,
+       "median_azmax_absdI": 0.028741199566143856,
+       "max_azmax_absdI": 1.2301102802467412,
+       "class_change_prob_upper": 0.1061186504967604
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.011640478222277135,
+       "median_azmax_absdI": 0.018429656405767166,
+       "max_azmax_absdI": 1.31973480366421,
+       "class_change_prob_upper": 0.07590793006315631
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007154796068869586,
+       "median_azmax_absdI": 0.01128367366442399,
+       "max_azmax_absdI": 1.2716995587786795,
+       "class_change_prob_upper": 0.05506755166518124
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.009377978602258169,
+       "median_azmax_absdI": 0.016045677579642856,
+       "max_azmax_absdI": 1.4409500587158801,
+       "class_change_prob_upper": 0.08823029967518004
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.01299544561491351,
+       "median_azmax_absdI": 0.021386735868357785,
+       "max_azmax_absdI": 1.4116877277066964,
+       "class_change_prob_upper": 0.09464413458573956
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.015977866834710294,
+       "median_azmax_absdI": 0.025186522410921498,
+       "max_azmax_absdI": 1.3027347627194195,
+       "class_change_prob_upper": 0.10399098955800365
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.014778121281120944,
+       "median_azmax_absdI": 0.023432183669300943,
+       "max_azmax_absdI": 1.1047850843806888,
+       "class_change_prob_upper": 0.09233651991223925
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.010459181676975902,
+       "median_azmax_absdI": 0.01654041664815289,
+       "max_azmax_absdI": 1.0342891834844279,
+       "class_change_prob_upper": 0.07022927454671937
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0068072261888526935,
+       "median_azmax_absdI": 0.010732108735588391,
+       "max_azmax_absdI": 1.1352257920955766,
+       "class_change_prob_upper": 0.053009179994332765
+      }
+     ]
+    },
+    "tau0.5_C4": {
+     "method": "C4",
+     "n_events": 307,
+     "error_median_km": 0.7972,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0169475476022627,
+       "median_azmax_absdI": 0.030083879718145412,
+       "max_azmax_absdI": 2.0016764801402993,
+       "class_change_prob_upper": 0.13070700465496457
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.02372834197080237,
+       "median_azmax_absdI": 0.03832614541625617,
+       "max_azmax_absdI": 1.9101922484105809,
+       "class_change_prob_upper": 0.13808329557238347
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.02483225783439048,
+       "median_azmax_absdI": 0.039467783421747726,
+       "max_azmax_absdI": 1.6566908012238373,
+       "class_change_prob_upper": 0.140749613992191
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.01823835640977174,
+       "median_azmax_absdI": 0.028902072513492034,
+       "max_azmax_absdI": 1.3029558138737218,
+       "class_change_prob_upper": 0.11018932081291269
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.011413213344528992,
+       "median_azmax_absdI": 0.018070641344756437,
+       "max_azmax_absdI": 1.5410277424867282,
+       "class_change_prob_upper": 0.07539549743363143
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.006794431888608647,
+       "median_azmax_absdI": 0.010715332027005173,
+       "max_azmax_absdI": 1.3521540792693494,
+       "class_change_prob_upper": 0.052723025435750706
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.013314646864795214,
+       "median_azmax_absdI": 0.02278333686077942,
+       "max_azmax_absdI": 1.7611185908582012,
+       "class_change_prob_upper": 0.10805526099919892
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.018308599410861076,
+       "median_azmax_absdI": 0.030111433778089856,
+       "max_azmax_absdI": 1.7015863278330876,
+       "class_change_prob_upper": 0.11553530688388265
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.020721169883227412,
+       "median_azmax_absdI": 0.03272941325823953,
+       "max_azmax_absdI": 1.517149707021478,
+       "class_change_prob_upper": 0.12260462761864886
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.016505549983788663,
+       "median_azmax_absdI": 0.026116483642444854,
+       "max_azmax_absdI": 1.2301102802467412,
+       "class_change_prob_upper": 0.10149690598084483
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.010797231734220987,
+       "median_azmax_absdI": 0.017085097057037583,
+       "max_azmax_absdI": 1.3190295402277428,
+       "class_change_prob_upper": 0.07236501732873449
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.006627648504231722,
+       "median_azmax_absdI": 0.010450693079893263,
+       "max_azmax_absdI": 1.2716995587786795,
+       "class_change_prob_upper": 0.0517223686432188
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.008789697204383724,
+       "median_azmax_absdI": 0.015351015240632485,
+       "max_azmax_absdI": 1.4409500587158801,
+       "class_change_prob_upper": 0.08406480162460771
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.0125026417658524,
+       "median_azmax_absdI": 0.02028147355186509,
+       "max_azmax_absdI": 1.4116877277066964,
+       "class_change_prob_upper": 0.09046787740657532
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.015458584224237012,
+       "median_azmax_absdI": 0.024363148460083306,
+       "max_azmax_absdI": 1.3027347627194195,
+       "class_change_prob_upper": 0.099436892992342
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.013543296978557667,
+       "median_azmax_absdI": 0.02144252942925988,
+       "max_azmax_absdI": 1.1047850843806888,
+       "class_change_prob_upper": 0.08794124309355696
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.009702530594184074,
+       "median_azmax_absdI": 0.015336600531752068,
+       "max_azmax_absdI": 1.0338463991964562,
+       "class_change_prob_upper": 0.06680272083034315
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.006302779364913205,
+       "median_azmax_absdI": 0.009935467840869593,
+       "max_azmax_absdI": 1.1352257920955766,
+       "class_change_prob_upper": 0.04973140663023986
+      }
+     ]
+    },
+    "tau2_BEST": {
+     "method": "M6r",
+     "n_events": 307,
+     "error_median_km": 0.953,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.02237125093799196,
+       "median_azmax_absdI": 0.0387521644657784,
+       "max_azmax_absdI": 2.0016764801402993,
+       "class_change_prob_upper": 0.215662368996091
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.02853888984915007,
+       "median_azmax_absdI": 0.048623232787734984,
+       "max_azmax_absdI": 1.9101922484105809,
+       "class_change_prob_upper": 0.22070498440898234
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.03165677808498554,
+       "median_azmax_absdI": 0.050303255481781224,
+       "max_azmax_absdI": 1.6566908012238373,
+       "class_change_prob_upper": 0.2216101286438945
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.022513477386416507,
+       "median_azmax_absdI": 0.03593049060656576,
+       "max_azmax_absdI": 1.3029558138737218,
+       "class_change_prob_upper": 0.181792197743542
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.013652326571233275,
+       "median_azmax_absdI": 0.021657185507293827,
+       "max_azmax_absdI": 1.8934615149694416,
+       "class_change_prob_upper": 0.139558521703999
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.008061075292244781,
+       "median_azmax_absdI": 0.01271948969044705,
+       "max_azmax_absdI": 1.3641531601925965,
+       "class_change_prob_upper": 0.10937721823814937
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0166842180559983,
+       "median_azmax_absdI": 0.0292933285448834,
+       "max_azmax_absdI": 1.7611185908582012,
+       "class_change_prob_upper": 0.19470292900099107
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.023141093178264707,
+       "median_azmax_absdI": 0.03784168485404786,
+       "max_azmax_absdI": 1.7015863278330876,
+       "class_change_prob_upper": 0.19974364993551316
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.026176967887233598,
+       "median_azmax_absdI": 0.04135224710683515,
+       "max_azmax_absdI": 1.517149707021478,
+       "class_change_prob_upper": 0.20411562239201275
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.020178452534720698,
+       "median_azmax_absdI": 0.032060741590102665,
+       "max_azmax_absdI": 1.2301102802467412,
+       "class_change_prob_upper": 0.17253132139672894
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.012902017012908024,
+       "median_azmax_absdI": 0.02045196300527306,
+       "max_azmax_absdI": 1.551912847285704,
+       "class_change_prob_upper": 0.13551045137989062
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007865124547375249,
+       "median_azmax_absdI": 0.012408056944264683,
+       "max_azmax_absdI": 1.2824533775943243,
+       "class_change_prob_upper": 0.1076625321971963
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.011124418179209072,
+       "median_azmax_absdI": 0.01942795124356102,
+       "max_azmax_absdI": 1.4409500587158801,
+       "class_change_prob_upper": 0.17047769667252866
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.015709964187541354,
+       "median_azmax_absdI": 0.025713242434089564,
+       "max_azmax_absdI": 1.4116877277066964,
+       "class_change_prob_upper": 0.17500687221256966
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.019095607288166058,
+       "median_azmax_absdI": 0.030049515640240325,
+       "max_azmax_absdI": 1.3027347627194195,
+       "class_change_prob_upper": 0.18088554452528097
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.016654560060197228,
+       "median_azmax_absdI": 0.02638451764385742,
+       "max_azmax_absdI": 1.1047850843806888,
+       "class_change_prob_upper": 0.15728482402156665
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.011572562738639141,
+       "median_azmax_absdI": 0.0183208738208604,
+       "max_azmax_absdI": 1.1697427840718768,
+       "class_change_prob_upper": 0.12774034605916867
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007483144055906967,
+       "median_azmax_absdI": 0.011801308112135419,
+       "max_azmax_absdI": 1.1441195347465478,
+       "class_change_prob_upper": 0.1041714493909229
+      }
+     ]
+    },
+    "tau2_C3": {
+     "method": "C3",
+     "n_events": 307,
+     "error_median_km": 0.4957,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.01155382540035452,
+       "median_azmax_absdI": 0.019312172216506156,
+       "max_azmax_absdI": 2.0016764801402993,
+       "class_change_prob_upper": 0.17141326704489349
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.015637659492719624,
+       "median_azmax_absdI": 0.02514707209627444,
+       "max_azmax_absdI": 1.9101922484105809,
+       "class_change_prob_upper": 0.1773830820735385
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.016847745333420445,
+       "median_azmax_absdI": 0.026672096141549726,
+       "max_azmax_absdI": 1.6566908012238373,
+       "class_change_prob_upper": 0.17543358643918552
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.011983949556890368,
+       "median_azmax_absdI": 0.018994829785202283,
+       "max_azmax_absdI": 1.3029558138737218,
+       "class_change_prob_upper": 0.1485904088627647
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.007026472381763306,
+       "median_azmax_absdI": 0.01108819312335506,
+       "max_azmax_absdI": 1.8934615149694416,
+       "class_change_prob_upper": 0.12087742006474225
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.004220375471739309,
+       "median_azmax_absdI": 0.006647571874629846,
+       "max_azmax_absdI": 1.3641531601925965,
+       "class_change_prob_upper": 0.09859852681400025
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.00871103775999025,
+       "median_azmax_absdI": 0.014643267796964251,
+       "max_azmax_absdI": 1.7611185908582012,
+       "class_change_prob_upper": 0.16043098442791878
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.01217347276193837,
+       "median_azmax_absdI": 0.01982127092030288,
+       "max_azmax_absdI": 1.7015863278330876,
+       "class_change_prob_upper": 0.1657863427757903
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.013915329796159217,
+       "median_azmax_absdI": 0.02188253540336747,
+       "max_azmax_absdI": 1.517149707021478,
+       "class_change_prob_upper": 0.16627438694898342
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.010700422277611277,
+       "median_azmax_absdI": 0.01693880627747957,
+       "max_azmax_absdI": 1.2301102802467412,
+       "class_change_prob_upper": 0.14312622772136566
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.006660895846816128,
+       "median_azmax_absdI": 0.010507562363082154,
+       "max_azmax_absdI": 1.551912847285704,
+       "class_change_prob_upper": 0.11791312856090033
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.004116219713581788,
+       "median_azmax_absdI": 0.006482891945439287,
+       "max_azmax_absdI": 1.2824533775943243,
+       "class_change_prob_upper": 0.09714757303544783
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.005836953669540189,
+       "median_azmax_absdI": 0.009855245623627159,
+       "max_azmax_absdI": 1.4409500587158801,
+       "class_change_prob_upper": 0.14875325212161275
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.008397698728846313,
+       "median_azmax_absdI": 0.01354673978657282,
+       "max_azmax_absdI": 1.4116877277066964,
+       "class_change_prob_upper": 0.1528083641690982
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.010204685203022533,
+       "median_azmax_absdI": 0.016073567916662333,
+       "max_azmax_absdI": 1.3027347627194195,
+       "class_change_prob_upper": 0.15390042939280194
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.008747313864263914,
+       "median_azmax_absdI": 0.01382028191730092,
+       "max_azmax_absdI": 1.1047850843806888,
+       "class_change_prob_upper": 0.13360025839780168
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.006007377260175905,
+       "median_azmax_absdI": 0.009470656602462948,
+       "max_azmax_absdI": 1.1697427840718768,
+       "class_change_prob_upper": 0.11202449329940671
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.003913427111623966,
+       "median_azmax_absdI": 0.006162355840880931,
+       "max_azmax_absdI": 1.1441195347465478,
+       "class_change_prob_upper": 0.09417059705840625
+      }
+     ]
+    },
+    "tau2_C4": {
+     "method": "C4",
+     "n_events": 307,
+     "error_median_km": 0.4349,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.009461731356480827,
+       "median_azmax_absdI": 0.015532646046995748,
+       "max_azmax_absdI": 2.0016764801402993,
+       "class_change_prob_upper": 0.16555235619095132
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.012682435424581747,
+       "median_azmax_absdI": 0.020209721445098354,
+       "max_azmax_absdI": 1.9101922484105809,
+       "class_change_prob_upper": 0.171614303968365
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.013721089741311357,
+       "median_azmax_absdI": 0.021706448335432144,
+       "max_azmax_absdI": 1.6566908012238373,
+       "class_change_prob_upper": 0.16978186435715448
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.010087330948088037,
+       "median_azmax_absdI": 0.01594444012317822,
+       "max_azmax_absdI": 1.3029558138737218,
+       "class_change_prob_upper": 0.13999630468273472
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.0061619439280767305,
+       "median_azmax_absdI": 0.009721842318884382,
+       "max_azmax_absdI": 1.8397257927062307,
+       "class_change_prob_upper": 0.11627442816870003
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0037214395856806923,
+       "median_azmax_absdI": 0.005860144044343079,
+       "max_azmax_absdI": 1.3521540792693494,
+       "class_change_prob_upper": 0.09266674841065296
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.00710475338975332,
+       "median_azmax_absdI": 0.011688949356864575,
+       "max_azmax_absdI": 1.7611185908582012,
+       "class_change_prob_upper": 0.154765121971658
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.009914615818710594,
+       "median_azmax_absdI": 0.01563887943080277,
+       "max_azmax_absdI": 1.7015863278330876,
+       "class_change_prob_upper": 0.1602728129319633
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.011812028476677245,
+       "median_azmax_absdI": 0.018661211597368978,
+       "max_azmax_absdI": 1.517149707021478,
+       "class_change_prob_upper": 0.1607364899097862
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.009068733193858761,
+       "median_azmax_absdI": 0.014319925433191286,
+       "max_azmax_absdI": 1.2301102802467412,
+       "class_change_prob_upper": 0.13438346943127635
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.0058319241895823624,
+       "median_azmax_absdI": 0.009200894882302446,
+       "max_azmax_absdI": 1.5184595779930128,
+       "class_change_prob_upper": 0.11338940514556466
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.003629823658516662,
+       "median_azmax_absdI": 0.0057153939191953735,
+       "max_azmax_absdI": 1.2716995587786795,
+       "class_change_prob_upper": 0.09116294394394328
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.00483086719662982,
+       "median_azmax_absdI": 0.008133263066481211,
+       "max_azmax_absdI": 1.4409500587158801,
+       "class_change_prob_upper": 0.14369975631046952
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.006634952801427369,
+       "median_azmax_absdI": 0.010916196535478461,
+       "max_azmax_absdI": 1.4116877277066964,
+       "class_change_prob_upper": 0.1476887261694621
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.008529812981976677,
+       "median_azmax_absdI": 0.01343158526785519,
+       "max_azmax_absdI": 1.3027347627194195,
+       "class_change_prob_upper": 0.14853523280450817
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.0074127528071960365,
+       "median_azmax_absdI": 0.011708848398392467,
+       "max_azmax_absdI": 1.1047850843806888,
+       "class_change_prob_upper": 0.12465578648227467
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.005233101727801338,
+       "median_azmax_absdI": 0.008251482887985774,
+       "max_azmax_absdI": 1.150997994845121,
+       "class_change_prob_upper": 0.10759237365871203
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0034514107867264976,
+       "median_azmax_absdI": 0.005433583172077308,
+       "max_azmax_absdI": 1.1352257920955766,
+       "class_change_prob_upper": 0.08809869041583217
+      }
+     ]
+    }
+   },
+   "Northern Osaka 2018": {
+    "tau0.5_BEST": {
+     "method": "M6p",
+     "n_events": 55,
+     "error_median_km": 1.1698,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.013706613021904445,
+       "median_azmax_absdI": 0.024743651379456652,
+       "max_azmax_absdI": 1.2881845756089014,
+       "class_change_prob_upper": 0.05741545315129315
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.020306914914443377,
+       "median_azmax_absdI": 0.03424071889749709,
+       "max_azmax_absdI": 1.2754221603495617,
+       "class_change_prob_upper": 0.07247117292615562
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.02735445078743194,
+       "median_azmax_absdI": 0.0432094137215997,
+       "max_azmax_absdI": 1.184736802826303,
+       "class_change_prob_upper": 0.09202105190031853
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.024296843325091452,
+       "median_azmax_absdI": 0.038565807659533914,
+       "max_azmax_absdI": 0.9741161625796666,
+       "class_change_prob_upper": 0.08371678884796542
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.01623081745674749,
+       "median_azmax_absdI": 0.025764838503878194,
+       "max_azmax_absdI": 1.1540307819303248,
+       "class_change_prob_upper": 0.06039154746836632
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.009894149679334429,
+       "median_azmax_absdI": 0.015626773534107005,
+       "max_azmax_absdI": 0.7439944781215223,
+       "class_change_prob_upper": 0.04051414671475918
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.011206681938931748,
+       "median_azmax_absdI": 0.02027078942940984,
+       "max_azmax_absdI": 1.1541135112597285,
+       "class_change_prob_upper": 0.05058018349377387
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.016772482953725826,
+       "median_azmax_absdI": 0.02836898045289846,
+       "max_azmax_absdI": 1.1493504919013904,
+       "class_change_prob_upper": 0.06340353893315293
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.023272621132011822,
+       "median_azmax_absdI": 0.03691185028520342,
+       "max_azmax_absdI": 1.085403890639223,
+       "class_change_prob_upper": 0.08153903733089025
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.02199592062599777,
+       "median_azmax_absdI": 0.034832913639013585,
+       "max_azmax_absdI": 0.9156762931944258,
+       "class_change_prob_upper": 0.07677620541144162
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.015371022568509134,
+       "median_azmax_absdI": 0.024379518228244464,
+       "max_azmax_absdI": 1.0272433652830588,
+       "class_change_prob_upper": 0.05772683258595005
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.009652609570294584,
+       "median_azmax_absdI": 0.015241883730744803,
+       "max_azmax_absdI": 0.7151485044734633,
+       "class_change_prob_upper": 0.03962346380019028
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.00812273310254775,
+       "median_azmax_absdI": 0.01470873976201204,
+       "max_azmax_absdI": 0.9563665997490033,
+       "class_change_prob_upper": 0.04198241428394919
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.012311635640004811,
+       "median_azmax_absdI": 0.02081432648230346,
+       "max_azmax_absdI": 0.9602422702260296,
+       "class_change_prob_upper": 0.05176497016710063
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.01789060011705452,
+       "median_azmax_absdI": 0.02871870719050973,
+       "max_azmax_absdI": 0.9285347017866444,
+       "class_change_prob_upper": 0.0671038138694186
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.01836835830772667,
+       "median_azmax_absdI": 0.02898271059193802,
+       "max_azmax_absdI": 0.8153073533934548,
+       "class_change_prob_upper": 0.06579314446083587
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.013838436976622182,
+       "median_azmax_absdI": 0.021916059082215986,
+       "max_azmax_absdI": 0.842087148133099,
+       "class_change_prob_upper": 0.05292152409477244
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.009181919667383616,
+       "median_azmax_absdI": 0.014492378901926726,
+       "max_azmax_absdI": 0.6617976982758718,
+       "class_change_prob_upper": 0.0378639283621104
+      }
+     ]
+    },
+    "tau0.5_C3": {
+     "method": "C3",
+     "n_events": 55,
+     "error_median_km": 0.7077,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.009221897136303475,
+       "median_azmax_absdI": 0.015489926272885635,
+       "max_azmax_absdI": 1.2881845756089014,
+       "class_change_prob_upper": 0.04718069324509359
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.013132194960112727,
+       "median_azmax_absdI": 0.021210396454002516,
+       "max_azmax_absdI": 1.2754221603495617,
+       "class_change_prob_upper": 0.05887792957910728
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.016800839138805288,
+       "median_azmax_absdI": 0.02651486489869265,
+       "max_azmax_absdI": 1.184736802826303,
+       "class_change_prob_upper": 0.07365719715617915
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.014952749155702981,
+       "median_azmax_absdI": 0.023677147863002387,
+       "max_azmax_absdI": 0.9741161625796666,
+       "class_change_prob_upper": 0.06665381126785243
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.009825913359134172,
+       "median_azmax_absdI": 0.015536239522679064,
+       "max_azmax_absdI": 1.1540307819303248,
+       "class_change_prob_upper": 0.04894486867885028
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.005986324765485739,
+       "median_azmax_absdI": 0.009436646948793941,
+       "max_azmax_absdI": 0.7439944781215223,
+       "class_change_prob_upper": 0.03350169313157338
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.007231634424215639,
+       "median_azmax_absdI": 0.012168758544736319,
+       "max_azmax_absdI": 1.1541135112597285,
+       "class_change_prob_upper": 0.04210022912563291
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.010477894130111725,
+       "median_azmax_absdI": 0.016965664022530236,
+       "max_azmax_absdI": 1.1493504919013904,
+       "class_change_prob_upper": 0.05205084704935675
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.014337407616893748,
+       "median_azmax_absdI": 0.022680669041699013,
+       "max_azmax_absdI": 1.085403890639223,
+       "class_change_prob_upper": 0.06577633368797785
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.013481962837941983,
+       "median_azmax_absdI": 0.021316952607055295,
+       "max_azmax_absdI": 0.9156762931944258,
+       "class_change_prob_upper": 0.061374424617350695
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.009305195309560598,
+       "median_azmax_absdI": 0.014705455325383992,
+       "max_azmax_absdI": 1.0272433652830588,
+       "class_change_prob_upper": 0.04688537482873886
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.005840167247887615,
+       "median_azmax_absdI": 0.009205008207731211,
+       "max_azmax_absdI": 0.7151485044734633,
+       "class_change_prob_upper": 0.032782119314794515
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.004990387099457618,
+       "median_azmax_absdI": 0.008490839554159435,
+       "max_azmax_absdI": 0.9563665997490033,
+       "class_change_prob_upper": 0.035731446351412705
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.007501186676791489,
+       "median_azmax_absdI": 0.012379037987328912,
+       "max_azmax_absdI": 0.9602422702260296,
+       "class_change_prob_upper": 0.043309623799064216
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.010983341059396669,
+       "median_azmax_absdI": 0.01743064354286326,
+       "max_azmax_absdI": 0.9285347017866444,
+       "class_change_prob_upper": 0.05492619091261789
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.011187302496779808,
+       "median_azmax_absdI": 0.01764850210383745,
+       "max_azmax_absdI": 0.8153073533934548,
+       "class_change_prob_upper": 0.05298768108157419
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.008377058411755258,
+       "median_azmax_absdI": 0.013226784556862436,
+       "max_azmax_absdI": 0.842087148133099,
+       "class_change_prob_upper": 0.04315887215766282
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.005555351389875641,
+       "median_azmax_absdI": 0.008753809241594235,
+       "max_azmax_absdI": 0.6617976982758718,
+       "class_change_prob_upper": 0.031356018858452794
+      }
+     ]
+    },
+    "tau0.5_C4": {
+     "method": "C4",
+     "n_events": 55,
+     "error_median_km": 0.8794,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.011144158831883029,
+       "median_azmax_absdI": 0.020680602233817184,
+       "max_azmax_absdI": 1.288570642138478,
+       "class_change_prob_upper": 0.048219337427615916
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.017040482000544064,
+       "median_azmax_absdI": 0.028958840108760098,
+       "max_azmax_absdI": 1.2757964562130173,
+       "class_change_prob_upper": 0.06031318415205474
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.022472285446703294,
+       "median_azmax_absdI": 0.03533433559445597,
+       "max_azmax_absdI": 1.1850850230209433,
+       "class_change_prob_upper": 0.07546435434843296
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.018649664279703517,
+       "median_azmax_absdI": 0.029623002419045048,
+       "max_azmax_absdI": 0.9744233268737617,
+       "class_change_prob_upper": 0.06819818987281329
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.011944255004640683,
+       "median_azmax_absdI": 0.018904578903677072,
+       "max_azmax_absdI": 1.1536031222023524,
+       "class_change_prob_upper": 0.04993927597170086
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007397962884664108,
+       "median_azmax_absdI": 0.01166947483631522,
+       "max_azmax_absdI": 0.7444498275051094,
+       "class_change_prob_upper": 0.03410774297985769
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.009490982748835447,
+       "median_azmax_absdI": 0.01697911143332691,
+       "max_azmax_absdI": 1.1544819097694996,
+       "class_change_prob_upper": 0.04293389869423454
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.014316605917094419,
+       "median_azmax_absdI": 0.023716295597474693,
+       "max_azmax_absdI": 1.1497084199872745,
+       "class_change_prob_upper": 0.0532175220305778
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.018990046539579943,
+       "median_azmax_absdI": 0.02995859487053025,
+       "max_azmax_absdI": 1.0857384405220518,
+       "class_change_prob_upper": 0.06730788123401461
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.01676851701574472,
+       "median_azmax_absdI": 0.02658500637990547,
+       "max_azmax_absdI": 0.9159735319502093,
+       "class_change_prob_upper": 0.06276506678407257
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.011319549655475214,
+       "median_azmax_absdI": 0.01790494138749908,
+       "max_azmax_absdI": 1.0268979718772073,
+       "class_change_prob_upper": 0.04782712069926711
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0072180524896612586,
+       "median_azmax_absdI": 0.011383796273058877,
+       "max_azmax_absdI": 0.7155774571654203,
+       "class_change_prob_upper": 0.0333735711398927
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.006879998005458741,
+       "median_azmax_absdI": 0.01201899661288434,
+       "max_azmax_absdI": 0.9567028063650591,
+       "class_change_prob_upper": 0.03632401793386052
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.010284557345095525,
+       "median_azmax_absdI": 0.017061013132312296,
+       "max_azmax_absdI": 0.9605701888430896,
+       "class_change_prob_upper": 0.04415092146696163
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.014357421528830343,
+       "median_azmax_absdI": 0.022750401876672852,
+       "max_azmax_absdI": 0.9288438392745542,
+       "class_change_prob_upper": 0.0560894737477249
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.013854684842273306,
+       "median_azmax_absdI": 0.021901757465455095,
+       "max_azmax_absdI": 0.8155857351014942,
+       "class_change_prob_upper": 0.054139671465495344
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.010203735978018939,
+       "median_azmax_absdI": 0.01612253613685537,
+       "max_azmax_absdI": 0.8418405104288507,
+       "class_change_prob_upper": 0.04400664749334183
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.006867352602063226,
+       "median_azmax_absdI": 0.010827215917786593,
+       "max_azmax_absdI": 0.6621802996483401,
+       "class_change_prob_upper": 0.03191862232531913
+      }
+     ]
+    },
+    "tau2_BEST": {
+     "method": "M5f",
+     "n_events": 55,
+     "error_median_km": 0.3011,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.004357390439568608,
+       "median_azmax_absdI": 0.007172801823582571,
+       "max_azmax_absdI": 2.0091894713379452,
+       "class_change_prob_upper": 0.11298740260779754
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.006462236284397073,
+       "median_azmax_absdI": 0.010306948893509277,
+       "max_azmax_absdI": 1.9882548143779368,
+       "class_change_prob_upper": 0.12038605793030356
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.008572917061854757,
+       "median_azmax_absdI": 0.013492049947952226,
+       "max_azmax_absdI": 1.8832226519965214,
+       "class_change_prob_upper": 0.12701893157261995
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.006939643194877445,
+       "median_azmax_absdI": 0.010957607178182633,
+       "max_azmax_absdI": 1.6370447252398745,
+       "class_change_prob_upper": 0.11649469748792503
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.004204940090973861,
+       "median_azmax_absdI": 0.006626154683544732,
+       "max_azmax_absdI": 1.309535622162496,
+       "class_change_prob_upper": 0.09962162416528328
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.002550487276110845,
+       "median_azmax_absdI": 0.004013799752423735,
+       "max_azmax_absdI": 1.2667010541982977,
+       "class_change_prob_upper": 0.07703521746225461
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.003532529134621712,
+       "median_azmax_absdI": 0.005791350555894632,
+       "max_azmax_absdI": 1.8658828880668277,
+       "class_change_prob_upper": 0.10919437686576453
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.005225099920650468,
+       "median_azmax_absdI": 0.008445878331950204,
+       "max_azmax_absdI": 1.8521195682734386,
+       "class_change_prob_upper": 0.11482686042197703
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.00729268698811721,
+       "median_azmax_absdI": 0.01149155938518398,
+       "max_azmax_absdI": 1.7712391333594664,
+       "class_change_prob_upper": 0.12068489335644841
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.006207858914407741,
+       "median_azmax_absdI": 0.009795031829414493,
+       "max_azmax_absdI": 1.5653325604376322,
+       "class_change_prob_upper": 0.11162816470092324
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.003981314303686391,
+       "median_azmax_absdI": 0.006272404342313301,
+       "max_azmax_absdI": 1.2742072278319962,
+       "class_change_prob_upper": 0.09714173111082781
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.002488151244724215,
+       "median_azmax_absdI": 0.0039154744335866895,
+       "max_azmax_absdI": 1.1964555136844728,
+       "class_change_prob_upper": 0.0759321565764277
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0025149474998806365,
+       "median_azmax_absdI": 0.004178395260597347,
+       "max_azmax_absdI": 1.640588072052835,
+       "class_change_prob_upper": 0.10285434714607673
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.003855428730264505,
+       "median_azmax_absdI": 0.006205187857993777,
+       "max_azmax_absdI": 1.6355730451262624,
+       "class_change_prob_upper": 0.1066876663478088
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.005562602041826275,
+       "median_azmax_absdI": 0.0087801087291529,
+       "max_azmax_absdI": 1.5860012370846006,
+       "class_change_prob_upper": 0.11142636705263581
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.0050890414640243475,
+       "median_azmax_absdI": 0.008020853762531198,
+       "max_azmax_absdI": 1.4381980912650545,
+       "class_change_prob_upper": 0.10310254084687603
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.003582941948179693,
+       "median_azmax_absdI": 0.0056426146937776835,
+       "max_azmax_absdI": 1.206886011626799,
+       "class_change_prob_upper": 0.09238392279506201
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0023666875540821696,
+       "median_azmax_absdI": 0.0037239195097969716,
+       "max_azmax_absdI": 1.075251079930773,
+       "class_change_prob_upper": 0.07372569293551233
+      }
+     ]
+    },
+    "tau2_C3": {
+     "method": "C3",
+     "n_events": 55,
+     "error_median_km": 0.3671,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0044042920890807235,
+       "median_azmax_absdI": 0.007380058740673628,
+       "max_azmax_absdI": 1.4145247397142549,
+       "class_change_prob_upper": 0.08694850834805291
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.00647009703408122,
+       "median_azmax_absdI": 0.010374860388493402,
+       "max_azmax_absdI": 1.4042818174322445,
+       "class_change_prob_upper": 0.09348287836033609
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.008824981991106115,
+       "median_azmax_absdI": 0.01392211225523365,
+       "max_azmax_absdI": 1.3238316155238354,
+       "class_change_prob_upper": 0.0975822372452195
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.007458196367668089,
+       "median_azmax_absdI": 0.01176721653016307,
+       "max_azmax_absdI": 1.119206995380518,
+       "class_change_prob_upper": 0.08721368235556845
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.004967421395259689,
+       "median_azmax_absdI": 0.007829912972123326,
+       "max_azmax_absdI": 1.1046113136359197,
+       "class_change_prob_upper": 0.07200251658644517
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0030850783837747513,
+       "median_azmax_absdI": 0.004856244883040048,
+       "max_azmax_absdI": 1.0210911468028503,
+       "class_change_prob_upper": 0.05562124345330577
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0035603792332528084,
+       "median_azmax_absdI": 0.005819457546202837,
+       "max_azmax_absdI": 1.2867358367437118,
+       "class_change_prob_upper": 0.08444947590373034
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.005299529555919384,
+       "median_azmax_absdI": 0.008517661340521562,
+       "max_azmax_absdI": 1.2828960260096458,
+       "class_change_prob_upper": 0.08929683530607055
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.007582136276216357,
+       "median_azmax_absdI": 0.01197587584156557,
+       "max_azmax_absdI": 1.2249103286015106,
+       "class_change_prob_upper": 0.09281337844622906
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.006718470819305367,
+       "median_azmax_absdI": 0.010592349152191023,
+       "max_azmax_absdI": 1.0579510644599277,
+       "class_change_prob_upper": 0.08315506614998534
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.004708182695675778,
+       "median_azmax_absdI": 0.007419422234491129,
+       "max_azmax_absdI": 0.9880908416465503,
+       "class_change_prob_upper": 0.06992283493176575
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0030101026686802238,
+       "median_azmax_absdI": 0.004737898079409684,
+       "max_azmax_absdI": 0.9734230991457405,
+       "class_change_prob_upper": 0.05465922865035214
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0025340133908022333,
+       "median_azmax_absdI": 0.004184150304421625,
+       "max_azmax_absdI": 1.0914278240869641,
+       "class_change_prob_upper": 0.07978444666168907
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.0038853958576906497,
+       "median_azmax_absdI": 0.006288361366198978,
+       "max_azmax_absdI": 1.0949349721405652,
+       "class_change_prob_upper": 0.08296952145634892
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.005862356664866511,
+       "median_azmax_absdI": 0.009274947555953622,
+       "max_azmax_absdI": 1.0651568075296665,
+       "class_change_prob_upper": 0.08572296845250356
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.0055670629253488585,
+       "median_azmax_absdI": 0.008767071239672295,
+       "max_azmax_absdI": 0.9514439938460881,
+       "class_change_prob_upper": 0.07574763604292603
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.004244979797979438,
+       "median_azmax_absdI": 0.006686491915938056,
+       "max_azmax_absdI": 0.8152138412805767,
+       "class_change_prob_upper": 0.06587924289893149
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0028639441867537915,
+       "median_azmax_absdI": 0.004507242242606671,
+       "max_azmax_absdI": 0.888051923858304,
+       "class_change_prob_upper": 0.05268459444953998
+      }
+     ]
+    },
+    "tau2_C4": {
+     "method": "C4",
+     "n_events": 55,
+     "error_median_km": 0.2862,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0032680908542067465,
+       "median_azmax_absdI": 0.005346465645355205,
+       "max_azmax_absdI": 1.4281990247703469,
+       "class_change_prob_upper": 0.08098506511860931
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.004921954067435417,
+       "median_azmax_absdI": 0.007893645726789226,
+       "max_azmax_absdI": 1.4176262994465385,
+       "class_change_prob_upper": 0.08483201794086868
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.006825535232803219,
+       "median_azmax_absdI": 0.010754716469561082,
+       "max_azmax_absdI": 1.3364310127280221,
+       "class_change_prob_upper": 0.08544075011266679
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.0062909844308561965,
+       "median_azmax_absdI": 0.009916015179076499,
+       "max_azmax_absdI": 1.1305890896013882,
+       "class_change_prob_upper": 0.07582474591858966
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.004008409297510755,
+       "median_azmax_absdI": 0.006316195299919754,
+       "max_azmax_absdI": 1.1046350921249213,
+       "class_change_prob_upper": 0.06427538376106527
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.002423502772073095,
+       "median_azmax_absdI": 0.0038137208106263556,
+       "max_azmax_absdI": 1.0447885628532643,
+       "class_change_prob_upper": 0.05083928735000006
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0026873265705785183,
+       "median_azmax_absdI": 0.00440705245557306,
+       "max_azmax_absdI": 1.2999211684282885,
+       "class_change_prob_upper": 0.07950025623727816
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.004092413545687183,
+       "median_azmax_absdI": 0.006568493321799327,
+       "max_azmax_absdI": 1.2957813314106086,
+       "class_change_prob_upper": 0.08202744049112334
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.005876452792136259,
+       "median_azmax_absdI": 0.00926781804433448,
+       "max_azmax_absdI": 1.2371142809332305,
+       "class_change_prob_upper": 0.08236346130245237
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.005680772027704762,
+       "median_azmax_absdI": 0.008948779506284602,
+       "max_azmax_absdI": 1.0690314020941112,
+       "class_change_prob_upper": 0.07287329931131818
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.0037930249637572375,
+       "median_azmax_absdI": 0.0059755579738062226,
+       "max_azmax_absdI": 0.9881103052655881,
+       "class_change_prob_upper": 0.06259404646424231
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0023642837238316704,
+       "median_azmax_absdI": 0.0037203285305936707,
+       "max_azmax_absdI": 0.9952069456049796,
+       "class_change_prob_upper": 0.04999356477125825
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.001966240594728275,
+       "median_azmax_absdI": 0.0032266954318373965,
+       "max_azmax_absdI": 1.1036942406158021,
+       "class_change_prob_upper": 0.07603195308856826
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.0030198883056508172,
+       "median_azmax_absdI": 0.004844828981499707,
+       "max_azmax_absdI": 1.1069536639365294,
+       "class_change_prob_upper": 0.0774976330833559
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.004530496687335994,
+       "median_azmax_absdI": 0.007154461234235385,
+       "max_azmax_absdI": 1.0766072614707345,
+       "class_change_prob_upper": 0.07760395596229785
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.004724979880577771,
+       "median_azmax_absdI": 0.007436134401542485,
+       "max_azmax_absdI": 0.9619402963520678,
+       "class_change_prob_upper": 0.06717804531457687
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.0034099721172431412,
+       "median_azmax_absdI": 0.005370107875351642,
+       "max_azmax_absdI": 0.815227968266338,
+       "class_change_prob_upper": 0.05925212057308652
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.00224889148612921,
+       "median_azmax_absdI": 0.003538379078985532,
+       "max_azmax_absdI": 0.9066942834141555,
+       "class_change_prob_upper": 0.04825583749444008
+      }
+     ]
+    }
+   },
+   "Western Shimane 2018": {
+    "tau0.5_BEST": {
+     "method": "M6p",
+     "n_events": 41,
+     "error_median_km": 1.9339,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.023396452840411183,
+       "median_azmax_absdI": 0.04403201071225965,
+       "max_azmax_absdI": 1.4495430122802988,
+       "class_change_prob_upper": 0.11132366841445056
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.033395845622362724,
+       "median_azmax_absdI": 0.058515929694131004,
+       "max_azmax_absdI": 1.4251123843338727,
+       "class_change_prob_upper": 0.12203306420820197
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.04541874558852402,
+       "median_azmax_absdI": 0.07220355207282196,
+       "max_azmax_absdI": 1.3051890664510046,
+       "class_change_prob_upper": 0.13449805150915245
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.04066883307669375,
+       "median_azmax_absdI": 0.06528684957402824,
+       "max_azmax_absdI": 1.0616748866898236,
+       "class_change_prob_upper": 0.11739563105489419
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.026827458700109785,
+       "median_azmax_absdI": 0.0428722332947316,
+       "max_azmax_absdI": 1.049741465301278,
+       "class_change_prob_upper": 0.08076876049232996
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.01635799669312316,
+       "median_azmax_absdI": 0.025919010427766214,
+       "max_azmax_absdI": 0.8659180532604467,
+       "class_change_prob_upper": 0.054402674218397534
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.01879550516264729,
+       "median_azmax_absdI": 0.03616784749763065,
+       "max_azmax_absdI": 1.2966778792558806,
+       "class_change_prob_upper": 0.0946364502014679
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.027623552248800046,
+       "median_azmax_absdI": 0.048626301915688924,
+       "max_azmax_absdI": 1.2831046118668683,
+       "class_change_prob_upper": 0.1042960241613624
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.03872260901025003,
+       "median_azmax_absdI": 0.061967400742806156,
+       "max_azmax_absdI": 1.1964565458154444,
+       "class_change_prob_upper": 0.11784377451616919
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.03667569307036084,
+       "median_azmax_absdI": 0.058637416024468036,
+       "max_azmax_absdI": 0.999308973122441,
+       "class_change_prob_upper": 0.10736658598654573
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.025406252960271176,
+       "median_azmax_absdI": 0.04054434761017953,
+       "max_azmax_absdI": 0.941321949882164,
+       "class_change_prob_upper": 0.07721523861773875
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.015958646639772214,
+       "median_azmax_absdI": 0.02527688347159085,
+       "max_azmax_absdI": 0.8294106183601416,
+       "class_change_prob_upper": 0.05328519695869807
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.013654980578654684,
+       "median_azmax_absdI": 0.02652138506224564,
+       "max_azmax_absdI": 1.0743957940849793,
+       "class_change_prob_upper": 0.07473479407151641
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.020315067787432674,
+       "median_azmax_absdI": 0.036123945972263385,
+       "max_azmax_absdI": 1.0724966530313318,
+       "class_change_prob_upper": 0.08243882091418503
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.02962909995370923,
+       "median_azmax_absdI": 0.047784356536454076,
+       "max_azmax_absdI": 1.0254829220584398,
+       "class_change_prob_upper": 0.09558231306817216
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.030390507553614783,
+       "median_azmax_absdI": 0.048367083464517145,
+       "max_azmax_absdI": 0.892076136930181,
+       "class_change_prob_upper": 0.09171872995769434
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.022873093977468076,
+       "median_azmax_absdI": 0.03641145590607074,
+       "max_azmax_absdI": 0.7789437832070749,
+       "class_change_prob_upper": 0.07077679915674805
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.015180440656835282,
+       "median_azmax_absdI": 0.02402704749742611,
+       "max_azmax_absdI": 0.7627928586278947,
+       "class_change_prob_upper": 0.05107735435183682
+      }
+     ]
+    },
+    "tau0.5_C3": {
+     "method": "C3",
+     "n_events": 41,
+     "error_median_km": 0.857,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.014106860772696319,
+       "median_azmax_absdI": 0.024337473992020416,
+       "max_azmax_absdI": 1.4495430122802988,
+       "class_change_prob_upper": 0.08986333799186992
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.01982921220911851,
+       "median_azmax_absdI": 0.03248634755663969,
+       "max_azmax_absdI": 1.4251123843338727,
+       "class_change_prob_upper": 0.0945304304147466
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.02370632993031327,
+       "median_azmax_absdI": 0.03733386606872781,
+       "max_azmax_absdI": 1.3051890664510046,
+       "class_change_prob_upper": 0.10431886831086201
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.01999850352573896,
+       "median_azmax_absdI": 0.031701494274456885,
+       "max_azmax_absdI": 1.0616748866898236,
+       "class_change_prob_upper": 0.09200017635530201
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.012352409746104513,
+       "median_azmax_absdI": 0.01957141295881234,
+       "max_azmax_absdI": 1.049741465301278,
+       "class_change_prob_upper": 0.064474373580842
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007316083688838469,
+       "median_azmax_absdI": 0.011541159120235954,
+       "max_azmax_absdI": 0.8659180532604467,
+       "class_change_prob_upper": 0.04456441138155375
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.011034304802387266,
+       "median_azmax_absdI": 0.019040835227628658,
+       "max_azmax_absdI": 1.2966778792558806,
+       "class_change_prob_upper": 0.07743288384288352
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.015875752131835556,
+       "median_azmax_absdI": 0.02606284073966623,
+       "max_azmax_absdI": 1.2831046118668683,
+       "class_change_prob_upper": 0.08192351191721083
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.019861916135664372,
+       "median_azmax_absdI": 0.031216113892027983,
+       "max_azmax_absdI": 1.1964565458154444,
+       "class_change_prob_upper": 0.09230191541772305
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.01808663303034205,
+       "median_azmax_absdI": 0.028615977349833073,
+       "max_azmax_absdI": 0.999308973122441,
+       "class_change_prob_upper": 0.084532696556425
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.011683061222559724,
+       "median_azmax_absdI": 0.01849880966258858,
+       "max_azmax_absdI": 0.941321949882164,
+       "class_change_prob_upper": 0.06179523006875537
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007136285765604729,
+       "median_azmax_absdI": 0.011255658168979804,
+       "max_azmax_absdI": 0.8294106183601416,
+       "class_change_prob_upper": 0.043688013012351326
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.007592987225915772,
+       "median_azmax_absdI": 0.013172926242395584,
+       "max_azmax_absdI": 1.0743957940849793,
+       "class_change_prob_upper": 0.06251962162338331
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.011147963465736429,
+       "median_azmax_absdI": 0.01838070052490358,
+       "max_azmax_absdI": 1.0724966530313318,
+       "class_change_prob_upper": 0.06636755611610984
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.014848527741895616,
+       "median_azmax_absdI": 0.0234488821427275,
+       "max_azmax_absdI": 1.0254829220584398,
+       "class_change_prob_upper": 0.07620217684927186
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.01494160192545564,
+       "median_azmax_absdI": 0.023673930333872852,
+       "max_azmax_absdI": 0.892076136930181,
+       "class_change_prob_upper": 0.07285898136975916
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.010494298330340062,
+       "median_azmax_absdI": 0.016597384876241197,
+       "max_azmax_absdI": 0.7789437832070749,
+       "class_change_prob_upper": 0.05691071952848612
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.00678609914084657,
+       "median_azmax_absdI": 0.010699890108787394,
+       "max_azmax_absdI": 0.7627928586278947,
+       "class_change_prob_upper": 0.04194975469696534
+      }
+     ]
+    },
+    "tau0.5_C4": {
+     "method": "C4",
+     "n_events": 41,
+     "error_median_km": 0.8035,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.01331291942247191,
+       "median_azmax_absdI": 0.023658641946704115,
+       "max_azmax_absdI": 1.3175650123326466,
+       "class_change_prob_upper": 0.10600215785669365
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.01954806162361889,
+       "median_azmax_absdI": 0.03200713283270124,
+       "max_azmax_absdI": 1.2971399946581026,
+       "class_change_prob_upper": 0.10958090565420942
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.02168637683622967,
+       "median_azmax_absdI": 0.03428258789489207,
+       "max_azmax_absdI": 1.1860774570704389,
+       "class_change_prob_upper": 0.11182057232872503
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.018507542023689358,
+       "median_azmax_absdI": 0.029420861584990212,
+       "max_azmax_absdI": 0.9564923661972534,
+       "class_change_prob_upper": 0.09731321719595168
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.011434454284878841,
+       "median_azmax_absdI": 0.01810314962354604,
+       "max_azmax_absdI": 1.2602675127281235,
+       "class_change_prob_upper": 0.07117949482541851
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0068381346884236055,
+       "median_azmax_absdI": 0.0107843769142199,
+       "max_azmax_absdI": 0.7016969381348243,
+       "class_change_prob_upper": 0.047562107518596144
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.010766579607493642,
+       "median_azmax_absdI": 0.018772758782966355,
+       "max_azmax_absdI": 1.1706039337781082,
+       "class_change_prob_upper": 0.09334280093986679
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.015453140865362792,
+       "median_azmax_absdI": 0.02504555022984757,
+       "max_azmax_absdI": 1.160604730099682,
+       "class_change_prob_upper": 0.09655115955497381
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.018048607533269104,
+       "median_azmax_absdI": 0.02876160801382748,
+       "max_azmax_absdI": 1.0819220793394009,
+       "class_change_prob_upper": 0.10005757780827923
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.016604148348562345,
+       "median_azmax_absdI": 0.026344994350941633,
+       "max_azmax_absdI": 0.8974592990386489,
+       "class_change_prob_upper": 0.08949120820642192
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.010819528911380188,
+       "median_azmax_absdI": 0.01711933585784091,
+       "max_azmax_absdI": 1.1110135859331352,
+       "class_change_prob_upper": 0.06807897822079022
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.006670453810264155,
+       "median_azmax_absdI": 0.010518300539178975,
+       "max_azmax_absdI": 0.6751918167167601,
+       "class_change_prob_upper": 0.04650817738416026
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.00738773690557414,
+       "median_azmax_absdI": 0.012577499647927275,
+       "max_azmax_absdI": 0.9591106705941351,
+       "class_change_prob_upper": 0.07580759652490805
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.010590288303900956,
+       "median_azmax_absdI": 0.017241929878266272,
+       "max_azmax_absdI": 0.960058021775781,
+       "class_change_prob_upper": 0.07882987950732312
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.01401496421043039,
+       "median_azmax_absdI": 0.022418843757259315,
+       "max_azmax_absdI": 0.9194776557013554,
+       "class_change_prob_upper": 0.08330710593453589
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.013672479586861163,
+       "median_azmax_absdI": 0.021630268843280006,
+       "max_azmax_absdI": 0.7965702697698346,
+       "class_change_prob_upper": 0.07670103419471587
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.009726069791352793,
+       "median_azmax_absdI": 0.01537289137552778,
+       "max_azmax_absdI": 0.8998997593993325,
+       "class_change_prob_upper": 0.0624247684575988
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.006343809143888279,
+       "median_azmax_absdI": 0.010000234785695677,
+       "max_azmax_absdI": 0.6259757174491273,
+       "class_change_prob_upper": 0.044445462780364806
+      }
+     ]
+    },
+    "tau2_BEST": {
+     "method": "M6r",
+     "n_events": 41,
+     "error_median_km": 0.844,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.015313423600484023,
+       "median_azmax_absdI": 0.028692079825895254,
+       "max_azmax_absdI": 1.46183657269266,
+       "class_change_prob_upper": 0.1913392025929518
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.022893813234569016,
+       "median_azmax_absdI": 0.039611420261183986,
+       "max_azmax_absdI": 1.442989193634406,
+       "class_change_prob_upper": 0.1996889658466265
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.027353022664629308,
+       "median_azmax_absdI": 0.04331425952578941,
+       "max_azmax_absdI": 1.3380321278949376,
+       "class_change_prob_upper": 0.2037520773840011
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.020140249441517974,
+       "median_azmax_absdI": 0.03207742026209812,
+       "max_azmax_absdI": 1.1069068619869142,
+       "class_change_prob_upper": 0.1761084892119931
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.01212717989500449,
+       "median_azmax_absdI": 0.01921091154334029,
+       "max_azmax_absdI": 1.2746472478882171,
+       "class_change_prob_upper": 0.15183068995033897
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007199673819246728,
+       "median_azmax_absdI": 0.01135679657125409,
+       "max_azmax_absdI": 0.9661313977099716,
+       "class_change_prob_upper": 0.12525740494668308
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.012735458842913461,
+       "median_azmax_absdI": 0.023906611654485797,
+       "max_azmax_absdI": 1.3183853341835545,
+       "class_change_prob_upper": 0.18695306809189458
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.01919037350577689,
+       "median_azmax_absdI": 0.03181999598037119,
+       "max_azmax_absdI": 1.3084360583167287,
+       "class_change_prob_upper": 0.1939492817011327
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.022699897760341512,
+       "median_azmax_absdI": 0.035775448126082486,
+       "max_azmax_absdI": 1.2322350242760405,
+       "class_change_prob_upper": 0.1974282125020855
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.01803103819898539,
+       "median_azmax_absdI": 0.028657628607089765,
+       "max_azmax_absdI": 1.0442426253483503,
+       "class_change_prob_upper": 0.1701416896008263
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.011471251566483058,
+       "median_azmax_absdI": 0.018160229178692384,
+       "max_azmax_absdI": 1.1220331211172303,
+       "class_change_prob_upper": 0.14849089172763472
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.007022831873700992,
+       "median_azmax_absdI": 0.011076036759467929,
+       "max_azmax_absdI": 0.9225836957495802,
+       "class_change_prob_upper": 0.123361764213953
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.009334239728938246,
+       "median_azmax_absdI": 0.016179832937481133,
+       "max_azmax_absdI": 1.1051054322281249,
+       "class_change_prob_upper": 0.181948422291323
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.013349126808440796,
+       "median_azmax_absdI": 0.021934648314749162,
+       "max_azmax_absdI": 1.1050266944741665,
+       "class_change_prob_upper": 0.18623769257330156
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.01676360919954091,
+       "median_azmax_absdI": 0.026381988447342103,
+       "max_azmax_absdI": 1.0638842973205875,
+       "class_change_prob_upper": 0.18845836644808797
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.014799814432275911,
+       "median_azmax_absdI": 0.02344651560132497,
+       "max_azmax_absdI": 0.9359132194814797,
+       "class_change_prob_upper": 0.15960161318179758
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.01030597016660498,
+       "median_azmax_absdI": 0.01629703166085491,
+       "max_azmax_absdI": 0.9071988891097053,
+       "class_change_prob_upper": 0.1417995733874979
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.006678387616609952,
+       "median_azmax_absdI": 0.01052946963758597,
+       "max_azmax_absdI": 0.8440621885144131,
+       "class_change_prob_upper": 0.11934753948093407
+      }
+     ]
+    },
+    "tau2_C3": {
+     "method": "C3",
+     "n_events": 41,
+     "error_median_km": 0.4562,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.008794735845747643,
+       "median_azmax_absdI": 0.014486104686988806,
+       "max_azmax_absdI": 1.46183657269266,
+       "class_change_prob_upper": 0.18916493216799213
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.01203501160214631,
+       "median_azmax_absdI": 0.019226869529755733,
+       "max_azmax_absdI": 1.442989193634406,
+       "class_change_prob_upper": 0.1962308640583212
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.013192489769207989,
+       "median_azmax_absdI": 0.020803473113322153,
+       "max_azmax_absdI": 1.3380321278949376,
+       "class_change_prob_upper": 0.19965610534723632
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.009995226786578873,
+       "median_azmax_absdI": 0.015797874729451544,
+       "max_azmax_absdI": 1.1069068619869142,
+       "class_change_prob_upper": 0.1727872913695411
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.006383163737253651,
+       "median_azmax_absdI": 0.010071398289338377,
+       "max_azmax_absdI": 1.2746472478882171,
+       "class_change_prob_upper": 0.1496915587006912
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.003894603343031214,
+       "median_azmax_absdI": 0.006133295932939955,
+       "max_azmax_absdI": 0.9661313977099716,
+       "class_change_prob_upper": 0.12395850035407106
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.006696766922843637,
+       "median_azmax_absdI": 0.011051938905025805,
+       "max_azmax_absdI": 1.3183853341835545,
+       "class_change_prob_upper": 0.18527963008719886
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.009384807257742813,
+       "median_azmax_absdI": 0.015030974271501832,
+       "max_azmax_absdI": 1.3084360583167287,
+       "class_change_prob_upper": 0.19121619348181115
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.0109517451166578,
+       "median_azmax_absdI": 0.017231149636009628,
+       "max_azmax_absdI": 1.2322350242760405,
+       "class_change_prob_upper": 0.1939777921823956
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.00898632598142786,
+       "median_azmax_absdI": 0.014189056461133083,
+       "max_azmax_absdI": 1.0442426253483503,
+       "class_change_prob_upper": 0.16715066748899945
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.006045390420120077,
+       "median_azmax_absdI": 0.009535330178156238,
+       "max_azmax_absdI": 1.1220331211172303,
+       "class_change_prob_upper": 0.14646521881290053
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0037988844752866874,
+       "median_azmax_absdI": 0.005982028219774671,
+       "max_azmax_absdI": 0.9225836957495802,
+       "class_change_prob_upper": 0.12209457487674803
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.004475494828798127,
+       "median_azmax_absdI": 0.00740127478723096,
+       "max_azmax_absdI": 1.1051054322281249,
+       "class_change_prob_upper": 0.1808098584734128
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.006435801557367796,
+       "median_azmax_absdI": 0.01033677934738842,
+       "max_azmax_absdI": 1.1050266944741665,
+       "class_change_prob_upper": 0.18432780518058767
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.008090669881946157,
+       "median_azmax_absdI": 0.01272272228762843,
+       "max_azmax_absdI": 1.0638842973205875,
+       "class_change_prob_upper": 0.1858593463804522
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.007423825980502276,
+       "median_azmax_absdI": 0.011703834268597585,
+       "max_azmax_absdI": 0.9359132194814797,
+       "class_change_prob_upper": 0.15712461149929002
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.005443191864988913,
+       "median_azmax_absdI": 0.008580495353506365,
+       "max_azmax_absdI": 0.9071988891097053,
+       "class_change_prob_upper": 0.13997615216852027
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.0036124565254318447,
+       "median_azmax_absdI": 0.005687492562268961,
+       "max_azmax_absdI": 0.8440621885144131,
+       "class_change_prob_upper": 0.11814215557577472
+      }
+     ]
+    },
+    "tau2_C4": {
+     "method": "C4",
+     "n_events": 41,
+     "error_median_km": 0.597,
+     "rows": [
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.010677525330018523,
+       "median_azmax_absdI": 0.018057134563570817,
+       "max_azmax_absdI": 1.3201284988698685,
+       "class_change_prob_upper": 0.1913988667438666
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.01513249180969731,
+       "median_azmax_absdI": 0.024512368891510313,
+       "max_azmax_absdI": 1.3065272062631061,
+       "class_change_prob_upper": 0.19806498519267665
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.016563093709093188,
+       "median_azmax_absdI": 0.02616847181247591,
+       "max_azmax_absdI": 1.2140590912507827,
+       "class_change_prob_upper": 0.19839340009023185
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.014028885409323831,
+       "median_azmax_absdI": 0.022238745447888758,
+       "max_azmax_absdI": 1.0004048806841475,
+       "class_change_prob_upper": 0.16387661249267488
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.008582510848650521,
+       "median_azmax_absdI": 0.013564435280420471,
+       "max_azmax_absdI": 1.2746472478882171,
+       "class_change_prob_upper": 0.14592530899042133
+      },
+      {
+       "model": "EHD (main)",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.005093111540016275,
+       "median_azmax_absdI": 0.008025477041843762,
+       "max_azmax_absdI": 0.7912322462313948,
+       "class_change_prob_upper": 0.11437419153976305
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.008349453563373799,
+       "median_azmax_absdI": 0.01414938601755591,
+       "max_azmax_absdI": 1.1848387661343487,
+       "class_change_prob_upper": 0.1870661621135703
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.012046411198461303,
+       "median_azmax_absdI": 0.0193827815560791,
+       "max_azmax_absdI": 1.1793009818409719,
+       "class_change_prob_upper": 0.19267435055403734
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.013703067781249044,
+       "median_azmax_absdI": 0.021753522239436652,
+       "max_azmax_absdI": 1.1136896188638998,
+       "class_change_prob_upper": 0.1915198720654934
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.01258618467559603,
+       "median_azmax_absdI": 0.019923144058136843,
+       "max_azmax_absdI": 0.9411528548796555,
+       "class_change_prob_upper": 0.15753684211615948
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.008118157312388121,
+       "median_azmax_absdI": 0.01282474302698562,
+       "max_azmax_absdI": 1.1220331211172303,
+       "class_change_prob_upper": 0.14226540521335335
+      },
+      {
+       "model": "fault-distance form, Mw 6",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.004968000566637398,
+       "median_azmax_absdI": 0.0078274300363897,
+       "max_azmax_absdI": 0.7598083664304889,
+       "class_change_prob_upper": 0.11227054614507209
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 3.0,
+       "median_azmean_absdI": 0.0057435470603015275,
+       "median_azmax_absdI": 0.009630260780146345,
+       "max_azmax_absdI": 0.9846889493945284,
+       "class_change_prob_upper": 0.18166173380474673
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 5.0,
+       "median_azmean_absdI": 0.008205263075212655,
+       "median_azmax_absdI": 0.013221117161226625,
+       "max_azmax_absdI": 0.987927554239358,
+       "class_change_prob_upper": 0.18377911305462763
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 10.0,
+       "median_azmean_absdI": 0.010632756909849737,
+       "median_azmax_absdI": 0.016933126061248013,
+       "max_azmax_absdI": 0.9548235223886626,
+       "class_change_prob_upper": 0.18125266900940126
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 20.0,
+       "median_azmean_absdI": 0.010363996183768556,
+       "median_azmax_absdI": 0.016369445256534103,
+       "max_azmax_absdI": 0.8392260174350465,
+       "class_change_prob_upper": 0.1463133968119955
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 40.0,
+       "median_azmean_absdI": 0.0072932520177092786,
+       "median_azmax_absdI": 0.011512393708061067,
+       "max_azmax_absdI": 0.9071988891097053,
+       "class_change_prob_upper": 0.13499862188950484
+      },
+      {
+       "model": "fault-distance form, Mw 7",
+       "site_epi_km": 80.0,
+       "median_azmean_absdI": 0.004724316879124714,
+       "median_azmax_absdI": 0.007441827319179506,
+       "max_azmax_absdI": 0.7019182021388612,
+       "class_change_prob_upper": 0.10790610700930349
+      }
+     ]
+    }
+   }
+  },
+  "site_epi_km": [
+   3.0,
+   5.0,
+   10.0,
+   20.0,
+   40.0,
+   80.0
+  ],
+  "slope": 1.82,
+  "class_width": 0.5,
+  "gmpe_sigma_log10": 0.23,
+  "conversion": "I = 2.54 + 1.82 log10 PGV",
+  "source": "formulas copied unchanged from 21_10_gmpe_location_error.py v2",
+  "limits": [
+   "point source; finite-fault distances not included",
+   "depth and magnitude errors not included",
+   "errors of 1.5 <= Mj < 2.0 events",
+   "one PGV-to-intensity conversion; no site terms",
+   "class-change probability is an upper bound with the narrowest class width 0.5"
+  ]
+ },
+ "part3_figure": {
+  "pdf": "PDF/26_11_FigS_memory_truncation.pdf",
+  "source": "26_10 summaries, variant B solid, variant A dashed"
+ }
+}

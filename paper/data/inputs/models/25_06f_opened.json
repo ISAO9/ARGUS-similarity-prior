@@ -1,0 +1,26 @@
+[
+ {
+  "utc": "2026-11-18T13:06:04Z",
+  "status": "opened",
+  "version": "v1",
+  "script_sha256": "a2784dd7165a345dd05f05cd4ce536291eb3c6498b047b16da2c0f0aa7f5b142",
+  "cache_sha256": "c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4",
+  "suffix": ""
+ },
+ {
+  "utc": "2026-11-18T13:06:04Z",
+  "status": "inputs: train_json 4f27ad1e0596d244b62b064918cde92cde6f93a13829a96bb6ac04079e13f87e model 0d0f75a48a50f866d3963c6560497abe1c007ecac628391284ca6fe248b712e1 rows ca23242288ad6fe4fdf5853960a6fd41b78328a59ec22bc5d484bf5334e632e9 ref_csv 43942e3f112cbae2f5f8588f3b46fb8b5f6be1ebd8b5442ec6242d7c14a3d178",
+  "version": "v1",
+  "script_sha256": "a2784dd7165a345dd05f05cd4ce536291eb3c6498b047b16da2c0f0aa7f5b142",
+  "cache_sha256": "c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4",
+  "suffix": ""
+ },
+ {
+  "utc": "2026-11-18T13:06:57Z",
+  "status": "completed: NOT-CONFIRMED",
+  "version": "v1",
+  "script_sha256": "a2784dd7165a345dd05f05cd4ce536291eb3c6498b047b16da2c0f0aa7f5b142",
+  "cache_sha256": "c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4",
+  "suffix": ""
+ }
+]

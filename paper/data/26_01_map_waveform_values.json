@@ -1,0 +1,133 @@
+{
+ "fig1": {
+  "wt2026": {
+   "label": "West Tottori 2026",
+   "n_stations": 50,
+   "n_cached_events": 494,
+   "n_test": 91,
+   "mainshock": [
+    35.314998626708984,
+    133.21400451660156,
+    6.4
+   ]
+  },
+  "ct2016": {
+   "label": "Central Tottori 2016",
+   "n_stations": 50,
+   "n_cached_events": 1894,
+   "n_test": 307,
+   "mainshock": [
+    35.38050079345703,
+    133.856201171875,
+    6.6
+   ]
+  },
+  "osaka": {
+   "label": "Northern Osaka 2018",
+   "n_stations": 50,
+   "n_cached_events": 221,
+   "n_test": 55,
+   "mainshock": [
+    34.84429931640625,
+    135.6217041015625,
+    6.1
+   ]
+  },
+  "nagano": {
+   "label": "Northern Nagano 2014",
+   "n_stations": 0,
+   "n_cached_events": 502,
+   "n_test": null,
+   "mainshock": [
+    36.6928,
+    137.891,
+    6.7
+   ]
+  },
+  "shimane": {
+   "label": "Western Shimane 2018",
+   "n_stations": 50,
+   "n_cached_events": 283,
+   "n_test": 41,
+   "mainshock": [
+    35.18470001220703,
+    132.58670043945312,
+    6.1
+   ]
+  }
+ },
+ "fig4": {
+  "event": "2016-10-30 05:17:33.100000",
+  "mj": 1.5,
+  "median_smax_t2": 0.7629,
+  "smax_recomputed": 0.762939525786953,
+  "smax_csv": 0.7629,
+  "sep_km": 0.26953863199235134,
+  "sep_csv": 0.27,
+  "past_event": "2016-10-26 12:09:18.600000",
+  "n_target_stations": 6,
+  "n_past": 1699,
+  "stations": [
+   {
+    "station": [
+     35.2313,
+     133.3909,
+     0.41
+    ],
+    "tP_s": 0.0,
+    "station_similarity": 0.6380142067918638,
+    "lag_s": 0.04
+   },
+   {
+    "station": [
+     35.5729,
+     134.3426,
+     0.015
+    ],
+    "tP_s": 0.4400005340576172,
+    "station_similarity": 0.41390545059685924,
+    "lag_s": -0.04
+   },
+   {
+    "station": [
+     35.2963,
+     133.2604,
+     0.17
+    ],
+    "tP_s": 1.3400001525878906,
+    "station_similarity": 0.8276705558556388,
+    "lag_s": 0.09
+   },
+   {
+    "station": [
+     35.0999,
+     134.319,
+     0.28
+    ],
+    "tP_s": 1.3999996185302734,
+    "station_similarity": 0.8864378589069053,
+    "lag_s": 0.02
+   },
+   {
+    "station": [
+     35.5579,
+     133.3004,
+     0.009
+    ],
+    "tP_s": 1.3999996185302734,
+    "station_similarity": 0.9461538602905241,
+    "lag_s": 0.03
+   },
+   {
+    "station": [
+     34.9363,
+     133.6205,
+     0.218
+    ],
+    "tP_s": 1.619999885559082,
+    "station_similarity": 0.8654552222799274,
+    "lag_s": 0.06
+   }
+  ]
+ }
+}

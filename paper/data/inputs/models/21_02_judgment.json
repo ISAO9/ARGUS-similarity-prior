@@ -1,0 +1,1207 @@
+{
+ "script": "21_02_tottori_similarity_confirmation.py",
+ "version": "v2",
+ "script_sha256": "a89b123281c835ad3f4c5713c99b920965649e6003159a81d08261a143fc3d18",
+ "mode": "test",
+ "suffix": "",
+ "cache": "data/tottori_processed/tottori_parsed_realpick_m15.pt",
+ "cache_sha256": "420fe1e304f43aae9baa7cbab9474623e014d01dddb4dbecab6644431b6f0ef7",
+ "canon": "data/tottori_processed/tottori_parsed_realpick.pt",
+ "canon_sha256": "41da6e3078e75d1713a6a19c52ff724c22be2bd83a2ece279da12ede2c0e79be",
+ "n_fresh": 296,
+ "n_canon_found": 198,
+ "n_events": 494,
+ "n_pool": 361,
+ "n_test": 91,
+ "n_no_measured_p": 0,
+ "n_evaluated": 91,
+ "mainshock": {
+  "origin_time": "2026-01-06 01:18:48.400000",
+  "mj": 6.4
+ },
+ "pool_cut_utc_ns": 1767921528400000000,
+ "fixed": {
+  "taus": [
+   0.5,
+   1.0,
+   2.0,
+   3.0
+  ],
+  "primary": "2",
+  "secondary": [
+   [
+    "H2",
+    "C4",
+    "2"
+   ],
+   [
+    "H3",
+    "C3",
+    "0.5"
+   ]
+  ],
+  "alpha_secondary": 0.005,
+  "min_corr": 3,
+  "min_mag": 1.5,
+  "fresh_max_mag": 2.0,
+  "match_s": 1.0,
+  "pool_h": 72.0,
+  "buffer_h": 1.0,
+  "band_hz": [
+   2.0,
+   8.0
+  ],
+  "band_sens_hz": [
+   4.0,
+   16.0
+  ],
+  "pre_s": 0.2,
+  "min_win_s": 0.3,
+  "max_win_s": 3.0,
+  "max_lag_s": 0.1,
+  "topk": 10,
+  "topk_sens": [
+   5,
+   20
+  ],
+  "min_pos": 5,
+  "buffer_sens_h": 0.1,
+  "s_weight": 0.5,
+  "shrink": 5.0,
+  "min_prior_ev": 5,
+  "prior_eps": 0.05,
+  "floor_km": 0.5,
+  "min_test": 30,
+  "alpha": 0.01,
+  "min_nonzero": 10,
+  "bar": 0.7,
+  "nboot": 2000,
+  "seed": 12,
+  "eps_t": 0.0001
+ },
+ "velocity": {
+  "v0": 5.499999999999999,
+  "k": 0.059999999999999984,
+  "vpvs": 1.7099999999999995
+ },
+ "laplace_b_s": 0.06568129879036638,
+ "kde_h_km": 1.0,
+ "grid": {
+  "H_km": 36.88865150367533,
+  "step_km": 1.0,
+  "finest_km": 0.04,
+  "zmax_km": 30.0,
+  "zfix_km": 11.432409986564657
+ },
+ "gates": {
+  "split": "PASS",
+  "lib": "PASS (checked for every evaluated event)",
+  "causal": {
+   "max_diff": 0.0,
+   "positive_control": 0.002337603424959811,
+   "n_checks": 20,
+   "events": [
+    "2026-01-09 04:10:27.700000",
+    "2026-01-09 11:41:42.800000",
+    "2026-01-09 12:32:29.100000",
+    "2026-01-09 12:42:13.700000",
+    "2026-01-09 12:42:20.900000"
+   ]
+  },
+  "physics_inf_median_km": 0.1359746457805218
+ },
+ "summary": {
+  "M0r": {
+   "0.5": {
+    "median_km": 1.989225415846407,
+    "ci_lo": 1.639941325818487,
+    "ci_hi": 2.4396527609825718,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.989225415846407,
+    "ci_lo": 1.639941325818487,
+    "ci_hi": 2.3150532580600984,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 1.989225415846407,
+    "ci_lo": 1.639941325818487,
+    "ci_hi": 2.3150532580600984,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 1.989225415846407,
+    "ci_lo": 1.639941325818487,
+    "ci_hi": 2.318168245633143,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 1.989225415846407,
+    "ci_lo": 1.639941325818487,
+    "ci_hi": 2.3150532580600984,
+    "available": 1.0
+   }
+  },
+  "Mp10": {
+   "0.5": {
+    "median_km": 2.211533308791764,
+    "ci_lo": 1.889772340046807,
+    "ci_hi": 2.6400692330440396,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 2.211533308791764,
+    "ci_lo": 1.889772340046807,
+    "ci_hi": 2.6400692330440396,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 2.211533308791764,
+    "ci_lo": 1.889772340046807,
+    "ci_hi": 2.6400692330440396,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 2.211533308791764,
+    "ci_lo": 1.855235260410311,
+    "ci_hi": 2.6400692330440396,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 2.211533308791764,
+    "ci_lo": 1.889772340046807,
+    "ci_hi": 2.641996807746258,
+    "available": 1.0
+   }
+  },
+  "M1": {
+   "0.5": {
+    "median_km": 4.388394495245797,
+    "ci_lo": 3.8385833644228025,
+    "ci_hi": 5.111120509623427,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 4.388394495245797,
+    "ci_lo": 3.824669602701717,
+    "ci_hi": 5.111120509623427,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 4.388394495245797,
+    "ci_lo": 3.824669602701717,
+    "ci_hi": 5.111120509623427,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 4.388394495245797,
+    "ci_lo": 3.8385833644228025,
+    "ci_hi": 5.111120509623427,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 4.388394495245797,
+    "ci_lo": 3.8382355203797753,
+    "ci_hi": 5.111120509623427,
+    "available": 1.0
+   }
+  },
+  "M2": {
+   "0.5": {
+    "median_km": 4.4335309308464685,
+    "ci_lo": 3.871149156178989,
+    "ci_hi": 5.194372534666167,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 4.388394495245797,
+    "ci_lo": 3.8385833644228025,
+    "ci_hi": 4.979958953244717,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 7.806931384616274,
+    "ci_lo": 7.35951520565092,
+    "ci_hi": 7.966073906087727,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 6.891974024196191,
+    "ci_lo": 6.300879491061671,
+    "ci_hi": 8.700487388252677,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 9.212467116749277,
+    "ci_lo": 8.670400045107955,
+    "ci_hi": 10.249779983679668,
+    "available": 1.0
+   }
+  },
+  "M3r": {
+   "0.5": {
+    "median_km": 1.9960482799755532,
+    "ci_lo": 1.765375437305551,
+    "ci_hi": 2.2363436022731453,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.9960482799755532,
+    "ci_lo": 1.764320349054023,
+    "ci_hi": 2.323146045397164,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 1.9960482799755532,
+    "ci_lo": 1.765375437305551,
+    "ci_hi": 2.2363436022731453,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 1.9960482799755532,
+    "ci_lo": 1.765375437305551,
+    "ci_hi": 2.2363436022731453,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 1.9960482799755532,
+    "ci_lo": 1.765375437305551,
+    "ci_hi": 2.323146045397164,
+    "available": 1.0
+   }
+  },
+  "M5": {
+   "0.5": {
+    "median_km": 0.6101515367800281,
+    "ci_lo": 0.4513887946602769,
+    "ci_hi": 0.7689142788997794,
+    "available": 0.02197802197802198
+   },
+   "1": {
+    "median_km": 1.7210654102944205,
+    "ci_lo": 0.3685785869988524,
+    "ci_hi": 39.4071174625909,
+    "available": 0.08791208791208792
+   },
+   "2": {
+    "median_km": 0.5621715418610114,
+    "ci_lo": 0.43601178112650274,
+    "ci_hi": 0.7902037796069161,
+    "available": 0.967032967032967
+   },
+   "3": {
+    "median_km": 0.22763845347422845,
+    "ci_lo": 0.1699928552204269,
+    "ci_hi": 0.3102151923442467,
+    "available": 0.989010989010989
+   },
+   "inf": {
+    "median_km": 0.1359746457805218,
+    "ci_lo": 0.10043403576107272,
+    "ci_hi": 0.14994366031712983,
+    "available": 1.0
+   }
+  },
+  "M5f": {
+   "0.5": {
+    "median_km": 4.306869857280101,
+    "ci_lo": 3.6727271895138074,
+    "ci_hi": 4.957820627548403,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 4.156880515056324,
+    "ci_lo": 3.617074985156924,
+    "ci_hi": 4.766084883410547,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5805962919179772,
+    "ci_lo": 0.4808188070699303,
+    "ci_hi": 0.8128287079745377,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.22897538541345688,
+    "ci_lo": 0.17026410480622994,
+    "ci_hi": 0.31692598019585855,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 0.1359746457805218,
+    "ci_lo": 0.10043403576107272,
+    "ci_hi": 0.14999915776759337,
+    "available": 1.0
+   }
+  },
+  "M6p": {
+   "0.5": {
+    "median_km": 1.902577167536975,
+    "ci_lo": 1.4988676622822368,
+    "ci_hi": 2.2822576598135313,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.7640632681650157,
+    "ci_lo": 1.3306546462821511,
+    "ci_hi": 2.065126450016279,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.6451940692200485,
+    "ci_lo": 0.5092728021124915,
+    "ci_hi": 0.947366342420178,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.24497563267763514,
+    "ci_lo": 0.17026410480622994,
+    "ci_hi": 0.31410087668984554,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 0.13671762769968662,
+    "ci_lo": 0.09776131732440113,
+    "ci_hi": 0.14994366031712983,
+    "available": 1.0
+   }
+  },
+  "M6r": {
+   "0.5": {
+    "median_km": 1.8963481492467855,
+    "ci_lo": 1.4798801515492883,
+    "ci_hi": 2.286793612202309,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.6565752400912548,
+    "ci_lo": 1.3007177229375173,
+    "ci_hi": 2.065126450016279,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5530392671999282,
+    "ci_lo": 0.49538347265142146,
+    "ci_hi": 0.8295822855675806,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.24497563267763514,
+    "ci_lo": 0.17026410480622994,
+    "ci_hi": 0.31410087668984554,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 0.13671762769968662,
+    "ci_lo": 0.09670610900198681,
+    "ci_hi": 0.14994366031712983,
+    "available": 1.0
+   }
+  },
+  "C1": {
+   "0.5": {
+    "median_km": 1.2636444353767626,
+    "ci_lo": 0.9135417612332579,
+    "ci_hi": 1.6865217264634647,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.0030322455729315,
+    "ci_lo": 0.7163936266876945,
+    "ci_hi": 1.4316397869491309,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5544708684787039,
+    "ci_lo": 0.36213470918386564,
+    "ci_hi": 0.7164213934624571,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.5198923760748387,
+    "ci_lo": 0.3510655027360291,
+    "ci_hi": 0.6347411463447583,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C2": {
+   "0.5": {
+    "median_km": 1.4894542359040275,
+    "ci_lo": 1.1264155781097782,
+    "ci_hi": 1.7330248834850865,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.3905802296935992,
+    "ci_lo": 0.994784243947671,
+    "ci_hi": 1.6842108540673606,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.7782944377637234,
+    "ci_lo": 0.6675704694106198,
+    "ci_hi": 1.218110085905575,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.7158802150617525,
+    "ci_lo": 0.5039956794626572,
+    "ci_hi": 1.140411857305494,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3": {
+   "0.5": {
+    "median_km": 1.435541808300115,
+    "ci_lo": 0.8255569102372928,
+    "ci_hi": 1.725320832216932,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.2166706744313613,
+    "ci_lo": 0.7543439375200637,
+    "ci_hi": 1.6209202216339704,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5171919904026392,
+    "ci_lo": 0.4753799438913485,
+    "ci_hi": 0.7711410699394159,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.2267707549322149,
+    "ci_lo": 0.17325484243835235,
+    "ci_hi": 0.29751522891098886,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C4": {
+   "0.5": {
+    "median_km": 1.2617927158315463,
+    "ci_lo": 0.8875474722746773,
+    "ci_hi": 1.725320832216932,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.2166706744313613,
+    "ci_lo": 0.7555609038740703,
+    "ci_hi": 1.640526764775106,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.336845943194292,
+    "ci_lo": 0.27711936423050276,
+    "ci_hi": 0.4997781031740903,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.1888459324357008,
+    "ci_lo": 0.14320936955133629,
+    "ci_hi": 0.22722236464896714,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3_K5": {
+   "0.5": {
+    "median_km": 1.2426866670070593,
+    "ci_lo": 0.8917387446491177,
+    "ci_hi": 1.660020590286743,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.0608220433473798,
+    "ci_lo": 0.7689815776587888,
+    "ci_hi": 1.4714522281328686,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5139381597451098,
+    "ci_lo": 0.4671554653828702,
+    "ci_hi": 0.6505265846661499,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.2267707549322149,
+    "ci_lo": 0.17026410480622994,
+    "ci_hi": 0.2849612916438509,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3_K20": {
+   "0.5": {
+    "median_km": 1.5553013227539747,
+    "ci_lo": 1.2338636384086576,
+    "ci_hi": 1.8728067696968924,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.4609589213854302,
+    "ci_lo": 1.0907504948590967,
+    "ci_hi": 1.953297922483781,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5122752808700614,
+    "ci_lo": 0.4753799438913485,
+    "ci_hi": 0.7189889708396944,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.22630152153500005,
+    "ci_lo": 0.17026410480622994,
+    "ci_hi": 0.2788158720638102,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3_band4-16": {
+   "0.5": {
+    "median_km": 0.9718391893941533,
+    "ci_lo": 0.7562599340802367,
+    "ci_hi": 1.156399338557057,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 0.8995791985379726,
+    "ci_lo": 0.7016562121532575,
+    "ci_hi": 1.1277038936333215,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5007330809024689,
+    "ci_lo": 0.4014448108013755,
+    "ci_hi": 0.6868542076972463,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.22630152153500005,
+    "ci_lo": 0.17026410480622994,
+    "ci_hi": 0.2788158720638102,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3_buffer0.1h": {
+   "0.5": {
+    "median_km": 1.435541808300115,
+    "ci_lo": 0.8255569102372928,
+    "ci_hi": 1.7086807949001785,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.2166706744313613,
+    "ci_lo": 0.7543439375200637,
+    "ci_hi": 1.6209202216339704,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5171919904026392,
+    "ci_lo": 0.4753799438913485,
+    "ci_hi": 0.772688584585217,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.2267707549322149,
+    "ci_lo": 0.17325484243835235,
+    "ci_hi": 0.29751522891098886,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3all": {
+   "0.5": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   },
+   "1": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   },
+   "2": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   },
+   "3": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   },
+   "inf": {
+    "median_km": 0.1359746457805218,
+    "ci_lo": 0.10043403576107272,
+    "ci_hi": 0.14994366031712983,
+    "available": 1.0
+   }
+  },
+  "C4all": {
+   "0.5": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   },
+   "1": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   },
+   "2": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   },
+   "3": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   },
+   "inf": {
+    "median_km": 0.10721527286279853,
+    "ci_lo": 0.09066110489504656,
+    "ci_hi": 0.12962821585087922,
+    "available": 1.0
+   }
+  }
+ },
+ "per_tau": {
+  "0.5": {
+   "C3": {
+    "method": "C3",
+    "tau": "0.5",
+    "best": "M6r",
+    "best_median_km": 1.8963481492467855,
+    "median_km": 1.435541808300115,
+    "paired_vs_best": {
+     "n": 91,
+     "n_nonzero": 87,
+     "p": 0.0014037398819589167,
+     "median_diff_km": -0.29939125593918003,
+     "frac_better": 0.5934065934065934,
+     "frac_tied": 0.04395604395604396
+    },
+    "floor": false,
+    "at_or_below_0p7_best": false,
+    "vs_M6r": {
+     "n": 91,
+     "n_nonzero": 87,
+     "p": 0.0014037398819589167,
+     "median_diff_km": -0.29939125593918003,
+     "frac_better": 0.5934065934065934,
+     "frac_tied": 0.04395604395604396
+    },
+    "vs_M6p": {
+     "n": 91,
+     "n_nonzero": 88,
+     "p": 0.001654008990367482,
+     "median_diff_km": -0.2908029534416125,
+     "frac_better": 0.5934065934065934,
+     "frac_tied": 0.03296703296703297
+    }
+   },
+   "C4": {
+    "method": "C4",
+    "tau": "0.5",
+    "best": "M6r",
+    "best_median_km": 1.8963481492467855,
+    "median_km": 1.2617927158315463,
+    "paired_vs_best": {
+     "n": 91,
+     "n_nonzero": 90,
+     "p": 0.001152063330686932,
+     "median_diff_km": -0.22287457042988978,
+     "frac_better": 0.6043956043956044,
+     "frac_tied": 0.01098901098901099
+    },
+    "floor": false,
+    "at_or_below_0p7_best": true,
+    "vs_M6r": {
+     "n": 91,
+     "n_nonzero": 90,
+     "p": 0.001152063330686932,
+     "median_diff_km": -0.22287457042988978,
+     "frac_better": 0.6043956043956044,
+     "frac_tied": 0.01098901098901099
+    },
+    "vs_M6p": {
+     "n": 91,
+     "n_nonzero": 90,
+     "p": 0.0015613225130362285,
+     "median_diff_km": -0.2908029534416125,
+     "frac_better": 0.5934065934065934,
+     "frac_tied": 0.01098901098901099
+    }
+   },
+   "C4_vs_C3": {
+    "n": 91,
+    "n_nonzero": 9,
+    "p": 0.5236174890046236,
+    "median_diff_km": 0.0,
+    "frac_better": 0.04395604395604396,
+    "frac_tied": 0.9010989010989011
+   },
+   "c3_fallback_frac": 0.0,
+   "similarity_measured_frac": 1.0,
+   "c4_corrected_stations_median": 1.0,
+   "c4_equals_c3_frac": 0.9010989010989011,
+   "stations_median": 1.0
+  },
+  "1": {
+   "C3": {
+    "method": "C3",
+    "tau": "1",
+    "best": "M6r",
+    "best_median_km": 1.6565752400912548,
+    "median_km": 1.2166706744313613,
+    "paired_vs_best": {
+     "n": 91,
+     "n_nonzero": 79,
+     "p": 0.000197707298207079,
+     "median_diff_km": -0.21140326812055443,
+     "frac_better": 0.6263736263736264,
+     "frac_tied": 0.13186813186813187
+    },
+    "floor": false,
+    "at_or_below_0p7_best": false,
+    "vs_M6r": {
+     "n": 91,
+     "n_nonzero": 79,
+     "p": 0.000197707298207079,
+     "median_diff_km": -0.21140326812055443,
+     "frac_better": 0.6263736263736264,
+     "frac_tied": 0.13186813186813187
+    },
+    "vs_M6p": {
+     "n": 91,
+     "n_nonzero": 80,
+     "p": 0.00022737418464833796,
+     "median_diff_km": -0.2345802771708541,
+     "frac_better": 0.6263736263736264,
+     "frac_tied": 0.12087912087912088
+    }
+   },
+   "C4": {
+    "method": "C4",
+    "tau": "1",
+    "best": "M6r",
+    "best_median_km": 1.6565752400912548,
+    "median_km": 1.2166706744313613,
+    "paired_vs_best": {
+     "n": 91,
+     "n_nonzero": 89,
+     "p": 0.0002325248922463082,
+     "median_diff_km": -0.188228288411867,
+     "frac_better": 0.6923076923076923,
+     "frac_tied": 0.02197802197802198
+    },
+    "floor": false,
+    "at_or_below_0p7_best": false,
+    "vs_M6r": {
+     "n": 91,
+     "n_nonzero": 89,
+     "p": 0.0002325248922463082,
+     "median_diff_km": -0.188228288411867,
+     "frac_better": 0.6923076923076923,
+     "frac_tied": 0.02197802197802198
+    },
+    "vs_M6p": {
+     "n": 91,
+     "n_nonzero": 89,
+     "p": 0.0003011605276526115,
+     "median_diff_km": -0.2006552536858024,
+     "frac_better": 0.6813186813186813,
+     "frac_tied": 0.02197802197802198
+    }
+   },
+   "C4_vs_C3": {
+    "n": 91,
+    "n_nonzero": 25,
+    "p": 0.3582115690629516,
+    "median_diff_km": 0.0,
+    "frac_better": 0.16483516483516483,
+    "frac_tied": 0.7252747252747253
+   },
+   "c3_fallback_frac": 0.0,
+   "similarity_measured_frac": 1.0,
+   "c4_corrected_stations_median": 1.0,
+   "c4_equals_c3_frac": 0.7252747252747253,
+   "stations_median": 1.0
+  },
+  "2": {
+   "C3": {
+    "method": "C3",
+    "tau": "2",
+    "best": "M6r",
+    "best_median_km": 0.5530392671999282,
+    "median_km": 0.5171919904026392,
+    "paired_vs_best": {
+     "n": 91,
+     "n_nonzero": 54,
+     "p": 0.0006699215007897901,
+     "median_diff_km": 0.0,
+     "frac_better": 0.43956043956043955,
+     "frac_tied": 0.4065934065934066
+    },
+    "floor": false,
+    "at_or_below_0p7_best": false,
+    "vs_M6r": {
+     "n": 91,
+     "n_nonzero": 54,
+     "p": 0.0006699215007897901,
+     "median_diff_km": 0.0,
+     "frac_better": 0.43956043956043955,
+     "frac_tied": 0.4065934065934066
+    },
+    "vs_M6p": {
+     "n": 91,
+     "n_nonzero": 56,
+     "p": 0.00012890520335138414,
+     "median_diff_km": 0.0,
+     "frac_better": 0.46153846153846156,
+     "frac_tied": 0.38461538461538464
+    }
+   },
+   "C4": {
+    "method": "C4",
+    "tau": "2",
+    "best": "M6r",
+    "best_median_km": 0.5530392671999282,
+    "median_km": 0.336845943194292,
+    "paired_vs_best": {
+     "n": 91,
+     "n_nonzero": 89,
+     "p": 1.606535865014008e-08,
+     "median_diff_km": -0.14269563795544438,
+     "frac_better": 0.7582417582417582,
+     "frac_tied": 0.02197802197802198
+    },
+    "floor": false,
+    "at_or_below_0p7_best": true,
+    "vs_M6r": {
+     "n": 91,
+     "n_nonzero": 89,
+     "p": 1.606535865014008e-08,
+     "median_diff_km": -0.14269563795544438,
+     "frac_better": 0.7582417582417582,
+     "frac_tied": 0.02197802197802198
+    },
+    "vs_M6p": {
+     "n": 91,
+     "n_nonzero": 89,
+     "p": 1.7115404496838563e-09,
+     "median_diff_km": -0.15325687207638317,
+     "frac_better": 0.7692307692307693,
+     "frac_tied": 0.02197802197802198
+    }
+   },
+   "C4_vs_C3": {
+    "n": 91,
+    "n_nonzero": 85,
+    "p": 5.141482935866511e-08,
+    "median_diff_km": -0.10777143567699166,
+    "frac_better": 0.7142857142857143,
+    "frac_tied": 0.06593406593406594
+   },
+   "c3_fallback_frac": 0.0,
+   "similarity_measured_frac": 1.0,
+   "c4_corrected_stations_median": 3.0,
+   "c4_equals_c3_frac": 0.06593406593406594,
+   "stations_median": 3.0
+  },
+  "3": {
+   "C3": {
+    "method": "C3",
+    "tau": "3",
+    "best": "M5f",
+    "best_median_km": 0.22897538541345688,
+    "median_km": 0.2267707549322149,
+    "paired_vs_best": {
+     "n": 91,
+     "n_nonzero": 35,
+     "p": 0.004603325213685317,
+     "median_diff_km": 0.0,
+     "frac_better": 0.26373626373626374,
+     "frac_tied": 0.6153846153846154
+    },
+    "floor": true,
+    "at_or_below_0p7_best": false,
+    "vs_M6r": {
+     "n": 91,
+     "n_nonzero": 33,
+     "p": 0.012467360468999765,
+     "median_diff_km": 0.0,
+     "frac_better": 0.24175824175824176,
+     "frac_tied": 0.6373626373626373
+    },
+    "vs_M6p": {
+     "n": 91,
+     "n_nonzero": 33,
+     "p": 0.015656454726570714,
+     "median_diff_km": 0.0,
+     "frac_better": 0.24175824175824176,
+     "frac_tied": 0.6373626373626373
+    }
+   },
+   "C4": {
+    "method": "C4",
+    "tau": "3",
+    "best": "M5f",
+    "best_median_km": 0.22897538541345688,
+    "median_km": 0.1888459324357008,
+    "paired_vs_best": {
+     "n": 91,
+     "n_nonzero": 87,
+     "p": 1.2605416476620988e-06,
+     "median_diff_km": -0.054468828958504356,
+     "frac_better": 0.7032967032967034,
+     "frac_tied": 0.04395604395604396
+    },
+    "floor": true,
+    "at_or_below_0p7_best": false,
+    "vs_M6r": {
+     "n": 91,
+     "n_nonzero": 88,
+     "p": 7.392868506188473e-07,
+     "median_diff_km": -0.05655137244648126,
+     "frac_better": 0.7032967032967034,
+     "frac_tied": 0.03296703296703297
+    },
+    "vs_M6p": {
+     "n": 91,
+     "n_nonzero": 88,
+     "p": 7.548435995624889e-07,
+     "median_diff_km": -0.05655137244648126,
+     "frac_better": 0.7032967032967034,
+     "frac_tied": 0.03296703296703297
+    }
+   },
+   "C4_vs_C3": {
+    "n": 91,
+    "n_nonzero": 86,
+    "p": 9.991083045768043e-06,
+    "median_diff_km": -0.03958817145558144,
+    "frac_better": 0.6923076923076923,
+    "frac_tied": 0.054945054945054944
+   },
+   "c3_fallback_frac": 0.0,
+   "similarity_measured_frac": 1.0,
+   "c4_corrected_stations_median": 5.0,
+   "c4_equals_c3_frac": 0.04395604395604396,
+   "stations_median": 5.0
+  }
+ },
+ "all_picks": {
+  "C4all_vs_M5": {
+   "n": 91,
+   "n_nonzero": 81,
+   "p": 0.08064986335999674,
+   "median_diff_km": 0.0,
+   "frac_better": 0.4835164835164835,
+   "frac_tied": 0.10989010989010989
+  },
+  "C4all_vs_C3all": {
+   "n": 91,
+   "n_nonzero": 82,
+   "p": 0.09267341047854888,
+   "median_diff_km": 0.0,
+   "frac_better": 0.4945054945054945,
+   "frac_tied": 0.0989010989010989
+  },
+  "n_shared": 91,
+  "medians_km": {
+   "M5": 0.1359746457805218,
+   "M6r": 0.13671762769968662,
+   "C3all": 0.1359746457805218,
+   "C4all": 0.10721527286279853
+  }
+ },
+ "hypotheses": {
+  "H1": {
+   "method": "C3",
+   "tau": "2",
+   "alpha": 0.01,
+   "best": "M6r",
+   "best_median_km": 0.5530392671999282,
+   "median_km": 0.5171919904026392,
+   "paired_vs_best": {
+    "n": 91,
+    "n_nonzero": 54,
+    "p": 0.0006699215007897901,
+    "median_diff_km": 0.0,
+    "frac_better": 0.43956043956043955,
+    "frac_tied": 0.4065934065934066
+   },
+   "floor": false,
+   "win": true,
+   "at_or_below_0p7_best": false,
+   "vs_M6r": {
+    "n": 91,
+    "n_nonzero": 54,
+    "p": 0.0006699215007897901,
+    "median_diff_km": 0.0,
+    "frac_better": 0.43956043956043955,
+    "frac_tied": 0.4065934065934066
+   },
+   "vs_M6p": {
+    "n": 91,
+    "n_nonzero": 56,
+    "p": 0.00012890520335138414,
+    "median_diff_km": 0.0,
+    "frac_better": 0.46153846153846156,
+    "frac_tied": 0.38461538461538464
+   }
+  },
+  "H2": {
+   "method": "C4",
+   "tau": "2",
+   "alpha": 0.005,
+   "best": "M6r",
+   "best_median_km": 0.5530392671999282,
+   "median_km": 0.336845943194292,
+   "paired_vs_best": {
+    "n": 91,
+    "n_nonzero": 89,
+    "p": 1.606535865014008e-08,
+    "median_diff_km": -0.14269563795544438,
+    "frac_better": 0.7582417582417582,
+    "frac_tied": 0.02197802197802198
+   },
+   "floor": false,
+   "win": true,
+   "at_or_below_0p7_best": true,
+   "vs_M6r": {
+    "n": 91,
+    "n_nonzero": 89,
+    "p": 1.606535865014008e-08,
+    "median_diff_km": -0.14269563795544438,
+    "frac_better": 0.7582417582417582,
+    "frac_tied": 0.02197802197802198
+   },
+   "vs_M6p": {
+    "n": 91,
+    "n_nonzero": 89,
+    "p": 1.7115404496838563e-09,
+    "median_diff_km": -0.15325687207638317,
+    "frac_better": 0.7692307692307693,
+    "frac_tied": 0.02197802197802198
+   }
+  },
+  "H3": {
+   "method": "C3",
+   "tau": "0.5",
+   "alpha": 0.005,
+   "best": "M6r",
+   "best_median_km": 1.8963481492467855,
+   "median_km": 1.435541808300115,
+   "paired_vs_best": {
+    "n": 91,
+    "n_nonzero": 87,
+    "p": 0.0014037398819589167,
+    "median_diff_km": -0.29939125593918003,
+    "frac_better": 0.5934065934065934,
+    "frac_tied": 0.04395604395604396
+   },
+   "floor": false,
+   "win": true,
+   "at_or_below_0p7_best": false,
+   "vs_M6r": {
+    "n": 91,
+    "n_nonzero": 87,
+    "p": 0.0014037398819589167,
+    "median_diff_km": -0.29939125593918003,
+    "frac_better": 0.5934065934065934,
+    "frac_tied": 0.04395604395604396
+   },
+   "vs_M6p": {
+    "n": 91,
+    "n_nonzero": 88,
+    "p": 0.001654008990367482,
+    "median_diff_km": -0.2908029534416125,
+    "frac_better": 0.5934065934065934,
+    "frac_tied": 0.03296703296703297
+   }
+  }
+ },
+ "verdict": "CONFIRMED",
+ "fresh": {
+  "n_canon_found": 198,
+  "same_build_frac": 1.0,
+  "n_mj2_not_in_canon": 0,
+  "canon_sha256": "41da6e3078e75d1713a6a19c52ff724c22be2bd83a2ece279da12ede2c0e79be",
+  "ref_21_01_cache_sha256": "41da6e3078e75d1713a6a19c52ff724c22be2bd83a2ece279da12ede2c0e79be"
+ },
+ "verdict_rule": "BEST(tau) = smallest median among the 9 AI-free methods that give an estimate for every evaluated event (chosen on the evaluated events). A hypothesis wins if the method median < BEST median, one-sided paired Wilcoxon (zero_method='wilcox') p < alpha with >= 10 non-zero pairs, and BEST >= 0.5 km (not FLOOR). H1 (primary): C3 at tau = 2 s, alpha 0.01 -> CONFIRMED / PHYSICS-AT-FLOOR / NOT-CONFIRMED; INCONCLUSIVE if fewer than 30 evaluated events. H2: C4 at tau = 2 s, H3: C3 at tau = 0.5 s, each alpha 0.005 (secondary). Test events: 1.5 <= Mj < 2.0 events absent from the 198-event canon, later than mainshock + 72 h",
+ "limits": [
+  "Tottori was used in ARGUS development; the test events are fresh only with respect to 18_01 and 21_01",
+  "one aftershock sequence; the test events (1.5 <= Mj < 2.0, not in the 198-event canon) were never used by 18_01 or 21_01, but the hypotheses (tau = 2 s, the C4 arm) were chosen after seeing 21_01 on other events of the same sequence; an untouched second sequence is still needed",
+  "the M>=1.5 cache was built by 15_01c v3.2 (same picking/QC code as the canon, output name only changed); its dataset-wide amplitude factor differs from the canon, which does not affect cosine similarity or travel times",
+  "past-event locations are JMA hypocentres (in operation: automatic slow-layer locations, possibly worse); truth is also JMA",
+  "offline PhaseNet picks on full records (possibly better than real-time picks); every method uses the same picks",
+  "cache keeps up to 24 stations per event (PhaseNet P first, earliest first); no not-yet-arrived information is used",
+  "cache waveforms had the full-window mean removed (includes future samples; removed by the 2 Hz high-pass except for a transient from the window start 3 s before P) and the source h5 is z-score normalised per 30-s window (the scale uses later samples of that window; cosine similarity is scale-invariant except where a window join falls inside the correlation window); the one-sample look-ahead of the cache's central-difference derivative is avoided by not using the last sample",
+  "no picking or telemetry latency (tau is ideal elapsed time)",
+  "the test events are small (1.5 <= Mj < 2.0); pick quality and station counts can differ from Mj >= 2.0 events",
+  "the 2-8 Hz band was chosen after seeing 18_01 on the 198 canon events of the same sequence",
+  "the pool now includes 1.5 <= Mj < 2.0 events, so calibration and all medians differ from 21_01 and are not directly comparable",
+  "C4's station terms come from past events' JMA hypocentres and truth is also JMA, so part of a C4 gain can be agreement with the JMA frame rather than better early information; C3all/C4all at all picks are reported to show this",
+  "C4 corrects only arrived stations held by >= 3 top similar events; each past event's terms are demeaned by its own median P residual over all its stations, while uncorrected stations keep only the static term",
+  "H1 (C3 at tau = 2 s) is the primary test; H2 and H3 are secondary at alpha 0.005; everything else is descriptive"
+ ],
+ "runtime_s": 333.0318088531494
+}

@@ -1,0 +1,75 @@
+{
+ "script": "24_01_nagano2014_jma_catalog.py",
+ "version": "v1",
+ "source": "https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2014.zip",
+ "source_file": "h2014.zip",
+ "source_sha256": "bcb1d2d91a5905b6e67dc1b734a8ac2a25169993e888133a0318f883dc18902d",
+ "mainshock": {
+  "origin_jst": "2014-11-22 22:08:17.90",
+  "lat": 36.69283333333333,
+  "lon": 137.891,
+  "depth_km": 4.59,
+  "mj": 6.7,
+  "mag_type": "D",
+  "precision": "1"
+ },
+ "box": [
+  36.5428,
+  36.8428,
+  137.716,
+  138.066
+ ],
+ "period_jst": [
+  "2014-11-20 22:08:17.90",
+  "2014-12-16 22:08:17.90"
+ ],
+ "pool_cut_jst": "2014-11-25 22:08:17.90",
+ "counts": {
+  "all": 2052,
+  "mj_ge_1p5": 502,
+  "mj_ge_2p0": 199,
+  "pool_mj_ge_1p5": 378,
+  "test_candidates_1p5_to_2p0_after_72h": 81,
+  "library_only_mj_ge_2p0_after_72h": 43
+ },
+ "excluded": {
+  "blank_lat_lon": 0,
+  "outside_box_or_period": 137962,
+  "precision_M_8_9": 0,
+  "subsidiary_3_5": 0,
+  "det_flag_N_F": 0,
+  "blank_mag_or_depth": 14
+ },
+ "det_flag_counts": {
+  "all": {
+   "K": 2051,
+   "S": 1
+  },
+  "mj_ge_1p5": {
+   "K": 502
+  }
+ },
+ "rules": {
+  "half_lat_deg": 0.15,
+  "half_lon_deg": 0.175,
+  "days_before": 2.0,
+  "days_after": 24.0,
+  "pool_h": 72.0,
+  "min_mag": 1.5,
+  "fresh_max_mag": 2.0,
+  "bad_precision": [
+   "8",
+   "9",
+   "M"
+  ],
+  "bad_subsidiary": [
+   "3",
+   "5"
+  ],
+  "bad_det_flag": [
+   "F",
+   "N"
+  ]
+ },
+ "note": "test candidates are before picking; the evaluated test set is those with a measured P in the cache"
+}

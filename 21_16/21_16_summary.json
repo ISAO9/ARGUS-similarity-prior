@@ -1,0 +1,314 @@
+{
+ "script": "21_16b_sparse_learned_summary.py",
+ "script_sha256": "5c3b56f1d529893910c761c8d0afd8adf88e1148f0aa259bbc1391b3bc1249fe",
+ "utc": "2026-11-01T12:27:08Z",
+ "expected_21_16a_sha256": "e67c2b2f3a17588402bf206186229af4f6676d0a8877aa320a08682b8ba41292",
+ "runs_read": [
+  "full",
+  "N12_s0",
+  "N12_s1",
+  "N12_s2",
+  "N8_s0",
+  "N8_s1",
+  "N8_s2",
+  "N5_s0",
+  "N5_s1",
+  "N5_s2"
+ ],
+ "gates": {
+  "missing": [],
+  "content_mismatch": [],
+  "n_cache_sha": 1,
+  "n_script_sha": 1,
+  "script_sha_matches_expected": true,
+  "g_core_not_pass": [],
+  "g_same_not_pass": [],
+  "g_same_learned_full": "PASS",
+  "g_causal_fail": [],
+  "open_log_problem": [],
+  "limit": 0
+ },
+ "open_log": {
+  "full": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N12_s0": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N12_s1": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N12_s2": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N8_s0": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N8_s1": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N8_s2": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N5_s0": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N5_s1": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  },
+  "N5_s2": {
+   "n_opened": 1,
+   "n_stopped": 0,
+   "n_completed": 1,
+   "n_reruns": 0,
+   "completed_sha_matches": true
+  }
+ },
+ "complete": true,
+ "run_script_sha256": [
+  "e67c2b2f3a17588402bf206186229af4f6676d0a8877aa320a08682b8ba41292"
+ ],
+ "cache_sha256": [
+  "e6485ac332e7c550b935bbb75f4ce517018960c5a1da37a98b50ad6fea729d68"
+ ],
+ "g_causal": {
+  "full": "PASS",
+  "N12_s0": "PASS",
+  "N12_s1": "PASS",
+  "N12_s2": "PASS",
+  "N8_s0": "PASS",
+  "N8_s1": "PASS",
+  "N8_s2": "PASS",
+  "N5_s0": "PASS",
+  "N5_s1": "PASS",
+  "N5_s2": "PASS"
+ },
+ "reference_full": {
+  "best": "M6r",
+  "best_km": 0.953,
+  "l4_km": 0.478,
+  "c4_km": 0.4349,
+  "gain_km": 0.475,
+  "p": 1.4499068743354292e-20,
+  "win": true
+ },
+ "levels": {
+  "12": {
+   "n_runs": 3,
+   "l4_wins_t2": 3,
+   "class": "HOLDS",
+   "n_untestable": 0,
+   "n_floor_blocked_t2": 0,
+   "gain_t2_km": [
+    2.9855,
+    2.0135,
+    3.1318
+   ],
+   "best_t2_km": [
+    3.61095,
+    2.6714,
+    3.8075
+   ],
+   "l4_t2_km": [
+    0.62545,
+    0.6579,
+    0.6757
+   ],
+   "p_t2": [
+    5.872546516765308e-30,
+    3.1893910290075515e-24,
+    5.46142761187351e-21
+   ],
+   "descriptive": {
+    "l4_vs_c4_wins_t2": 0,
+    "c4_vs_best_wins_t2": 3,
+    "l3_vs_best_wins_t05": 3,
+    "c4_t2_km": [
+     0.7847,
+     0.7,
+     0.6883
+    ]
+   }
+  },
+  "8": {
+   "n_runs": 3,
+   "l4_wins_t2": 3,
+   "class": "HOLDS",
+   "n_untestable": 0,
+   "n_floor_blocked_t2": 0,
+   "gain_t2_km": [
+    3.0803499999999997,
+    2.0663,
+    2.4451
+   ],
+   "best_t2_km": [
+    3.8145499999999997,
+    2.7406,
+    3.1178
+   ],
+   "l4_t2_km": [
+    0.7342,
+    0.6743,
+    0.6727
+   ],
+   "p_t2": [
+    1.1114607283589783e-22,
+    6.212057125223734e-22,
+    4.9359930441517146e-24
+   ],
+   "descriptive": {
+    "l4_vs_c4_wins_t2": 0,
+    "c4_vs_best_wins_t2": 3,
+    "l3_vs_best_wins_t05": 3,
+    "c4_t2_km": [
+     0.8271,
+     0.659,
+     0.6899500000000001
+    ]
+   }
+  },
+  "5": {
+   "n_runs": 3,
+   "l4_wins_t2": 3,
+   "class": "HOLDS",
+   "n_untestable": 0,
+   "n_floor_blocked_t2": 0,
+   "gain_t2_km": [
+    2.9650000000000003,
+    2.5954,
+    3.1746000000000003
+   ],
+   "best_t2_km": [
+    3.7526,
+    3.2595,
+    3.8208
+   ],
+   "l4_t2_km": [
+    0.7876,
+    0.6641,
+    0.6462
+   ],
+   "p_t2": [
+    1.1887500702314769e-20,
+    4.743593128593471e-27,
+    3.214645208004336e-27
+   ],
+   "descriptive": {
+    "l4_vs_c4_wins_t2": 0,
+    "c4_vs_best_wins_t2": 3,
+    "l3_vs_best_wins_t05": 3,
+    "c4_t2_km": [
+     0.804,
+     0.6911,
+     0.70115
+    ]
+   }
+  }
+ },
+ "verdict": "L4-SPARSE-HOLDS",
+ "figure_lines_t2_gain": {
+  "L4": [
+   [
+    5,
+    2.9650000000000003
+   ],
+   [
+    8,
+    2.4451
+   ],
+   [
+    12,
+    2.9855
+   ],
+   [
+    50,
+    0.475
+   ]
+  ],
+  "C4": [
+   [
+    5,
+    2.9486
+   ],
+   [
+    8,
+    2.42785
+   ],
+   [
+    12,
+    2.82625
+   ],
+   [
+    50,
+    0.5181
+   ]
+  ]
+ },
+ "limits": [
+  "second sequence: Central Tottori 2016 (mainshock 2016-10-21 05:07 UTC, Mj 6.6), never used in ARGUS development; the hypotheses were fixed on West Tottori 2026 (21_01/21_02) and are applied here unchanged",
+  "one second sequence only",
+  "stations are NIED Hi-net (0101) only, chosen as the 50 nearest with data among the current NIED list; the West Tottori 2026 set of 50 stations also included non-Hi-net stations, so station types and geometry differ",
+  "waveforms were downloaded around catalogue events only and converted to the West Tottori 2026 h5 form (30-s windows, per-window per-component z-score, JST epoch); whether a filter was applied before the z-score in the 2026 h5 is not recorded (none here; compared in 21_04b G-spec)",
+  "the cache was built by 15_01c v3.3 (picking, QC and assembly identical to v3; only the window-index file name and output folder changed)",
+  "catalogue: JMA final hypocentres (h2016; West Tottori 2026 used the unified catalogue); past-event locations are JMA hypocentres (in operation: automatic slow-layer locations, possibly worse); truth is also JMA",
+  "the 2016 catalogue excludes matched-filter, undetermined/fixed (precision M, 8, 9; flag N, F), artificial and low-frequency events; whether the 2026 catalogue excluded them is not recorded. Manual and automatic hypocentres are mixed (per-flag counts in 21_04a's JSON)",
+  "station elevations are NIED's current height(m) (possibly the sensor depth for borehole stations); the 2026 station list's convention is not recorded; static station terms absorb a constant offset",
+  "offline PhaseNet picks on full records (possibly better than real-time picks); every method uses the same picks",
+  "cache keeps up to 24 stations per event (PhaseNet P first, earliest first); no not-yet-arrived information is used",
+  "cache waveforms had the full-window mean removed (includes future samples; removed by the 2 Hz high-pass except for a transient from the window start 3 s before P) and the source h5 is z-score normalised per 30-s window (the scale uses later samples of that window; cosine similarity is scale-invariant except where a window join falls inside the correlation window); the one-sample look-ahead of the cache's central-difference derivative is avoided by not using the last sample",
+  "no picking or telemetry latency (tau is ideal elapsed time)",
+  "the test events are small (1.5 <= Mj < 2.0); pick quality and station counts can differ from Mj >= 2.0 events",
+  "the 2-8 Hz band was chosen after seeing 18_01 on West Tottori 2026",
+  "C4's station terms come from past events' JMA hypocentres and truth is also JMA, so part of a C4 gain can be agreement with the JMA frame rather than better early information",
+  "C4 corrects only arrived stations held by >= 3 top similar events; each past event's terms are demeaned by its own median P residual over all its stations, while uncorrected stations keep only the static term",
+  "the sparse networks are subsets of Hi-net stations chosen by a position-only farthest-point rule (N stations, random first station); real sparse networks (ocean-bottom, other station types, other regions) differ",
+  "the cache was built on the dense network: events needed >= 4 picks there (some would be missed by a sparse network), and the Wadati S-P quality check used all of an event's stations, so removed stations influenced which S picks of kept stations survive",
+  "the cache keeps at most 24 stations per event (measured-P stations ordered by earliest P, then fallback picks); stations beyond the 24th in the full network are unavailable in the thinned network; candidate stations are those appearing in the cache",
+  "each network is evaluated on the test events with a P pick at its kept stations, so trends across networks compare different event sets and are descriptive",
+  "truth, past-event locations and C4/L4 station terms are JMA hypocentres determined with the dense network; in a region that only has a sparse network the past-event locations would be worse, so C3/C4/L3/L4 here are optimistic",
+  "same limits as 21_04 (one sequence, offline PhaseNet picks, no picking or telemetry latency, small events, the 2016 test carries a documented deviation: amendment 03)",
+  "the learned ranker (21_06a) was trained on the dense West Tottori 2026 network only and frozen; it is applied unchanged (no retraining) to thinned networks, where its physics features shift: n_common_picks shrinks and dd_offset_km/dd_fit_rms_s need >= 4 common stations (nan otherwise); this distribution shift is the main risk tested here",
+  "the 2016 test carries a documented deviation (amendment 03: the preregistered station-timing check G-clock2 (c) failed) and a known error tail attributed to early mis-picks at far stations (21_15); the primary test does not filter the tail",
+  "the 2016 test events were already opened by 21_04, 21_06b and 21_09; new in 21_16 are only L3/L4 on the thinned networks",
+  "the double-difference offset is a horizontal straight-ray approximation (depth not solved)",
+  "log10_dt_h uses the target's JMA origin time (not known exactly at tau; the error is a few seconds against >= 1 h)",
+  "all errors are rounded to 4 decimals (as in the 21_06b and 21_09 CSVs) before comparison so that ties stay ties; 21_09a judged C4 on unrounded errors, so C4-vs-BEST p values here may differ from 21_09 in the last digits (descriptive here)",
+  "21_16: per network, L4 at tau = 2 s vs BEST (alpha 0.005) is the classified test; everything else is descriptive"
+ ]
+}

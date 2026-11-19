@@ -1,0 +1,29 @@
+# 25 registration record (Western Shimane 2018, preregistration 25)
+
+GitHub commit (0-D): 54ae4bc2036ba1dba1d708103791f3f770cd0e35 (committed 2026-11-18T00:52:40+09:00 = 2026-11-17T15:52:40Z)
+Zenodo v5 DOI (0-E): 10.5281/zenodo.24317791
+Zenodo v5 published: 2026-11-18 JST, after the 0-D commit (exact time not recorded)
+Registration date (UTC): 2026-11-17 (GitHub commit time; Zenodo v5 was published after it on 2026-11-18 JST)
+Embargo end (files): 2028-11-03
+JMA hypocentre file h2018.zip SHA-256 (0-C): ea8eb186db3f2ede1b5013d2002fddd703e9e01e721189f94380bb0ab56794ec
+24_07_causal_picks.py: same file as in Zenodo v4 (SHA-256 b9b2fd5c8855c52f2e3a528e695374af752db3b0de6f789942e6da8824c2d14b, md5 2cd204e4fba59cc1c0552a46a87bd204); not re-uploaded to v5
+
+# Added later (do not edit lines above)
+N1 versions: h5py 3.14.0, torch 2.14.1+cpu, numpy 2.4.6, scipy 1.16.3, obspy 1.5.1, seisbench 0.12.7
+N5 h2018 status (JMA page): no status label (no 確定/暫定/速報, no revision date) is shown for 2018 on https://www.data.jma.go.jp/eqev/data/bulletin/hypo.html (checked 2026-11-18; the list runs to 2024). https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/relocate.html states no recomputation for 2018 in its text (its per-month colour table was not read). File used: h2018.zip downloaded 2026-11-16 07:34 JST from https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2018.zip, 6973661 bytes, SHA-256 ea8eb186db3f2ede1b5013d2002fddd703e9e01e721189f94380bb0ab56794ec.
+N9: run twice (Colab disconnected after the first run, before N10); both runs gave 57392 windows, identical gate values and an h5 of 1152904134 bytes.
+N12b R1 cache SHA-256: c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4 (283 events; 25_03h v1 e676ea476c098c68ee6461f21d40df1541a799c6497994d85a32df26620cebaa)
+N12b input_cache_sha256: 6fde5af2190f07f936509a12ef64df5dcc3a3dcef0a83ae13048fb20a0b174f8 (25_03 cache, 369 of 389 events; 25_03 d58b389f4f64e4b068b75f7b6a9ee41d23a241ec0579a90cbf81ffe0d53363f4)
+Note (N12b): the step's last display line read a non-existent top-level key 'input_cache_sha256' (KeyError); the value was read from J['input']['cache_sha256'] instead. No script or output was changed.
+
+G-clock2 (N13/N14b): pass_station False only; (c-near) 24 stations within 80 km with n >= 20, 0 outside 1.0 s; (c-far) 10 stations at 97.9-120.3 km outside 1.0 s. Per preregistration 25 section 5.3 item 4, the test proceeds and all outputs carry the label:
+EN: "preregistered test; the far-station (> 80 km) part of the station-level clock check (G-clock2 (c)) failed, which this preregistration declared in advance as non-blocking; diagnosis in 25_04e"
+JA: 「事前登録の試験(G-clock2 の局ごとの確かめ (c) のうち、80 km より遠い局の部分が不合格。この部分は止める条件にしないと事前に決めてあった。記述は 25_04e)」
+
+N16 SHA-256 (4 files):
+  tottori_parsed_realpick_shimane2018_m15_r1.pt c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4
+  24_07_causal_picks_shimane2018.csv eee733e397efb6913e1d7ba0ec6e65056d84b3de7d79ae02611529fcf86483a1
+  24_07_causal_picks_shimane2018.json fd11b1e70ab6212d977984ee8d6930c06397fbdd6c6eb4d8dbd4b1cab7c37d8f
+  jma_shimane2018.csv 37ebc96d071bbedf49d2f07825dcfbd92e10ee03b455d9c0a0a07474813ba6a0
+  24_07 seisbench 0.12.7; 24_07 run 674 s (2.4 s per event), G-causal 20/20 PASS
+M1 (Mac): the 4 data files, the 5 scripts and the 4 frozen models match all digits; M1b versions 1.8.0 2.4.3 3.12.12.

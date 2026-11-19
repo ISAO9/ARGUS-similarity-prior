@@ -1,0 +1,26 @@
+[
+ {
+  "utc": "2026-10-30T03:51:37Z",
+  "status": "opened",
+  "version": "v1",
+  "script_sha256": "442c411945f288cfff7f14490ee9826ffcfe055e5a79cc2af0c39fe93cb5bfea",
+  "cache_sha256": "e6485ac332e7c550b935bbb75f4ce517018960c5a1da37a98b50ad6fea729d68",
+  "suffix": ""
+ },
+ {
+  "utc": "2026-10-30T03:51:37Z",
+  "status": "inputs: train_json 4f27ad1e0596d244b62b064918cde92cde6f93a13829a96bb6ac04079e13f87e model 0d0f75a48a50f866d3963c6560497abe1c007ecac628391284ca6fe248b712e1 rows ca23242288ad6fe4fdf5853960a6fd41b78328a59ec22bc5d484bf5334e632e9 ref_csv 271d824df81ad34bc1f40ae1e71426badd9ff20e8f580fb6a9eba61dbd6724a7",
+  "version": "v1",
+  "script_sha256": "442c411945f288cfff7f14490ee9826ffcfe055e5a79cc2af0c39fe93cb5bfea",
+  "cache_sha256": "e6485ac332e7c550b935bbb75f4ce517018960c5a1da37a98b50ad6fea729d68",
+  "suffix": ""
+ },
+ {
+  "utc": "2026-10-30T03:59:50Z",
+  "status": "completed: LEARNED-CONFIRMED",
+  "version": "v1",
+  "script_sha256": "442c411945f288cfff7f14490ee9826ffcfe055e5a79cc2af0c39fe93cb5bfea",
+  "cache_sha256": "e6485ac332e7c550b935bbb75f4ce517018960c5a1da37a98b50ad6fea729d68",
+  "suffix": ""
+ }
+]

@@ -1,0 +1,41 @@
+[project]
+name = "swift"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cartopy>=0.25.0",
+    "flask>=3.1.3",
+    "flask-socketio>=5.6.1",
+    "h5py>=3.16.0",
+    "imageio>=2.37.3",
+    "imageio-ffmpeg>=0.6.0",
+    "lxml>=6.0.2",
+    "matplotlib>=3.10.8",
+    "mss>=10.1.0",
+    "numpy>=2.4.3",
+    "obspy>=1.5.0",
+    "pandas>=3.0.1",
+    "pillow>=12.1.1",
+    "plotly>=6.6.0",
+    "pygmt>=0.19.0",
+    "pymupdf>=1.28.2",
+    "pyyaml>=6.0.3",
+    "reportlab>=4.4.10",
+    "requests>=2.32.5",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
+    "segyio>=1.9.14",
+    "shapely>=2.1.2",
+    "streamlit>=1.19.0",
+    "tensorboard>=2.20.0",
+    "torch>=2.10.0",
+    "torch-geometric>=2.7.0",
+    "torchaudio>=2.10.0",
+    "torchvision>=0.25.0",
+    "tqdm>=4.67.3",
+    "watchdog>=6.0.0",
+    "xgboost>=3.2.0",
+]

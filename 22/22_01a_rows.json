@@ -1,0 +1,163 @@
+{
+ "script": "22_01a_gate_rows_wt2026.py",
+ "version": "v1",
+ "script_sha256": "a04dcc48d7301758205a26dca8ac15297bf4366f5662afd2acd08a75b8cbb49d",
+ "mode": "full",
+ "cache": "data/tottori_processed/tottori_parsed_realpick_m15.pt",
+ "cache_sha256": "420fe1e304f43aae9baa7cbab9474623e014d01dddb4dbecab6644431b6f0ef7",
+ "gate_feature_block_sha256": "c2a1eabfaaa5f94f359f965dfdaf720ca2437164bf3954f0f543e1eaf5772263",
+ "gate_feats": [
+  "log1p_d_C4_C1_km",
+  "log1p_d_C4_M6r_km",
+  "log1p_d_C1_C2_km",
+  "log1p_top10_spread_km",
+  "S_max",
+  "S_gap12",
+  "log1p_n_pos",
+  "n_P",
+  "p_resid_C4_s",
+  "C4_at_edge",
+  "n_corr_C4",
+  "tau_s",
+  "log1p_d_C4_lib_km"
+ ],
+ "g_same": "PASS",
+ "g_same_methods": [
+  "C3",
+  "C4",
+  "M6r",
+  "C1"
+ ],
+ "g_same_events": 91,
+ "rows_path": "data/22_01a_rows_wt2026.npz",
+ "rows_sha256": "b57caba76f0d8cca1a5ca952afe17b494897ef76c4ac98cecb63fa8d27c48d59",
+ "n_rows": 1972,
+ "n_rows_with_C1": 1856,
+ "n_skipped_no_library": 1,
+ "nan_features": {
+  "log1p_d_C4_C1_km": 0,
+  "log1p_d_C4_M6r_km": 0,
+  "log1p_d_C1_C2_km": 0,
+  "log1p_top10_spread_km": 0,
+  "S_max": 0,
+  "S_gap12": 0,
+  "log1p_n_pos": 0,
+  "n_P": 0,
+  "p_resid_C4_s": 995,
+  "C4_at_edge": 0,
+  "n_corr_C4": 0,
+  "tau_s": 0,
+  "log1p_d_C4_lib_km": 0
+ },
+ "describe": {
+  "0.5": {
+   "n": 459,
+   "frac_C1_closer": 0.514161220043573,
+   "frac_switch": 0.0457516339869281,
+   "M6r": {
+    "median_km": 1.9828,
+    "gt10": 0.04793028322440087,
+    "gt30": 0.032679738562091505
+   },
+   "C4": {
+    "median_km": 1.4458,
+    "gt10": 0.04793028322440087,
+    "gt30": 0.034858387799564274
+   },
+   "C1": {
+    "median_km": 1.551,
+    "gt10": 0.002178649237472767,
+    "gt30": 0.0
+   },
+   "R": {
+    "median_km": 1.4309,
+    "gt10": 0.002178649237472767,
+    "gt30": 0.0
+   }
+  },
+  "1": {
+   "n": 461,
+   "frac_C1_closer": 0.5249457700650759,
+   "frac_switch": 0.0824295010845987,
+   "M6r": {
+    "median_km": 1.5931,
+    "gt10": 0.08026030368763558,
+    "gt30": 0.05422993492407809
+   },
+   "C4": {
+    "median_km": 1.2167,
+    "gt10": 0.08459869848156182,
+    "gt30": 0.06290672451193059
+   },
+   "C1": {
+    "median_km": 1.4042,
+    "gt10": 0.0021691973969631237,
+    "gt30": 0.0
+   },
+   "R": {
+    "median_km": 1.1496,
+    "gt10": 0.0021691973969631237,
+    "gt30": 0.0
+   }
+  },
+  "2": {
+   "n": 467,
+   "frac_C1_closer": 0.4625267665952891,
+   "frac_switch": 0.14989293361884368,
+   "M6r": {
+    "median_km": 0.7845,
+    "gt10": 0.15203426124197003,
+    "gt30": 0.11777301927194861
+   },
+   "C4": {
+    "median_km": 0.5985,
+    "gt10": 0.15417558886509636,
+    "gt30": 0.11349036402569593
+   },
+   "C1": {
+    "median_km": 0.9134,
+    "gt10": 0.006423982869379015,
+    "gt30": 0.0
+   },
+   "R": {
+    "median_km": 0.5445,
+    "gt10": 0.004282655246252677,
+    "gt30": 0.0
+   }
+  },
+  "3": {
+   "n": 469,
+   "frac_C1_closer": 0.3582089552238806,
+   "frac_switch": 0.1513859275053305,
+   "M6r": {
+    "median_km": 0.3299,
+    "gt10": 0.15565031982942432,
+    "gt30": 0.12153518123667377
+   },
+   "C4": {
+    "median_km": 0.2745,
+    "gt10": 0.1535181236673774,
+    "gt30": 0.11940298507462686
+   },
+   "C1": {
+    "median_km": 0.7745,
+    "gt10": 0.0021321961620469083,
+    "gt30": 0.0
+   },
+   "R": {
+    "median_km": 0.2712,
+    "gt10": 0.0021321961620469083,
+    "gt30": 0.0
+   }
+  }
+ },
+ "utc": "2026-11-02T13:01:43Z",
+ "numpy": "2.4.3",
+ "python": "3.12.12",
+ "runtime_s": 231.28429007530212,
+ "limits": [
+  "one sequence (West Tottori 2026); truth and past locations are JMA hypocentres",
+  "the 91 evaluation events were opened in 21_02; all events with P picks are training rows (22_00 section 1.4)",
+  "feature 9 uses a separate 1-D depth scan at the C4 epicentre (a fit-quality proxy only)"
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "script": "25_01_shimane2018_jma_catalog.py",
+ "version": "v1",
+ "source": "https://www.data.jma.go.jp/eqev/data/bulletin/data/hypo/h2018.zip",
+ "source_file": "h2018_25_00.zip",
+ "source_sha256": "ea8eb186db3f2ede1b5013d2002fddd703e9e01e721189f94380bb0ab56794ec",
+ "mainshock": {
+  "origin_jst": "2018-04-09 01:32:30.81",
+  "lat": 35.184666666666665,
+  "lon": 132.58666666666667,
+  "depth_km": 12.13,
+  "mj": 6.1,
+  "mag_type": "D",
+  "precision": "1"
+ },
+ "box": [
+  35.0347,
+  35.3347,
+  132.4117,
+  132.7617
+ ],
+ "period_jst": [
+  "2018-04-07 01:32:30.81",
+  "2018-05-03 01:32:30.81"
+ ],
+ "pool_cut_jst": "2018-04-12 01:32:30.81",
+ "counts": {
+  "all": 3361,
+  "mj_ge_1p5": 389,
+  "mj_ge_2p0": 189,
+  "pool_mj_ge_1p5": 310,
+  "test_candidates_1p5_to_2p0_after_72h": 41,
+  "library_only_mj_ge_2p0_after_72h": 38
+ },
+ "excluded": {
+  "blank_lat_lon": 0,
+  "outside_box_or_period": 253583,
+  "precision_M_8_9": 0,
+  "subsidiary_3_5": 0,
+  "det_flag_N_F": 0,
+  "blank_mag_or_depth": 48
+ },
+ "det_flag_counts": {
+  "all": {
+   "A": 2087,
+   "K": 288,
+   "s": 75,
+   "k": 447,
+   "a": 464
+  },
+  "mj_ge_1p5": {
+   "K": 285,
+   "s": 3,
+   "k": 13,
+   "A": 88
+  }
+ },
+ "rules": {
+  "half_lat_deg": 0.15,
+  "half_lon_deg": 0.175,
+  "days_before": 2.0,
+  "days_after": 24.0,
+  "pool_h": 72.0,
+  "min_mag": 1.5,
+  "fresh_max_mag": 2.0,
+  "bad_precision": [
+   "8",
+   "9",
+   "M"
+  ],
+  "bad_subsidiary": [
+   "3",
+   "5"
+  ],
+  "bad_det_flag": [
+   "F",
+   "N"
+  ]
+ },
+ "note": "test candidates are before picking; the evaluated test set is those with a measured P in the cache"
+}

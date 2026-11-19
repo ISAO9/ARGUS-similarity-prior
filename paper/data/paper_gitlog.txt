@@ -1,0 +1,27 @@
+2a3ac1e 2026-11-18 22:13:57 +0900 25: results (Western Shimane 2018), with registration record
+54ae4bc 2026-11-18 00:52:40 +0900 25: preregistration of the one-shot test on Western Shimane 2018 (fifth sequence): record, 12 scripts, steps, notebook, diff log, dev of G-clock2 (d)
+f2c7ce8 2026-11-15 23:56:06 +0900 24: stopped at G-clock2 (amendment 01 check failed); results and execution record
+fc38d0f 2026-11-15 22:52:53 +0900 24: amendment 01 (G-clock2 condition d), registered before opening
+e064c36 2026-11-15 14:59:07 +0900 24: record commit hash and Zenodo version
+a852c2c 2026-11-15 14:51:02 +0900 24: preregistration of the one-shot test on Northern Nagano 2014 (fourth sequence): record, 11 scripts, steps, notebook, diff log
+43a08fc 2026-11-15 10:04:17 +0900 21_20/21_20f/22_04 (amendment 04): results, Northern Osaka 2018. 21_20 PHYSICS-AT-FLOOR (H3 win), 21_20f PHYSICS-AT-FLOOR (HL3 win), 22_04 INCONCLUSIVE
+ae91e63 2026-11-15 08:10:20 +0900 21_20 amendment 04: 21_20h output recorded (cache b4d1fe12, 242->221 events, test candidates 56->55) + 21_20g outputs
+2665fbb 2026-11-14 00:17:39 +0900 21_20 amendment 04: record commit hash 3f8abad and Zenodo v2 (10.5281/zenodo.24190129)
+3f8abad 2026-11-13 17:51:01 +0900 21_20/22: amendment 04 (exclude events overlapping another catalogue event; before opening) + 21_20g diagnosis script
+3839889 2026-11-03 19:03:19 +0900 21_20 stopped before opening: G-clock2 (d) hourly check failed (clock could not be verified); 22_04 not tested
+de42f9f 2026-11-03 13:30:30 +0900 21_20 and 22: record the commit hash and the external timestamp (Zenodo 10.5281/zenodo.23905464)
+6bac5a0 2026-11-03 12:44:13 +0900 21_20 and 22: preregistrations, frozen scripts and the frozen trust gate (Northern Osaka 2018)
+a64ccad 2026-11-01 21:38:46 +0900 21_16 results: L4-SPARSE-HOLDS (one-shot run, 21_16a e67c2b2f, 21_16b 5c3b56f1)
+b90c2b2 2026-11-01 18:59:19 +0900 21_16: record prereg commit; deposit deferred to pre-submission (before the run)
+1d469fe 2026-11-01 16:07:42 +0900 21_16 preregistration (L4 on sparse networks), frozen 21_16a v2 / 21_16b v1
+e93fec6 2026-10-30 20:25:06 +0900 21_09 preregistration: sparse networks
+4dc9be6 2026-10-30 13:01:48 +0900 21_06b test result (Central Tottori 2016): LEARNED-CONFIRMED (HL1, HL3 win; HL2 vs C4 no win); documented deviation per amendment 03
+80793ba 2026-10-30 12:29:29 +0900 21_04 test result (Central Tottori 2016): CONFIRMED; documented deviation per amendment 03
+5133563 2026-10-30 11:22:14 +0900 Amendment 03: G-clock2 (c) failure, diagnosis, documented deviation
+dc1267b 2026-10-29 16:51:36 +0900 Amendment 02: G-clock failure analysis and pick-based G-clock2
+c5fa534 2026-10-28 23:10:11 +0900 Amendment 01: 21_04b v1.1 (retry with shorter Hi-net requests)
+e1ffdd7 2026-10-28 21:59:20 +0900 Freeze B: record trained model hashes in section 6
+8541e2d 2026-10-28 21:57:59 +0900 Freeze B: 21_06 trained model hashes
+7518ca2 2026-10-28 21:50:38 +0900 Freeze A: 21_06 learned ranker preregistration
+9e57664 2026-10-28 10:54:28 +0900 Record preregistration commit hash
+ceb15b1 2026-10-28 10:14:13 +0900 21_04 preregistration: rules and scripts frozen before opening Central Tottori 2016 data

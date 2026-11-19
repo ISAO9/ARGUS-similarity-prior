@@ -1,0 +1,57 @@
+{
+ "script": "26_05_set_size_control.py",
+ "version": "v1",
+ "sequence": "ct2016",
+ "frozen_script": "21_04_ct2016_similarity_confirmation.py",
+ "frozen_script_sha256": "0b2807843763b641a67e090407311d39c0204cdb7825577c6b86b07a0532908d",
+ "cache": "data/ct2016_processed/tottori_parsed_realpick_ct2016_m15.pt",
+ "n_events": 307,
+ "draws": 20,
+ "max_abs_diff_vs_frozen_km": 0.0,
+ "median_n_m3": 362.0,
+ "summary": {
+  "0.5": {
+   "median_km": {
+    "C3": 0.8669,
+    "M6r": 2.0576,
+    "Late10": 2.6157,
+    "R10_median_of_draw_medians": 2.93825,
+    "R10_min_draw_median": 2.497,
+    "R10_max_draw_median": 3.3269
+   },
+   "C3_vs_R10": {
+    "frac_better": 0.7947882736156352,
+    "frac_tied": 0.03908794788273615,
+    "frac_worse": 0.16612377850162866
+   },
+   "C3_vs_Late10": {
+    "frac_better": 0.6775244299674267,
+    "frac_tied": 0.05211726384364821,
+    "frac_worse": 0.2703583061889251
+   },
+   "events_with_m3_le_10": 5
+  },
+  "2": {
+   "median_km": {
+    "C3": 0.4957,
+    "M6r": 0.953,
+    "Late10": 1.1863,
+    "R10_median_of_draw_medians": 1.43975,
+    "R10_min_draw_median": 1.1664,
+    "R10_max_draw_median": 1.6662
+   },
+   "C3_vs_R10": {
+    "frac_better": 0.7654723127035831,
+    "frac_tied": 0.13029315960912052,
+    "frac_worse": 0.10423452768729642
+   },
+   "C3_vs_Late10": {
+    "frac_better": 0.6547231270358306,
+    "frac_tied": 0.17263843648208468,
+    "frac_worse": 0.17263843648208468
+   },
+   "events_with_m3_le_10": 5
+  }
+ },
+ "note": "descriptive control, not registered; same physics and prior rule as M6r and C3, only the set of past events differs"
+}

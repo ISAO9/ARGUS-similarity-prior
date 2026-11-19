@@ -1,0 +1,324 @@
+{
+ "script": "25_09_shimane2018_flag_descriptive.py",
+ "version": "v1",
+ "script_sha256": "99b35de5fefa07611bf8797691539a939c6c17e0789f1471329515ec9d2e4101",
+ "utc": "2026-11-18T13:09:14Z",
+ "inputs": {
+  "csv": "25_05_per_event.csv",
+  "csv_sha256": "43942e3f112cbae2f5f8588f3b46fb8b5f6be1ebd8b5442ec6242d7c14a3d178",
+  "judgment": "25_05_judgment.json",
+  "judgment_sha256": "49d646a1af63205edec8f75028faffb658104fea0db02f896e8f518e190c4fbe",
+  "script_25_05_sha256": "80309ce7012b89af0c052e225cb66b2e15ee104af247937b63510064f9c11398",
+  "ref_suffix": "",
+  "catalog": "jma_shimane2018.csv",
+  "catalog_sha256": "37ebc96d071bbedf49d2f07825dcfbd92e10ee03b455d9c0a0a07474813ba6a0",
+  "h5_evaluated": true
+ },
+ "flags": {
+  "manual": [
+   "K",
+   "S",
+   "k",
+   "s"
+  ],
+  "automatic": [
+   "A",
+   "a"
+  ],
+  "counts": {
+   "A": 25,
+   "K": 15,
+   "k": 1
+  }
+ },
+ "results": {
+  "groups": {
+   "all": {
+    "tau0.5_BEST": {
+     "method": "M6p",
+     "column": "M6p_err_t0.5",
+     "n": 41,
+     "median_km": 1.9339
+    },
+    "tau0.5_C3": {
+     "method": "C3",
+     "column": "C3_err_t0.5",
+     "n": 41,
+     "median_km": 0.857
+    },
+    "tau0.5_C4": {
+     "method": "C4",
+     "column": "C4_err_t0.5",
+     "n": 41,
+     "median_km": 0.8035
+    },
+    "tau0.5_BEST, causal picks": {
+     "method": "M6p",
+     "column": "M6p_causal_err_t0.5",
+     "n": 41,
+     "median_km": 1.8206
+    },
+    "tau0.5_C3, causal picks": {
+     "method": "C3",
+     "column": "C3_causal_err_t0.5",
+     "n": 41,
+     "median_km": 0.8956
+    },
+    "tau2_BEST": {
+     "method": "M6r",
+     "column": "M6r_err_t2",
+     "n": 41,
+     "median_km": 0.844
+    },
+    "tau2_C3": {
+     "method": "C3",
+     "column": "C3_err_t2",
+     "n": 41,
+     "median_km": 0.4562
+    },
+    "tau2_C4": {
+     "method": "C4",
+     "column": "C4_err_t2",
+     "n": 41,
+     "median_km": 0.597
+    },
+    "tau2_BEST, causal picks": {
+     "method": "M6p",
+     "column": "M6p_causal_err_t2",
+     "n": 41,
+     "median_km": 1.3317
+    },
+    "tau2_C3, causal picks": {
+     "method": "C3",
+     "column": "C3_causal_err_t2",
+     "n": 41,
+     "median_km": 0.8271
+    }
+   },
+   "manual (K, k, S, s)": {
+    "tau0.5_BEST": {
+     "method": "M6p",
+     "column": "M6p_err_t0.5",
+     "n": 16,
+     "median_km": 1.9278
+    },
+    "tau0.5_C3": {
+     "method": "C3",
+     "column": "C3_err_t0.5",
+     "n": 16,
+     "median_km": 0.8865000000000001
+    },
+    "tau0.5_C4": {
+     "method": "C4",
+     "column": "C4_err_t0.5",
+     "n": 16,
+     "median_km": 0.8271999999999999
+    },
+    "tau0.5_BEST, causal picks": {
+     "method": "M6p",
+     "column": "M6p_causal_err_t0.5",
+     "n": 16,
+     "median_km": 1.58335
+    },
+    "tau0.5_C3, causal picks": {
+     "method": "C3",
+     "column": "C3_causal_err_t0.5",
+     "n": 16,
+     "median_km": 0.87325
+    },
+    "tau2_BEST": {
+     "method": "M6r",
+     "column": "M6r_err_t2",
+     "n": 16,
+     "median_km": 1.0486499999999999
+    },
+    "tau2_C3": {
+     "method": "C3",
+     "column": "C3_err_t2",
+     "n": 16,
+     "median_km": 0.7283
+    },
+    "tau2_C4": {
+     "method": "C4",
+     "column": "C4_err_t2",
+     "n": 16,
+     "median_km": 0.85275
+    },
+    "tau2_BEST, causal picks": {
+     "method": "M6p",
+     "column": "M6p_causal_err_t2",
+     "n": 16,
+     "median_km": 1.31765
+    },
+    "tau2_C3, causal picks": {
+     "method": "C3",
+     "column": "C3_causal_err_t2",
+     "n": 16,
+     "median_km": 0.84785
+    }
+   },
+   "automatic (A, a)": {
+    "tau0.5_BEST": {
+     "method": "M6p",
+     "column": "M6p_err_t0.5",
+     "n": 25,
+     "median_km": 1.9339
+    },
+    "tau0.5_C3": {
+     "method": "C3",
+     "column": "C3_err_t0.5",
+     "n": 25,
+     "median_km": 0.857
+    },
+    "tau0.5_C4": {
+     "method": "C4",
+     "column": "C4_err_t0.5",
+     "n": 25,
+     "median_km": 0.6614
+    },
+    "tau0.5_BEST, causal picks": {
+     "method": "M6p",
+     "column": "M6p_causal_err_t0.5",
+     "n": 25,
+     "median_km": 1.8767
+    },
+    "tau0.5_C3, causal picks": {
+     "method": "C3",
+     "column": "C3_causal_err_t0.5",
+     "n": 25,
+     "median_km": 1.3461
+    },
+    "tau2_BEST": {
+     "method": "M6r",
+     "column": "M6r_err_t2",
+     "n": 25,
+     "median_km": 0.844
+    },
+    "tau2_C3": {
+     "method": "C3",
+     "column": "C3_err_t2",
+     "n": 25,
+     "median_km": 0.45
+    },
+    "tau2_C4": {
+     "method": "C4",
+     "column": "C4_err_t2",
+     "n": 25,
+     "median_km": 0.5812
+    },
+    "tau2_BEST, causal picks": {
+     "method": "M6p",
+     "column": "M6p_causal_err_t2",
+     "n": 25,
+     "median_km": 1.3317
+    },
+    "tau2_C3, causal picks": {
+     "method": "C3",
+     "column": "C3_causal_err_t2",
+     "n": 25,
+     "median_km": 0.8271
+    }
+   },
+   "other": {
+    "tau0.5_BEST": {
+     "method": "M6p",
+     "column": "M6p_err_t0.5",
+     "n": 0,
+     "median_km": null
+    },
+    "tau0.5_C3": {
+     "method": "C3",
+     "column": "C3_err_t0.5",
+     "n": 0,
+     "median_km": null
+    },
+    "tau0.5_C4": {
+     "method": "C4",
+     "column": "C4_err_t0.5",
+     "n": 0,
+     "median_km": null
+    },
+    "tau0.5_BEST, causal picks": {
+     "method": "M6p",
+     "column": "M6p_causal_err_t0.5",
+     "n": 0,
+     "median_km": null
+    },
+    "tau0.5_C3, causal picks": {
+     "method": "C3",
+     "column": "C3_causal_err_t0.5",
+     "n": 0,
+     "median_km": null
+    },
+    "tau2_BEST": {
+     "method": "M6r",
+     "column": "M6r_err_t2",
+     "n": 0,
+     "median_km": null
+    },
+    "tau2_C3": {
+     "method": "C3",
+     "column": "C3_err_t2",
+     "n": 0,
+     "median_km": null
+    },
+    "tau2_C4": {
+     "method": "C4",
+     "column": "C4_err_t2",
+     "n": 0,
+     "median_km": null
+    },
+    "tau2_BEST, causal picks": {
+     "method": "M6p",
+     "column": "M6p_causal_err_t2",
+     "n": 0,
+     "median_km": null
+    },
+    "tau2_C3, causal picks": {
+     "method": "C3",
+     "column": "C3_causal_err_t2",
+     "n": 0,
+     "median_km": null
+    }
+   }
+  },
+  "paired_C3_vs_BEST_tau2": {
+   "all": {
+    "best": "M6r",
+    "n": 41,
+    "n_nonzero": 19,
+    "p_one_sided_descriptive": 0.02431240083360507,
+    "share_C3_smaller": 0.3170731707317073
+   },
+   "manual (K, k, S, s)": {
+    "best": "M6r",
+    "n": 16,
+    "n_nonzero": 8,
+    "p_one_sided_descriptive": null,
+    "share_C3_smaller": 0.3125
+   },
+   "automatic (A, a)": {
+    "best": "M6r",
+    "n": 25,
+    "n_nonzero": 11,
+    "p_one_sided_descriptive": 0.054755468744320385,
+    "share_C3_smaller": 0.32
+   },
+   "other": {
+    "best": "M6r",
+    "n": 0,
+    "n_nonzero": 0,
+    "p_one_sided_descriptive": null,
+    "share_C3_smaller": null
+   }
+  }
+ },
+ "descriptive_only": true,
+ "limits": [
+  "the flag describes how JMA produced the hypocentre, not its error",
+  "groups are small",
+  "BEST is the one chosen on all test events (as in H1), not re-chosen per group",
+  "p values are descriptive (no hypothesis, no alpha, no multiplicity control)",
+  "pairs are compared on the 4-decimal values of the 25_05 CSV, so n_nonzero and p of the group 'all' need not equal H1's values in 25_05"
+ ]
+}

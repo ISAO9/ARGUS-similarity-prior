@@ -1,0 +1,57 @@
+{
+ "script": "26_05_set_size_control.py",
+ "version": "v1",
+ "sequence": "shimane",
+ "frozen_script": "25_05_shimane2018_similarity_confirmation.py",
+ "frozen_script_sha256": "80309ce7012b89af0c052e225cb66b2e15ee104af247937b63510064f9c11398",
+ "cache": "data/shimane2018_processed/tottori_parsed_realpick_shimane2018_m15_r1.pt",
+ "n_events": 41,
+ "draws": 20,
+ "max_abs_diff_vs_frozen_km": 0.0,
+ "median_n_m3": 158.0,
+ "summary": {
+  "0.5": {
+   "median_km": {
+    "C3": 0.857,
+    "M6r": 1.9434,
+    "Late10": 2.2292,
+    "R10_median_of_draw_medians": 1.7391,
+    "R10_min_draw_median": 1.2766,
+    "R10_max_draw_median": 1.9643
+   },
+   "C3_vs_R10": {
+    "frac_better": 0.6585365853658537,
+    "frac_tied": 0.12195121951219512,
+    "frac_worse": 0.21951219512195122
+   },
+   "C3_vs_Late10": {
+    "frac_better": 0.6341463414634146,
+    "frac_tied": 0.07317073170731707,
+    "frac_worse": 0.2926829268292683
+   },
+   "events_with_m3_le_10": 3
+  },
+  "2": {
+   "median_km": {
+    "C3": 0.4562,
+    "M6r": 0.844,
+    "Late10": 1.2785,
+    "R10_median_of_draw_medians": 0.9356,
+    "R10_min_draw_median": 0.8329,
+    "R10_max_draw_median": 1.0881
+   },
+   "C3_vs_R10": {
+    "frac_better": 0.4146341463414634,
+    "frac_tied": 0.5365853658536586,
+    "frac_worse": 0.04878048780487805
+   },
+   "C3_vs_Late10": {
+    "frac_better": 0.43902439024390244,
+    "frac_tied": 0.4634146341463415,
+    "frac_worse": 0.0975609756097561
+   },
+   "events_with_m3_le_10": 3
+  }
+ },
+ "note": "descriptive control, not registered; same physics and prior rule as M6r and C3, only the set of past events differs"
+}

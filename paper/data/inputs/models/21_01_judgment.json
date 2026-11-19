@@ -1,0 +1,770 @@
+{
+ "script": "21_01_tottori_similarity_prior_early_location.py",
+ "version": "v3",
+ "script_sha256": "1251375a42c41c97847c3a986d30bf67743b09527ec53ac3f3e510221e4edb45",
+ "mode": "test",
+ "suffix": "",
+ "cache": "data/tottori_processed/tottori_parsed_realpick.pt",
+ "cache_sha256": "41da6e3078e75d1713a6a19c52ff724c22be2bd83a2ece279da12ede2c0e79be",
+ "n_events": 198,
+ "n_pool": 156,
+ "n_test": 42,
+ "n_no_measured_p": 0,
+ "n_evaluated": 42,
+ "mainshock": {
+  "origin_time": "2026-01-06 01:18:48.400000",
+  "mj": 6.4
+ },
+ "pool_cut_utc_ns": 1767921528400000000,
+ "fixed": {
+  "taus": [
+   0.5,
+   1.0,
+   2.0,
+   3.0
+  ],
+  "judged_taus": [
+   "1",
+   "2",
+   "3"
+  ],
+  "pool_h": 72.0,
+  "buffer_h": 1.0,
+  "band_hz": [
+   2.0,
+   8.0
+  ],
+  "band_sens_hz": [
+   4.0,
+   16.0
+  ],
+  "pre_s": 0.2,
+  "min_win_s": 0.3,
+  "max_win_s": 3.0,
+  "max_lag_s": 0.1,
+  "topk": 10,
+  "topk_sens": [
+   5,
+   20
+  ],
+  "min_pos": 5,
+  "buffer_sens_h": 0.1,
+  "s_weight": 0.5,
+  "shrink": 5.0,
+  "min_prior_ev": 5,
+  "prior_eps": 0.05,
+  "floor_km": 0.5,
+  "min_test": 30,
+  "alpha": 0.01,
+  "min_nonzero": 10,
+  "bar": 0.7,
+  "nboot": 2000,
+  "seed": 12,
+  "eps_t": 0.0001
+ },
+ "velocity": {
+  "v0": 5.549999999999999,
+  "k": 0.054999999999999986,
+  "vpvs": 1.7149999999999994
+ },
+ "laplace_b_s": 0.06006028942703638,
+ "kde_h_km": 0.5,
+ "grid": {
+  "H_km": 35.165738201815806,
+  "step_km": 1.0,
+  "finest_km": 0.04,
+  "zmax_km": 30.0,
+  "zfix_km": 11.487820524435778
+ },
+ "gates": {
+  "split": "PASS",
+  "lib": "PASS (checked for every evaluated event)",
+  "causal": {
+   "max_diff": 0.0,
+   "positive_control": 0.003514049260825991,
+   "n_checks": 15,
+   "events": [
+    "2026-01-09 02:06:44.400000",
+    "2026-01-09 03:02:03",
+    "2026-01-09 11:26:24.900000",
+    "2026-01-09 12:39:29.100000",
+    "2026-01-09 13:03:11.300000"
+   ]
+  },
+  "physics_inf_median_km": 0.09495351037211694
+ },
+ "summary": {
+  "M0r": {
+   "0.5": {
+    "median_km": 2.152785424258256,
+    "ci_lo": 1.6446943348107013,
+    "ci_hi": 3.3598586104107815,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 2.152785424258256,
+    "ci_lo": 1.6446943348107013,
+    "ci_hi": 3.340249568467594,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 2.152785424258256,
+    "ci_lo": 1.6446943348107013,
+    "ci_hi": 3.3598586104107815,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 2.152785424258256,
+    "ci_lo": 1.6446943348107013,
+    "ci_hi": 3.340249568467594,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 2.152785424258256,
+    "ci_lo": 1.6446943348107013,
+    "ci_hi": 3.340249568467594,
+    "available": 1.0
+   }
+  },
+  "Mp10": {
+   "0.5": {
+    "median_km": 2.287807108591988,
+    "ci_lo": 1.9751968066565222,
+    "ci_hi": 3.059941269785425,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 2.287807108591988,
+    "ci_lo": 1.9751968066565222,
+    "ci_hi": 3.0844540542858105,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 2.287807108591988,
+    "ci_lo": 1.9751968066565222,
+    "ci_hi": 3.0844540542858105,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 2.287807108591988,
+    "ci_lo": 2.014802352431873,
+    "ci_hi": 3.200681430435283,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 2.287807108591988,
+    "ci_lo": 2.014802352431873,
+    "ci_hi": 3.0844540542858105,
+    "available": 1.0
+   }
+  },
+  "M1": {
+   "0.5": {
+    "median_km": 4.9183960973260845,
+    "ci_lo": 4.2564331786031415,
+    "ci_hi": 6.225167314375885,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 4.9183960973260845,
+    "ci_lo": 4.256659629667215,
+    "ci_hi": 6.468160776308383,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 4.9183960973260845,
+    "ci_lo": 4.233957671395619,
+    "ci_hi": 6.173211317575441,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 4.9183960973260845,
+    "ci_lo": 4.256659629667215,
+    "ci_hi": 6.173211317575441,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 4.9183960973260845,
+    "ci_lo": 4.247270628037543,
+    "ci_hi": 6.235056600847962,
+    "available": 1.0
+   }
+  },
+  "M2": {
+   "0.5": {
+    "median_km": 5.04697160858556,
+    "ci_lo": 4.234363224435363,
+    "ci_hi": 6.168226051671568,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 4.81958903687271,
+    "ci_lo": 4.218141102845625,
+    "ci_hi": 5.738299371711387,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 7.704399720987968,
+    "ci_lo": 7.230848577657622,
+    "ci_hi": 8.147403220355944,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 6.908622507694682,
+    "ci_lo": 3.7213835570148195,
+    "ci_hi": 8.488290605606196,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 8.78745231924804,
+    "ci_lo": 8.15763088439046,
+    "ci_hi": 9.733497024566066,
+    "available": 1.0
+   }
+  },
+  "M3r": {
+   "0.5": {
+    "median_km": 2.308091324221615,
+    "ci_lo": 1.4219435236460283,
+    "ci_hi": 3.30860119347728,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 2.308091324221615,
+    "ci_lo": 1.4219435236460283,
+    "ci_hi": 3.30860119347728,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 2.308091324221615,
+    "ci_lo": 1.4219435236460283,
+    "ci_hi": 3.30860119347728,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 2.308091324221615,
+    "ci_lo": 1.4219435236460283,
+    "ci_hi": 3.30860119347728,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 2.308091324221615,
+    "ci_lo": 1.4329909840431416,
+    "ci_hi": 3.3411335346282987,
+    "available": 1.0
+   }
+  },
+  "M5": {
+   "0.5": {
+    "median_km": 7.302896582322644,
+    "ci_lo": 7.302896582322644,
+    "ci_hi": 7.302896582322644,
+    "available": 0.023809523809523808
+   },
+   "1": {
+    "median_km": 0.4332823838575072,
+    "ci_lo": 0.04065159458814796,
+    "ci_hi": 55.12354110099415,
+    "available": 0.07142857142857142
+   },
+   "2": {
+    "median_km": 0.8265505517960661,
+    "ci_lo": 0.6309911544616922,
+    "ci_hi": 1.0096937982635699,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.24324207754666555,
+    "ci_lo": 0.17491989647001432,
+    "ci_hi": 0.3009789009959464,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 0.09495351037211694,
+    "ci_lo": 0.06877440377305123,
+    "ci_hi": 0.11353818742641286,
+    "available": 1.0
+   }
+  },
+  "M5f": {
+   "0.5": {
+    "median_km": 4.9183960973260845,
+    "ci_lo": 4.2564331786031415,
+    "ci_hi": 6.173211317575441,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 4.470845896436146,
+    "ci_lo": 4.092118336029799,
+    "ci_hi": 5.738299371711387,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.8265505517960661,
+    "ci_lo": 0.641771912376311,
+    "ci_hi": 1.0096937982635699,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.24324207754666555,
+    "ci_lo": 0.17491989647001432,
+    "ci_hi": 0.2929464166899718,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 0.09495351037211694,
+    "ci_lo": 0.06877440377305123,
+    "ci_hi": 0.11143900754904121,
+    "available": 1.0
+   }
+  },
+  "M6p": {
+   "0.5": {
+    "median_km": 2.1307481467544997,
+    "ci_lo": 1.562233198710371,
+    "ci_hi": 2.887487124951991,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.533041624459437,
+    "ci_lo": 1.0970541338200483,
+    "ci_hi": 1.9403555254090628,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5858669990332537,
+    "ci_lo": 0.3819470960113318,
+    "ci_hi": 1.058714287234701,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.2601101740233313,
+    "ci_lo": 0.19270808972166606,
+    "ci_hi": 0.3507811525239151,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 0.10125172422995359,
+    "ci_lo": 0.08093645790090015,
+    "ci_hi": 0.11779269120072233,
+    "available": 1.0
+   }
+  },
+  "M6r": {
+   "0.5": {
+    "median_km": 2.0729199589887655,
+    "ci_lo": 1.5214077476899062,
+    "ci_hi": 2.895444475124692,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.4969177597867684,
+    "ci_lo": 0.9447102841648387,
+    "ci_hi": 1.8355336810621736,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5786800064608782,
+    "ci_lo": 0.35822704004303535,
+    "ci_hi": 0.8471902746029247,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.25201982144347096,
+    "ci_lo": 0.1910946395045467,
+    "ci_hi": 0.34968766955906905,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": 0.10125172422995359,
+    "ci_lo": 0.08093645790090015,
+    "ci_hi": 0.11779269120072233,
+    "available": 1.0
+   }
+  },
+  "C1": {
+   "0.5": {
+    "median_km": 1.8081947292391074,
+    "ci_lo": 1.1514191542696075,
+    "ci_hi": 2.71653869257228,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.249082336632806,
+    "ci_lo": 0.9122284558680734,
+    "ci_hi": 1.5596652159394777,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.7606167218013684,
+    "ci_lo": 0.4270531758258266,
+    "ci_hi": 1.5075887910076704,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.5295031884961261,
+    "ci_lo": 0.38726977933858797,
+    "ci_hi": 1.1589653012447374,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C2": {
+   "0.5": {
+    "median_km": 1.808166014819144,
+    "ci_lo": 1.2608398018224785,
+    "ci_hi": 2.3864058034068583,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.6240899728057685,
+    "ci_lo": 1.2872562927039115,
+    "ci_hi": 2.2448285765036946,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 1.6661068475944414,
+    "ci_lo": 0.9110604127601579,
+    "ci_hi": 2.1839240748632225,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 1.1797197141592621,
+    "ci_lo": 0.8571619037637955,
+    "ci_hi": 1.3933964349199766,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3": {
+   "0.5": {
+    "median_km": 1.3685197911796871,
+    "ci_lo": 1.0221505686805945,
+    "ci_hi": 2.3722097290029884,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.5413314083867453,
+    "ci_lo": 1.2516945838564149,
+    "ci_hi": 2.218587979657724,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.43746396887260575,
+    "ci_lo": 0.30362978482693853,
+    "ci_hi": 0.6689178116711663,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.22535159444485106,
+    "ci_lo": 0.16266199191082706,
+    "ci_hi": 0.2870178777924324,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3_K5": {
+   "0.5": {
+    "median_km": 1.301846438256638,
+    "ci_lo": 0.9062503741550448,
+    "ci_hi": 1.7285432284665267,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.2753420823717803,
+    "ci_lo": 0.990136041980214,
+    "ci_hi": 1.9534610553184517,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.43386318318760275,
+    "ci_lo": 0.3139843408477452,
+    "ci_hi": 0.6774225480558418,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.2411239429550608,
+    "ci_lo": 0.14795338540855124,
+    "ci_hi": 0.28047533940647396,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3_K20": {
+   "0.5": {
+    "median_km": 1.7932086936843166,
+    "ci_lo": 1.2459231364210308,
+    "ci_hi": 2.388919148927364,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.0793167260936338,
+    "ci_lo": 0.9111379061829505,
+    "ci_hi": 1.322664307450359,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.5142580970270164,
+    "ci_lo": 0.31524722648393627,
+    "ci_hi": 0.7735849024858668,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.2168363763452707,
+    "ci_lo": 0.16269379531313827,
+    "ci_hi": 0.2870178777924324,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3_band4-16": {
+   "0.5": {
+    "median_km": 1.229320821018974,
+    "ci_lo": 0.9820489373430941,
+    "ci_hi": 2.4085976496810875,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.2068095664693663,
+    "ci_lo": 0.9235605740407082,
+    "ci_hi": 1.9097896204051013,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.4148956469220034,
+    "ci_lo": 0.31285859640134983,
+    "ci_hi": 0.5999193319659383,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.2520101640167584,
+    "ci_lo": 0.18587386153444221,
+    "ci_hi": 0.30899895962837737,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  },
+  "C3_buffer0.1h": {
+   "0.5": {
+    "median_km": 1.3685197911796871,
+    "ci_lo": 1.0221505686805945,
+    "ci_hi": 2.3722097290029884,
+    "available": 1.0
+   },
+   "1": {
+    "median_km": 1.478810295177213,
+    "ci_lo": 1.225886975549777,
+    "ci_hi": 2.1607832976892567,
+    "available": 1.0
+   },
+   "2": {
+    "median_km": 0.43746396887260575,
+    "ci_lo": 0.30374614220594875,
+    "ci_hi": 0.6689178116711663,
+    "available": 1.0
+   },
+   "3": {
+    "median_km": 0.22535159444485106,
+    "ci_lo": 0.16269379531313827,
+    "ci_hi": 0.2870178777924324,
+    "available": 1.0
+   },
+   "inf": {
+    "median_km": null,
+    "ci_lo": null,
+    "ci_hi": null,
+    "available": 0.0
+   }
+  }
+ },
+ "per_tau": {
+  "0.5": {
+   "judged": false,
+   "best": "M6r",
+   "best_median_km": 2.0729199589887655,
+   "c3_median_km": 1.3685197911796871,
+   "paired_vs_best": {
+    "n": 42,
+    "n_nonzero": 35,
+    "p": 0.010459057728318037,
+    "median_diff_km": -0.04233403446059136,
+    "frac_better": 0.5476190476190477,
+    "frac_tied": 0.16666666666666666
+   },
+   "floor": false,
+   "win": false,
+   "c3_at_or_below_0p7_best": true,
+   "vs_M6r": {
+    "n": 42,
+    "n_nonzero": 35,
+    "p": 0.010459057728318037,
+    "median_diff_km": -0.04233403446059136,
+    "frac_better": 0.5476190476190477,
+    "frac_tied": 0.16666666666666666
+   },
+   "vs_M6p": {
+    "n": 42,
+    "n_nonzero": 35,
+    "p": 0.006694511189492246,
+    "median_diff_km": -0.1933906584940696,
+    "frac_better": 0.5476190476190477,
+    "frac_tied": 0.16666666666666666
+   },
+   "c3_fallback_frac": 0.0,
+   "similarity_measured_frac": 1.0,
+   "stations_median": 1.0
+  },
+  "1": {
+   "judged": true,
+   "best": "M6r",
+   "best_median_km": 1.4969177597867684,
+   "c3_median_km": 1.5413314083867453,
+   "paired_vs_best": {
+    "n": 42,
+    "n_nonzero": 35,
+    "p": 0.9340794385053035,
+    "median_diff_km": 0.006319321773222475,
+    "frac_better": 0.3333333333333333,
+    "frac_tied": 0.16666666666666666
+   },
+   "floor": false,
+   "win": false,
+   "c3_at_or_below_0p7_best": false,
+   "vs_M6r": {
+    "n": 42,
+    "n_nonzero": 35,
+    "p": 0.9340794385053035,
+    "median_diff_km": 0.006319321773222475,
+    "frac_better": 0.3333333333333333,
+    "frac_tied": 0.16666666666666666
+   },
+   "vs_M6p": {
+    "n": 42,
+    "n_nonzero": 36,
+    "p": 0.8608241781112058,
+    "median_diff_km": 0.0,
+    "frac_better": 0.40476190476190477,
+    "frac_tied": 0.14285714285714285
+   },
+   "c3_fallback_frac": 0.0,
+   "similarity_measured_frac": 1.0,
+   "stations_median": 1.0
+  },
+  "2": {
+   "judged": true,
+   "best": "M6r",
+   "best_median_km": 0.5786800064608782,
+   "c3_median_km": 0.43746396887260575,
+   "paired_vs_best": {
+    "n": 42,
+    "n_nonzero": 34,
+    "p": 0.01664715689994326,
+    "median_diff_km": -0.017845896162113517,
+    "frac_better": 0.5,
+    "frac_tied": 0.19047619047619047
+   },
+   "floor": false,
+   "win": false,
+   "c3_at_or_below_0p7_best": false,
+   "vs_M6r": {
+    "n": 42,
+    "n_nonzero": 34,
+    "p": 0.01664715689994326,
+    "median_diff_km": -0.017845896162113517,
+    "frac_better": 0.5,
+    "frac_tied": 0.19047619047619047
+   },
+   "vs_M6p": {
+    "n": 42,
+    "n_nonzero": 34,
+    "p": 0.004797095603677778,
+    "median_diff_km": -0.05376385956741594,
+    "frac_better": 0.5714285714285714,
+    "frac_tied": 0.19047619047619047
+   },
+   "c3_fallback_frac": 0.0,
+   "similarity_measured_frac": 1.0,
+   "stations_median": 3.0
+  },
+  "3": {
+   "judged": true,
+   "best": "M5",
+   "best_median_km": 0.24324207754666555,
+   "c3_median_km": 0.22535159444485106,
+   "paired_vs_best": {
+    "n": 42,
+    "n_nonzero": 20,
+    "p": 0.01667011012550877,
+    "median_diff_km": 0.0,
+    "frac_better": 0.3333333333333333,
+    "frac_tied": 0.5238095238095238
+   },
+   "floor": true,
+   "win": false,
+   "c3_at_or_below_0p7_best": false,
+   "vs_M6r": {
+    "n": 42,
+    "n_nonzero": 17,
+    "p": 0.05121718249644865,
+    "median_diff_km": 0.0,
+    "frac_better": 0.2857142857142857,
+    "frac_tied": 0.5952380952380952
+   },
+   "vs_M6p": {
+    "n": 42,
+    "n_nonzero": 18,
+    "p": 0.04269449895941479,
+    "median_diff_km": 0.0,
+    "frac_better": 0.2857142857142857,
+    "frac_tied": 0.5714285714285714
+   },
+   "c3_fallback_frac": 0.0,
+   "similarity_measured_frac": 1.0,
+   "stations_median": 5.0
+  }
+ },
+ "verdict": "SIMILARITY-NO",
+ "n_win": 0,
+ "n_floor": 1,
+ "verdict_rule": "per tau: BEST = smallest median among the 9 AI-free methods that give an estimate for every evaluated event (chosen on the evaluated events); WIN = C3 median < BEST median and one-sided paired Wilcoxon (zero_method='wilcox') p < 0.01 with >= 10 non-zero pairs, not FLOOR (BEST < 0.5 km); judged at tau = 1, 2, 3 s; WINS = 3/3, PARTIAL = 1-2/3, PHYSICS-AT-FLOOR = 0/3 and all three FLOOR, NO = otherwise 0/3, INCONCLUSIVE if fewer than 30 evaluated events; tau = 0.5 s descriptive",
+ "limits": [
+  "198 events (Mj >= 2.0) of one aftershock sequence; Tottori was used in ARGUS development and the 2-8 Hz band was chosen after seeing 18_01 (same events, zero-phase filter); an untouched second sequence is needed",
+  "past-event locations are JMA hypocentres (in operation: automatic slow-layer locations, possibly worse); truth is also JMA",
+  "offline PhaseNet picks on full records (possibly better than real-time picks); every method uses the same picks",
+  "cache keeps up to 24 stations per event (PhaseNet P first, earliest first); no not-yet-arrived information is used",
+  "cache waveforms had the full-window mean removed (includes future samples; removed by the 2 Hz high-pass except for a transient from the window start 3 s before P) and the source h5 is z-score normalised per 30-s window (the scale uses later samples of that window; cosine similarity is scale-invariant except where a window join falls inside the correlation window); the one-sample look-ahead of the cache's central-difference derivative is avoided by not using the last sample",
+  "no picking or telemetry latency (tau is ideal elapsed time)",
+  "only C3 is judged; C1, C2 and sensitivities are descriptive"
+ ],
+ "runtime_s": 78.582102060318
+}

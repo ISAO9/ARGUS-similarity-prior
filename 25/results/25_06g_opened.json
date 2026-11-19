@@ -1,0 +1,18 @@
+[
+ {
+  "utc": "2026-11-18T13:08:31Z",
+  "status": "opened",
+  "version": "v1",
+  "script_sha256": "2a5d7ae55d63976e0bfd3861e7e248afb74086677ab7fbfbd510d7d9f69037a3",
+  "cache_sha256": "c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4",
+  "suffix": ""
+ },
+ {
+  "utc": "2026-11-18T13:08:50Z",
+  "status": "completed: verdict GATE-NOT-CONFIRMED",
+  "version": "v1",
+  "script_sha256": "2a5d7ae55d63976e0bfd3861e7e248afb74086677ab7fbfbd510d7d9f69037a3",
+  "cache_sha256": "c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4",
+  "suffix": ""
+ }
+]

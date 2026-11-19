@@ -1,0 +1,57 @@
+{
+ "script": "26_05_set_size_control.py",
+ "version": "v1",
+ "sequence": "osaka",
+ "frozen_script": "21_20_osaka2018_similarity_confirmation.py",
+ "frozen_script_sha256": "2c0fb375e6a1a8d48d3ffbc611bb189b2390d224488cdd5585c76f5cadd5da43",
+ "cache": "data/osaka2018_processed/tottori_parsed_realpick_osaka2018_m15_a04.pt",
+ "n_events": 55,
+ "draws": 20,
+ "max_abs_diff_vs_frozen_km": 0.0,
+ "median_n_m3": 65.0,
+ "summary": {
+  "0.5": {
+   "median_km": {
+    "C3": 0.7077,
+    "M6r": 1.1743,
+    "Late10": 1.2506,
+    "R10_median_of_draw_medians": 1.2056499999999999,
+    "R10_min_draw_median": 1.0871,
+    "R10_max_draw_median": 1.4549
+   },
+   "C3_vs_R10": {
+    "frac_better": 0.4727272727272727,
+    "frac_tied": 0.38181818181818183,
+    "frac_worse": 0.14545454545454545
+   },
+   "C3_vs_Late10": {
+    "frac_better": 0.4727272727272727,
+    "frac_tied": 0.34545454545454546,
+    "frac_worse": 0.18181818181818182
+   },
+   "events_with_m3_le_10": 5
+  },
+  "2": {
+   "median_km": {
+    "C3": 0.3671,
+    "M6r": 0.3671,
+    "Late10": 0.3593,
+    "R10_median_of_draw_medians": 0.3671,
+    "R10_min_draw_median": 0.3671,
+    "R10_max_draw_median": 0.3671
+   },
+   "C3_vs_R10": {
+    "frac_better": 0.09090909090909091,
+    "frac_tied": 0.8727272727272727,
+    "frac_worse": 0.03636363636363636
+   },
+   "C3_vs_Late10": {
+    "frac_better": 0.12727272727272726,
+    "frac_tied": 0.8,
+    "frac_worse": 0.07272727272727272
+   },
+   "events_with_m3_le_10": 5
+  }
+ },
+ "note": "descriptive control, not registered; same physics and prior rule as M6r and C3, only the set of past events differs"
+}

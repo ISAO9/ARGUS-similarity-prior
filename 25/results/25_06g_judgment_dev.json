@@ -1,0 +1,343 @@
+{
+ "script": "25_06g_shimane2018_gate_test.py",
+ "version": "v1",
+ "script_sha256": "2a5d7ae55d63976e0bfd3861e7e248afb74086677ab7fbfbd510d7d9f69037a3",
+ "mode": "dev",
+ "sequence": "Western Shimane 2018",
+ "suffix": "_dev",
+ "cache": "data/shimane2018_processed/tottori_parsed_realpick_shimane2018_m15_r1.pt",
+ "cache_sha256": "c81b97b70a1f0d5619e63f2822a0652df6be08371a924fc5129bb56ca6457db4",
+ "gate_pkl_sha256": "358e3daddfc0c9dd3c95e35d92bb9c83a2123ee459f2bb5b657b0be10ce11555",
+ "gate_feature_block_sha256": "c2a1eabfaaa5f94f359f965dfdaf720ca2437164bf3954f0f543e1eaf5772263",
+ "gate_apply_block_sha256": "fcc56fd873cb9919fc8e8c9b3b518e11ef59f42db121d52c53202b208ae82cbc",
+ "ref_csv": "data/25_05_per_event_dev.csv",
+ "ref_csv_sha256": "c6e722586b6d81e6907779a1804eab300b4f6f6f37f3489cdb428c914213db04",
+ "ref_judgment": "models/25_05_judgment_dev.json",
+ "ref_suffix": "",
+ "gate_frozen_utc": "2026-11-02T13:31:21Z",
+ "g_same": "PASS",
+ "n_events": 20,
+ "tau_main": 2.0,
+ "hypotheses": {
+  "HG1": {
+   "b_C4_only_miss": 1,
+   "c_G_only_miss": 0,
+   "n_discordant": 1,
+   "p": 0.5,
+   "alpha": 0.005,
+   "min_discordant": 8
+  },
+  "HG2": {
+   "n_nonzero": 2,
+   "median_diff_km": 0.0,
+   "p": 0.08985624743949988,
+   "alpha": 0.005,
+   "min_nonzero": 10,
+   "wilcoxon": "one-sided, zero_method=wilcox, method=approx, correction=False"
+  },
+  "guard": {
+   "G_median_km": 0.4504,
+   "C4_median_km": 0.53535,
+   "margin_km": 0.05,
+   "ok": true
+  },
+  "HG3_secondary": {
+   "tau_s": 1.0,
+   "n_nonzero": 1,
+   "median_diff_km": 0.0,
+   "p": 0.15865525393145707,
+   "alpha": 0.005,
+   "min_nonzero": 10,
+   "G_median_km": 0.45094999999999996,
+   "R_median_km": 0.5156000000000001,
+   "result": "INCONCLUSIVE",
+   "note": "secondary; reported separately; does not change the verdict"
+  }
+ },
+ "verdict": "INCONCLUSIVE",
+ "secondary_HG3": "INCONCLUSIVE",
+ "verdict_rule": "INCONCLUSIVE (n<30 or HG1 discordant<8) -> GATE-CONFIRMED (HG1, HG2, guard) -> GATE-HELPS-NOT-BEYOND-RULE (HG1, guard; HG2 fails if nonzero pairs<10) -> GATE-NOT-CONFIRMED",
+ "describe": {
+  "0.5": {
+   "n": 20,
+   "frac_G_C1": 0.0,
+   "frac_R_C1": 0.0,
+   "n_fallback": 0,
+   "M6r": {
+    "n": 20,
+    "median_km": 1.8016,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "C4": {
+    "n": 20,
+    "median_km": 0.64075,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "C1": {
+    "n": 20,
+    "median_km": 0.71235,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "R": {
+    "n": 20,
+    "median_km": 0.64075,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "G": {
+    "n": 20,
+    "median_km": 0.64075,
+    "gt10": 0.0,
+    "gt30": 0.0
+   }
+  },
+  "1": {
+   "n": 20,
+   "frac_G_C1": 0.05,
+   "frac_R_C1": 0.0,
+   "n_fallback": 0,
+   "M6r": {
+    "n": 20,
+    "median_km": 1.6404,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "C4": {
+    "n": 20,
+    "median_km": 0.5156000000000001,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "C1": {
+    "n": 20,
+    "median_km": 0.22885,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "R": {
+    "n": 20,
+    "median_km": 0.5156000000000001,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "G": {
+    "n": 20,
+    "median_km": 0.45094999999999996,
+    "gt10": 0.0,
+    "gt30": 0.0
+   }
+  },
+  "2": {
+   "n": 20,
+   "frac_G_C1": 0.15,
+   "frac_R_C1": 0.05,
+   "n_fallback": 0,
+   "M6r": {
+    "n": 20,
+    "median_km": 0.8706,
+    "gt10": 0.05,
+    "gt30": 0.05
+   },
+   "C4": {
+    "n": 20,
+    "median_km": 0.53535,
+    "gt10": 0.05,
+    "gt30": 0.05
+   },
+   "C1": {
+    "n": 20,
+    "median_km": 0.242,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "R": {
+    "n": 20,
+    "median_km": 0.53535,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "G": {
+    "n": 20,
+    "median_km": 0.4504,
+    "gt10": 0.0,
+    "gt30": 0.0
+   }
+  },
+  "3": {
+   "n": 20,
+   "frac_G_C1": 0.2,
+   "frac_R_C1": 0.15,
+   "n_fallback": 0,
+   "M6r": {
+    "n": 20,
+    "median_km": 0.3366,
+    "gt10": 0.15,
+    "gt30": 0.15
+   },
+   "C4": {
+    "n": 20,
+    "median_km": 0.2217,
+    "gt10": 0.15,
+    "gt30": 0.15
+   },
+   "C1": {
+    "n": 20,
+    "median_km": 0.3364,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "R": {
+    "n": 20,
+    "median_km": 0.2217,
+    "gt10": 0.0,
+    "gt30": 0.0
+   },
+   "G": {
+    "n": 20,
+    "median_km": 0.17504999999999998,
+    "gt10": 0.0,
+    "gt30": 0.0
+   }
+  }
+ },
+ "q_calibration": {
+  "n": 80,
+  "brier": 4.096934634868344e-06,
+  "brier_base_rate": 4.644768133174791e-06,
+  "base_rate_train": 0.0021551724137931034,
+  "observed_rate": 0.0
+ },
+ "feature_range": {
+  "log1p_d_C4_C1_km": {
+   "train_min": 0.024467957233459726,
+   "train_max": 4.065171679543391,
+   "test_min": 0.02705482526429392,
+   "test_max": 3.9725558696133483,
+   "frac_outside": 0.0
+  },
+  "log1p_d_C4_M6r_km": {
+   "train_min": 0.0,
+   "train_max": 4.364092772219671,
+   "test_min": 0.0,
+   "test_max": 1.2903989464442267,
+   "frac_outside": 0.0
+  },
+  "log1p_d_C1_C2_km": {
+   "train_min": 0.0,
+   "train_max": 2.5835177147005632,
+   "test_min": 0.027357114742024277,
+   "test_max": 0.9480773435326475,
+   "frac_outside": 0.0
+  },
+  "log1p_top10_spread_km": {
+   "train_min": 0.07953149498245507,
+   "train_max": 1.5088112760268786,
+   "test_min": 0.23641361868945956,
+   "test_max": 0.8742431014699265,
+   "frac_outside": 0.0
+  },
+  "S_max": {
+   "train_min": 0.02440057449368806,
+   "train_max": 0.9972774729440416,
+   "test_min": 0.30762524797967283,
+   "test_max": 0.9974393125426,
+   "frac_outside": 0.0125
+  },
+  "S_gap12": {
+   "train_min": 0.0,
+   "train_max": 0.4097872725694927,
+   "test_min": 0.00045719541357719384,
+   "test_max": 0.266831773584875,
+   "frac_outside": 0.0
+  },
+  "log1p_n_pos": {
+   "train_min": 1.791759469228055,
+   "train_max": 6.054439346269371,
+   "test_min": 3.1780538303479458,
+   "test_max": 5.159055299214529,
+   "frac_outside": 0.0
+  },
+  "n_P": {
+   "train_min": 1.0,
+   "train_max": 22.0,
+   "test_min": 1.0,
+   "test_max": 6.0,
+   "frac_outside": 0.0
+  },
+  "p_resid_C4_s": {
+   "train_min": 1.1205660683799579e-06,
+   "train_max": 3.0763574574136046,
+   "test_min": 0.0007632798938126406,
+   "test_max": 1.6225614225830571,
+   "frac_outside": 0.0
+  },
+  "C4_at_edge": {
+   "train_min": 0.0,
+   "train_max": 1.0,
+   "test_min": 0.0,
+   "test_max": 1.0,
+   "frac_outside": 0.0
+  },
+  "n_corr_C4": {
+   "train_min": 1.0,
+   "train_max": 19.0,
+   "test_min": 1.0,
+   "test_max": 6.0,
+   "frac_outside": 0.0
+  },
+  "tau_s": {
+   "train_min": 0.5,
+   "train_max": 3.0,
+   "test_min": 0.5,
+   "test_max": 3.0,
+   "frac_outside": 0.0
+  },
+  "log1p_d_C4_lib_km": {
+   "train_min": 0.003214199614721128,
+   "train_max": 4.017369157880533,
+   "test_min": 0.01686730225233868,
+   "test_max": 3.755359626535346,
+   "frac_outside": 0.0
+  }
+ },
+ "limits": [
+  "West Tottori 2026 training rows contain many C4 misses (tau = 2 s: 15.4% > 10 km over 467 rows with C1), mostly early in the sequence when the past-event list is short, while the 91 21_02 evaluation events had 3.3%; rule R was already strong in 2026 (0.4% > 10 km), so HG2 (G beating R) is a hard test",
+  "test errors are rounded to 4 decimals (numpy round) before HG1/HG2, as were the training errors",
+  "the gate G was trained on one sequence (West Tottori 2026) and frozen before Northern Osaka 2018 and Western Shimane 2018 were opened (22_00 section 7)",
+  "truth and past-event locations are JMA hypocentres; C1 can only return locations of past events, so neither C1 nor G can answer for an event in a new place",
+  "rule R's 10 km threshold was chosen after seeing Central Tottori 2016 and is fixed here in advance",
+  "feature 9 (P residual at the C4 epicentre) is missing with fewer than 3 P picks and is then filled with the training median",
+  "C1 and C4 errors are rounded to 4 decimals before comparison (as in the 25_05 CSV) so that ties stay ties",
+  "all 25_05 limitations apply (listed below, copied from 25_05 v1)",
+  "fifth sequence: Western Shimane 2018 (mainshock 2018-04-09, 01:32:30.81 JST, Mj 6.1; JMA catalogue values, see 25_01's JSON), never used in ARGUS development; the hypotheses H1-H3 were fixed on West Tottori 2026 (21_01/21_02), tested on Central Tottori 2016 (21_04, with a documented deviation) and Northern Osaka 2018 (21_20, re-registered with amendment 04) and are applied here unchanged; the fourth sequence (Northern Nagano 2014, preregistration 24 with the same rules) was stopped by the clock check G-clock2 before its test was opened, and its rules (including H4 and H5) are carried over unchanged except G-clock2 condition (d)",
+  "one fifth sequence only; before this preregistration the catalogue h2018 was opened by 25_00 to count events (counts and the mainshock row only; no location list, waveform or method error was looked at); h2018 had been opened before for Northern Osaka 2018 (21_20a), whose box and period do not include this sequence",
+  "the catalogue-only count of test candidates after rule R1 was 41 in 25_00 (25_00 required at least 40 to select a sequence); events without a PhaseNet P in the cache are not evaluated, and fewer than 30 evaluated events give INCONCLUSIVE",
+  "25 of these 41 catalogue test candidates have JMA's automatic-hypocentre flag (A), 15 are K and 1 is k (25_00); the truth and past-event locations therefore mix manual and automatic JMA hypocentres; errors by flag are described by 25_09 (no test)",
+  "stations are NIED Hi-net (0101) only, chosen as the 50 nearest with data among the current NIED list; the West Tottori 2026 set of 50 stations also included non-Hi-net stations, so station types and geometry differ; stations that existed in 2018 but are not in the current NIED list cannot be candidates",
+  "waveforms were downloaded around catalogue events only and converted to the West Tottori 2026 h5 form (30-s windows, per-window per-component z-score, JST epoch; 25_02 also stores the window mean and standard deviation); no filter was applied before the z-score (compared in 25_02 G-spec)",
+  "the cache was built by 25_03, whose picking, QC and assembly are identical to 15_01c v3.3; 25_03h then removed every event with another catalogue event from 15 s before to 5 s after its origin (rule R1 of 21_20 amendment 04, fixed here before any Shimane waveform was opened; it uses origin times and Mj only), which can bias the sample against busy periods",
+  "catalogue: JMA hypocentres from h2018 (whether h2018 is the final stage is to be confirmed); past-event locations are JMA hypocentres (in operation: automatic slow-layer locations, possibly worse); truth is also JMA",
+  "the 2018 catalogue excludes matched-filter, undetermined/fixed (precision M, 8, 9; flag N, F), artificial and low-frequency events. Manual and automatic hypocentres can be mixed (per-flag counts in 25_01's JSON)",
+  "station elevations are NIED's current height(m) (possibly the sensor depth for borehole stations); static station terms absorb a constant offset",
+  "H1-H4 use offline PhaseNet picks on full records (possibly better than real-time picks); every method uses the same picks",
+  "cache keeps up to 24 stations per event (PhaseNet P first, earliest first); no not-yet-arrived information is used",
+  "cache waveforms had the full-window mean removed (includes future samples; removed by the 2 Hz high-pass except for a transient from the window start 3 s before P) and the source h5 is z-score normalised per 30-s window (the scale uses later samples of that window; cosine similarity is scale-invariant except where a window join falls inside the correlation window); the one-sample look-ahead of the cache's central-difference derivative is avoided by not using the last sample",
+  "no picking or telemetry latency (tau is ideal elapsed time)",
+  "the test events are small (1.5 <= Mj < 2.0); pick quality and station counts can differ from Mj >= 2.0 events",
+  "the 2-8 Hz band was chosen after seeing 18_01 on West Tottori 2026",
+  "C4's station terms come from past events' JMA hypocentres and truth is also JMA, so part of a C4 gain can be agreement with the JMA frame rather than better early information; C3all/C4all at all picks are reported to show this",
+  "C4 corrects only arrived stations held by >= 3 top similar events; each past event's terms are demeaned by its own median P residual over all its stations, while uncorrected stations keep only the static term",
+  "H4 compares C3 with C1 (the JMA epicentre of the most similar past event, the 'search the most similar past event' approach) on the events where C1 exists (C1 is undefined when fewer than 5 past events have a positive similarity)",
+  "H5 re-runs every method with picks made by 24_07 from data up to T only (T = first offline P + tau); the tau origin, the station set (the cache stations) and the P search band (relative to the catalogue origin) still come from the offline picks and the catalogue; no Wadati QC or STA/LTA fallback at each time; the similarity windows start at the causal P; stations picked causally but without an offline PhaseNet P are used by the physics but not by the similarity; past events keep their offline picks (their records are complete at the time of the target event)",
+  "the clock check G-clock2 condition (d) was redesigned for this preregistration on four earlier sequences only (25_04x, 25_04y, 25_04z and 25_04v; Shimane was not opened): 5 consecutive events after mainshock + 72 h, median of event medians within 0.5 s; it does not check common timing errors that affect only one or two events, or events within 72 h of the mainshock; its positive control was set to +1.0 s on 4 consecutive events after +0.6 s could not be met together with the negative control (25_04z); a 0.6 s common offset over 4 events is therefore not reliably detected",
+  "if the station-level clock check G-clock2 (c) fails only at stations farther than 80 km, the test proceeds with a fixed label (preregistration 25, section 5.3); a constant clock offset at a far station can be missed",
+  "H1 (C3 at tau = 2 s) is the primary test; H2, H3 and H4 are secondary at alpha 0.005; H5 (causal picks) uses the H1 rule at alpha 0.01 as a realism check; everything else is descriptive"
+ ],
+ "numpy": "2.4.3",
+ "python": "3.12.12",
+ "utc": "2026-11-18T12:53:25Z",
+ "runtime_s": 9.942181825637817
+}
