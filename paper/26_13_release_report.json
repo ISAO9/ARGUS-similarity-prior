@@ -136,6 +136,22 @@
   "status": "PASS"
  },
  {
+  "check": "rerun 26_15_error_distributions.py",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_15_tail_stats.csv [csv] = released Mac output",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_15_tail_stats.json [num] = released Mac output",
+  "status": "PASS"
+ },
+ {
+  "check": "rerun data/26_15_table_S9.md = released Mac output",
+  "status": "PASS"
+ },
+ {
   "check": "figure PDFs",
   "status": "INFO"
  },

@@ -1,6 +1,7 @@
 # =============================================================================
-# Script : 26_13_release_assemble.py   (v2.1, 2026-11-20: the business name is matched only by its
-#          SHA-256 hash, so the name itself never appears in this script or its report)
+# Script : 26_13_release_assemble.py   (v2.2, 2026-11-20: adds 26_15 (error distributions, Figure S2 and
+#          Table S9), rerun and compared with the Mac output; v2.1: the business name is matched only by
+#          its SHA-256 hash, so the name itself never appears in this script or its report)
 # Project: ARGUS (SRL new submission, "How Much Do Waveform-Similar Past
 #          Earthquakes Improve Early Epicenters?")
 #
@@ -11,7 +12,7 @@
 #   changing every commit hash. This script builds a separate PUBLIC copy
 #   (default ~/ARGUS_public) that has no history:
 #
-#   1. Collect  paper scripts (26_01-26_06, 26_08-26_13), check scripts, frozen
+#   1. Collect  paper scripts (26_01-26_06, 26_08-26_13, 26_15), check scripts, frozen
 #               results of every registration, learned models (found by their
 #               registered SHA-256), 26_xx outputs, figure PDFs and the Python
 #               environment of ~/SWIFT.
@@ -25,7 +26,7 @@
 #               a registered script is never changed), REGISTRATION_LOG.txt
 #               (every commit: hash, time, message), a README, an MIT LICENSE,
 #               and paper/ (the paper materials).
-#   4. Verify   reruns 26_04, 26_06, 26_02, 26_03, 26_09 and 26_11 from the
+#   4. Verify   reruns 26_04, 26_06, 26_02, 26_03, 26_09, 26_11 and 26_15 from the
 #               staged files and compares numeric fingerprints with the
 #               submitted paper (fixed on 2026-11-19) and with the Mac outputs.
 #   5. Scan     every staged file: credentials, e-mail addresses, the author's
@@ -113,6 +114,7 @@ SENT = {   # SHA-256 of the 26_xx scripts as delivered (the versions behind the 
     "26_10_memory_truncation.py": "108d5c6e5523057f83afc091e1cf167e7fca8e3d50cb7c317d78560b76b1dc02",
     "26_11_reviewer_supplement.py": "969c91bafd1bde42cf43b95188605ab3742fa5afcb91c9bf0985a2928df942ac",
     "26_12_causal_mean_check.py": "6858e4cead4304ebc60b997ebcc7718c1b2170bd2b66302e19c6a79ad1e31299",
+    "26_15_error_distributions.py": "654ed371cfb1a6b77f40c00d49c6a11f8edf150cfd7ccebdd56f711e071239e8",
 }
 # Fingerprints of the outputs whose numbers are in the submitted paper (2026-11-19).
 # "num": numbers only; "text": numbers + labels (hex hashes, paths, times ignored);
@@ -454,6 +456,7 @@ descriptive checks of its supplement.
 | `src/26_01`–`26_06` | Figures 1–9 and Tables S1 (map and waveform, results, schematic and timeline, effect sizes, set-size control, Table S1) |
 | `src/26_08`–`26_12` | Descriptive checks of the supplement (inventory, test-period terciles, memory truncation, DPRI catalog and intensity summary with Figure S1, mean removal) |
 | `src/26_13` | Builds this folder, scans it, and reruns the scripts below to confirm the numbers |
+| `src/26_15` | Figure S2 and Table S9 (full error distributions, descriptive) |
 | `src/21_10`, `src/23_01`–`23_03` | Earlier checks used in Text S4 (intensity effect, spatial holdout, DPRI catalog) |
 | `data/inputs/models`, `data/inputs/data` | Frozen results of the registered tests: judgment and opening records (JSON), per-event errors (CSV), the frozen learned models |
 | `data/`, `models/`, `PDF/` | Outputs of the 26_xx scripts and the figure files |
@@ -602,7 +605,8 @@ if True:
     print("\n5. Verify (rerun from the staged files)")
     with tempfile.TemporaryDirectory() as td:
         T = Path(td) / "paper"; shutil.copytree(STAGE, T)
-        for rel in list(FP_EXPECT) + ["data/26_11_reviewer_supplement.json"]:
+        for rel in list(FP_EXPECT) + ["data/26_11_reviewer_supplement.json", "data/26_15_tail_stats.json",
+                                      "data/26_15_tail_stats.csv", "data/26_15_table_S9.md"]:
             if (T / rel).exists(): (T / rel).unlink()                     # regenerate, never reuse
         for s in ("26_04_paper_effect_sizes.py", "26_06_paper_table_s1.py",
                   "26_02_paper_result_figures.py", "26_03_paper_schematic_timeline.py"):
@@ -636,6 +640,18 @@ if True:
             res("rerun 26_11 numbers = released Mac output", fingerprint(a, "num") == fingerprint(b, "num"))
         else:
             res("rerun 26_11 numbers = released Mac output", "WARN", "Mac output missing" if a.exists() else "rerun failed")
+        rc, tail = run(["src/26_15_error_distributions.py"], T)
+        res("rerun 26_15_error_distributions.py", rc == 0, tail if rc else "")
+        for rel, kind in (("data/26_15_tail_stats.csv", "csv"), ("data/26_15_tail_stats.json", "num")):
+            a, b = T / rel, STAGE / rel
+            if a.exists() and b.exists():
+                res(f"rerun {rel} [{kind}] = released Mac output", fingerprint(a, kind) == fingerprint(b, kind))
+            else:
+                res(f"rerun {rel} [{kind}] = released Mac output", "FAIL",
+                    "Mac output missing (run 26_15 on the Mac first)" if a.exists() else "rerun failed")
+        a, b = T / "data/26_15_table_S9.md", STAGE / "data/26_15_table_S9.md"
+        res("rerun data/26_15_table_S9.md = released Mac output",
+            a.exists() and b.exists() and a.read_text() == b.read_text())
         for f in sorted((T / "PDF").glob("26_0[23]_*.pdf")):
             if not (STAGE / "PDF" / f.name).exists():
                 shutil.copy2(f, STAGE / "PDF" / f.name); print(f"    released the rerun figure PDF/{f.name}")

@@ -19,6 +19,7 @@ descriptive checks of its supplement.
 | `src/26_01`–`26_06` | Figures 1–9 and Tables S1 (map and waveform, results, schematic and timeline, effect sizes, set-size control, Table S1) |
 | `src/26_08`–`26_12` | Descriptive checks of the supplement (inventory, test-period terciles, memory truncation, DPRI catalog and intensity summary with Figure S1, mean removal) |
 | `src/26_13` | Builds this folder, scans it, and reruns the scripts below to confirm the numbers |
+| `src/26_15` | Figure S2 and Table S9 (full error distributions, descriptive) |
 | `src/21_10`, `src/23_01`–`23_03` | Earlier checks used in Text S4 (intensity effect, spatial holdout, DPRI catalog) |
 | `data/inputs/models`, `data/inputs/data` | Frozen results of the registered tests: judgment and opening records (JSON), per-event errors (CSV), the frozen learned models |
 | `data/`, `models/`, `PDF/` | Outputs of the 26_xx scripts and the figure files |
